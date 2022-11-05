@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 #raylib library cross-compile script
 
