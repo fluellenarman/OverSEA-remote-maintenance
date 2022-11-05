@@ -1,3 +1,0 @@
-[submodule "client/client/depend/logq"]
-	path = client/client/depend/logq
-	url = https://github.com/iikare/logq.git
