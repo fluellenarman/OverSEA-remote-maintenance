@@ -48,7 +48,7 @@ void controller::drawRectText(rectText rectT, const colorRGB& rectCol, const col
   drawRectangle(rectT.rect, rectCol);
 
 //measure text ex
-  Vector2 textDim = MeasureTextEx(getFont(rectT.fontSize), text.c_str(), rectT.fontSize, 0);
+  Vector2 textDim = measureTextEx( text, rectT.fontSize );
   float posX = rectT.rect.x + rectT.rect.width/2 - textDim.x/2;
   float posY = rectT.rect.y + rectT.rect.height/2 - textDim.y/2;
   Vector2 pos = {posX, posY};
