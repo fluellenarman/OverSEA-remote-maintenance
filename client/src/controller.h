@@ -11,7 +11,7 @@
 #include <string>
 #include <unordered_map>
 #include "color.h"
-#include "rectangle.h"
+#include "geometry.h"
 
 using std::string;
 using std::unordered_map;

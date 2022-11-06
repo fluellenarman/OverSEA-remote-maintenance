@@ -9,7 +9,7 @@
 #include "../depend/logq/src/log.h"
 #include "controller.h"
 #include "enum.h"
-#include "rectangle.h"
+#include "geometry.h"
 
 using std::string;
 
@@ -43,6 +43,7 @@ int main() {
         ctr.drawTextEx(window_title.c_str(), {200.0f, 200.0f}, {12,24,244});
         ctr.drawTextEx(window_title.c_str(), {200.0f, 300.0f}, {12,24,244}, 50);
         ctr.drawTextEx(window_title.c_str(), {200.0f, 400.0f}, {12,24,244}, 150);
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 500.0f}, {12,24,244}, 340);
         break;
       case sceneType::SCENE_LOGIN:
         //ctr.drawRectangle(login_button_position, {120, 12, 255});
