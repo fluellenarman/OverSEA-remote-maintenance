@@ -18,6 +18,7 @@ constexpr int window_h = 900;
 const string window_title = "OverSEA receiver client ver.0";
 
 constexpr rectangle login_button_position = {window_w/2 - 100, window_h/2 - 50, 200, 100};
+constexpr rectText login_button_position_but = {window_w/2 - 100, window_h/2 - 50, 200, 100,24};
 
 
 sceneType current_scene = sceneType::SCENE_LOGIN;
@@ -38,23 +39,19 @@ int main() {
     ctr.beginRender();
 
     switch(current_scene) {
-
-      case sceneType::SCENE_LOGIN:
-
-
-        ctr.drawRectangle(login_button_position, {120, 12, 255});
-
-
-
+      case sceneType::SCENE_TEST:
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 200.0f}, {12,24,244});
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 300.0f}, {12,24,244}, 50);
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 400.0f}, {12,24,244}, 150);
         break;
-
+      case sceneType::SCENE_LOGIN:
+        //ctr.drawRectangle(login_button_position, {120, 12, 255});
+        ctr.drawRectText(login_button_position_but, {120, 12, 255}, {0,0,0}, "button");
+        break;
       default:
         break;
-
     }
-    ctr.drawTextEx(window_title.c_str(), {200.0f, 200.0f}, {12,24,244});
-    ctr.drawTextEx(window_title.c_str(), {200.0f, 300.0f}, {12,24,244}, 50);
-    ctr.drawTextEx(window_title.c_str(), {200.0f, 400.0f}, {12,24,244}, 150);
+   
 
 
     // user input logic
@@ -62,10 +59,9 @@ int main() {
     switch(current_scene) {
       case sceneType::SCENE_LOGIN:
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-          
-
           if (ctr.cursorInBox(login_button_position)) {
               logQ("clicked in box");
+              current_scene=sceneType::SCENE_TEST;
           }
         }
         break;

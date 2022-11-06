@@ -31,13 +31,23 @@ Font& controller::getFont(int size) {
 
 void controller::drawTextEx(const string& msg, const Vector2& pos, const colorRGB& col, int size) {
   Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
-  DrawTextEx(getFont(size), msg.c_str(), pos, 
-             getFont(size).baseSize, 0, color);
+  DrawTextEx(getFont(size), msg.c_str(), pos, getFont(size).baseSize, 0, color);
 }
     
 void controller::drawRectangle(rectangle rect, const colorRGB& col) {
   Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
   DrawRectangle(rect.x, rect.y, rect.width, rect.height, color);
+}
+
+void controller::drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, string text) {
+  drawRectangle(rectT.rect, rectCol);
+
+//measure text ex
+  Vector2 textDim = MeasureTextEx(getFont(rectT.fontSize), text.c_str(), rectT.fontSize, 0);
+  float posX = rectT.rect.x + rectT.rect.width/2 - textDim.x/2;
+  float posY = rectT.rect.y + rectT.rect.height/2 - textDim.y/2;
+  Vector2 pos = {posX, posY};
+  drawTextEx(text, pos, textCol, rectT.fontSize);
 }
 
 bool controller::cursorInBox(const rectangle& box) {
