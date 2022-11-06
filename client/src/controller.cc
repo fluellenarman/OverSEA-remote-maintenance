@@ -35,6 +35,15 @@ void controller::drawTextEx(const string& msg, const Vector2& pos, const colorRG
              getFont(size).baseSize, 0, color);
 }
     
+void controller::drawRectangle(rectangle rect, const colorRGB& col) {
+  Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
+  DrawRectangle(rect.x, rect.y, rect.width, rect.height, color);
+}
+
+bool controller::cursorInBox(const rectangle& box) {
+  return pointInBox(GetMousePosition(), box);
+}
+
 void controller::unload() {
   for (auto f : fontMap) {
     UnloadFont(f.second);
