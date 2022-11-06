@@ -33,8 +33,13 @@ class controller {
     void drawTextEx(const string& msg, const Vector2& pos, const colorRGB& col, 
                     int size = 24, const string& font = FONT_YKLIGHT);
     void drawRectangle(rectangle rect, const colorRGB& col);
-    void drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, const string text,
-                      const string& font = FONT_YKLIGHT);
+    void drawRectLines(rectangle rect, const colorRGB& col);
+    void drawRectwithLines(rectangle rect, const colorRGB& rectCol, const colorRGB& linesCol);
+    void drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, const string text, 
+                      const int align = 0, const string& font = FONT_YKLIGHT);
+    Vector2 getTextPos(rectText rectT, string text, const int align);
+    void drawTextInputBox(rectText rectT, bool input, bool cursor, const colorRGB& rectCol, const colorRGB& textCol, 
+                          string text, const int align = 1, const string& font = FONT_YKLIGHT);
 
     bool cursorInBox(const rectangle& box);
     template<class T>
