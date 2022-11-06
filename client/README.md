@@ -20,4 +20,4 @@ To build for linux, use:
 
 To build for windows (using WSL/debian):
 
-'make re arch=win'
+`make re arch=win`
