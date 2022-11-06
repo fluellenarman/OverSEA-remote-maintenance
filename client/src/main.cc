@@ -35,15 +35,17 @@ int main() {
   SetTargetFPS(60);
   logW(LL_INFO, "window initialization OK");
 
+  ctr.init();
+
   while (!WindowShouldClose()) {
     ctr.beginRender();
 
     switch(current_scene) {
       case sceneType::SCENE_TEST:
-        ctr.drawTextEx(window_title.c_str(), {200.0f, 200.0f}, {12,24,244});
-        ctr.drawTextEx(window_title.c_str(), {200.0f, 300.0f}, {12,24,244}, 50);
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 200.0f}, {12,24,244}, 24, FONT_CAMO);
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 300.0f}, {12,24,244}, 50, FONT_CAMO);
         ctr.drawTextEx(window_title.c_str(), {200.0f, 400.0f}, {12,24,244}, 150);
-        ctr.drawTextEx(window_title.c_str(), {200.0f, 500.0f}, {12,24,244}, 340);
+        ctr.drawTextEx(window_title.c_str(), {200.0f, 500.0f}, {12,24,244}, 340, FONT_CAMO);
         break;
       case sceneType::SCENE_LOGIN:
         //ctr.drawRectangle(login_button_position, {120, 12, 255});

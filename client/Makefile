@@ -16,7 +16,7 @@ endif
 
 
 
-CFLAGS=--std=c++20 -Wall -Wextra $(DEPDEF)
+CFLAGS=--std=c++20 -Wall -Wextra $(DEPDEF) -Og -g
 
 ifeq ($(strip $(arch)),)
 LFLAGS+=$(LD) -lraylib 

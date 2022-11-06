@@ -10,11 +10,14 @@
 
 #include <string>
 #include <unordered_map>
+#include <map>
 #include "color.h"
 #include "geometry.h"
+#include "constants.h"
 
 using std::string;
 using std::unordered_map;
+using std::map;
 using std::pair;
 using std::move;
 using std::is_same;
@@ -22,12 +25,16 @@ using std::is_same;
 class controller {
   public:
 
-    Font& getFont(int size);
-    const Vector2 measureTextEx(const string& msg, int size = 14);
+
+    void init();
+
+    Font* getFont(const string& font, int size);
+    const Vector2 measureTextEx(const string& msg, int size = 14, const string& font = FONT_YKLIGHT);
     void drawTextEx(const string& msg, const Vector2& pos, const colorRGB& col, 
-                    int size = 24);
+                    int size = 24, const string& font = FONT_YKLIGHT);
     void drawRectangle(rectangle rect, const colorRGB& col);
-    void drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, const string text);
+    void drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, const string text,
+                      const string& font = FONT_YKLIGHT);
 
     bool cursorInBox(const rectangle& box);
     template<class T>
@@ -48,7 +55,7 @@ class controller {
 
   private:
 
-    unordered_map<int, Font> fontMap;
+    unordered_map<string, map<int, Font>> fontMap;
 
 
 

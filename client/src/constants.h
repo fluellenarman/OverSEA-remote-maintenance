@@ -1,0 +1,9 @@
+#pragma once
+
+#if defined(LOCRAY)
+#define FONT_YKLIGHT  "./yklight.ttf"
+#define FONT_CAMO     "./camo.ttf"
+#else
+#define FONT_YKLIGHT  "bin/yklight.ttf"
+#define FONT_CAMO     "bin/camo.ttf"
+#endif

@@ -1,37 +1,37 @@
 #include "controller.h"
 #include "../depend/logq/src/log.h"
 
-Font& controller::getFont(int size) {
-  // if not in map then load that font
-  auto it = fontMap.find(size);
-  if (it == fontMap.end()){ 
+void controller::init() {
 
-    #if defined(LOCRAY)
-    string f = "./yklight.ttf";
-    #else
-    string f = "bin/yklight.ttf";
-    #endif
+  fontMap.insert(make_pair(FONT_YKLIGHT, map<int, Font>{}));
+  fontMap.insert(make_pair(FONT_CAMO, map<int, Font>{}));
 
+}
 
-    logW(LL_INFO, "loading default font (yklight) w/size:", size);
-
-    Font tmp = LoadFontEx(f.c_str(), size, nullptr, 255); 
-
+Font* controller::getFont(const string& id, int size) {
+  // find if a font with this id exists
+  auto fit = fontMap.find(id);
+  if (fit == fontMap.end()) {
+    logW(LL_CRIT, "invalid font id -", id);
+    return nullptr;
+  }
+  // if this font exists, find map of font size to font pointer
+  auto it = fit->second.find(size);
+  if (it == fit->second.end()){ 
+    // if end is reached, this font combination doesn't exist and needs to be created
+    logQ("loading", id, "with size", size);
+    Font tmp = LoadFontEx(id.c_str(), size, nullptr, 255);
     SetTextureFilter(tmp.texture, TEXTURE_FILTER_BILINEAR);
-    
-    fontMap.insert(pair<int, Font>(size, move(tmp)));
-  
-    it = fontMap.find(size);
+    fit->second.insert(make_pair(size, move(tmp)));
   }
 
-  
-  return it->second;
+  return &fit->second.find(size)->second;
   
 }
 
-void controller::drawTextEx(const string& msg, const Vector2& pos, const colorRGB& col, int size) {
+void controller::drawTextEx(const string& msg, const Vector2& pos, const colorRGB& col, int size, const string& font) {
   Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
-  DrawTextEx(getFont(size), msg.c_str(), pos, getFont(size).baseSize, 0, color);
+  DrawTextEx(*getFont(font, size), msg.c_str(), pos, getFont(font, size)->baseSize, 0, color);
 }
     
 void controller::drawRectangle(rectangle rect, const colorRGB& col) {
@@ -39,12 +39,13 @@ void controller::drawRectangle(rectangle rect, const colorRGB& col) {
   DrawRectangle(rect.x, rect.y, rect.width, rect.height, color);
 }
     
-const Vector2 controller::measureTextEx(const string& msg, int size) {
-  Font& ft = getFont(size);
-  return MeasureTextEx(ft, msg.c_str(), ft.baseSize, 0);
+const Vector2 controller::measureTextEx(const string& msg, int size, const string& font) {
+  Font* ft = getFont(font, size);
+  return MeasureTextEx(*ft, msg.c_str(), ft->baseSize, 0);
 }
 
-void controller::drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, string text) {
+void controller::drawRectText(rectText rectT, const colorRGB& rectCol, const colorRGB& textCol, string text,
+                              const string& font) {
   drawRectangle(rectT.rect, rectCol);
 
 //measure text ex
@@ -52,7 +53,7 @@ void controller::drawRectText(rectText rectT, const colorRGB& rectCol, const col
   float posX = rectT.rect.x + rectT.rect.width/2 - textDim.x/2;
   float posY = rectT.rect.y + rectT.rect.height/2 - textDim.y/2;
   Vector2 pos = {posX, posY};
-  drawTextEx(text, pos, textCol, rectT.fontSize);
+  drawTextEx(text, pos, textCol, rectT.fontSize, font);
 }
 
 bool controller::cursorInBox(const rectangle& box) {
@@ -60,8 +61,10 @@ bool controller::cursorInBox(const rectangle& box) {
 }
 
 void controller::unload() {
-  for (auto f : fontMap) {
-    UnloadFont(f.second);
+  for (const auto& item : fontMap) {
+    for (const auto& font : item.second) {
+      UnloadFont(font.second);
+    }
   }
   CloseWindow();
 }
