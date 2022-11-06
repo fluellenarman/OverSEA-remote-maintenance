@@ -39,6 +39,11 @@ void controller::drawRectangle(rectangle rect, const colorRGB& col) {
   Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
   DrawRectangle(rect.x, rect.y, rect.width, rect.height, color);
 }
+    
+const Vector2 controller::measureTextEx(const string& msg, int size) {
+  Font& ft = getFont(size);
+  return MeasureTextEx(ft, msg.c_str(), ft.baseSize, 0);
+}
 
 bool controller::cursorInBox(const rectangle& box) {
   return pointInBox(GetMousePosition(), box);

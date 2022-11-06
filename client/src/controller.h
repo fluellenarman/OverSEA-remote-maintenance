@@ -23,6 +23,7 @@ class controller {
   public:
 
     Font& getFont(int size);
+    const Vector2 measureTextEx(const string& msg, int size = 14);
     void drawTextEx(const string& msg, const Vector2& pos, const colorRGB& col, 
                     int size = 24);
     void drawRectangle(rectangle rect, const colorRGB& col);
