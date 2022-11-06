@@ -48,10 +48,15 @@ class controller {
         return static_cast<int>(pt.x) >= box.x && static_cast<int>(pt.x) < box.x + box.width &&
               static_cast<int>(pt.y) >= box.y && static_cast<int>(pt.y) < box.y + box.height;
       }
-    
-    logW(LL_WARN, "call to", __func__, "using invalid type", typeid(T).name());
-    return false;
-  }
+      
+      logW(LL_WARN, "call to", __func__, "using invalid type", typeid(T).name());
+      return false;
+    }
+
+
+    bool anyKeyPressed();
+    unsigned int getFrameCounter() { return counter; }
+
     void beginRender();
     void endRender();
 
@@ -62,6 +67,8 @@ class controller {
 
     unordered_map<string, map<int, Font>> fontMap;
 
+
+    unsigned int counter = 0;
 
 
 };

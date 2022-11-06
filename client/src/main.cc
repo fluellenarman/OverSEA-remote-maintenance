@@ -39,12 +39,10 @@ int main() {
   logW(LL_INFO, "window initialization OK");
 
   ctr.init();
-  bool input_but = false;
+  bool login_input_but = false;
   bool cursorExists = false;
-  //char name[MAX_INPUT_CHARS + 1] = "\0";
   string name = "";
   int letterCount = 0;
-  int framesCounter = 0;
 
   while (!WindowShouldClose()) {
 
@@ -58,22 +56,11 @@ int main() {
         ctr.drawTextEx(window_title.c_str(), {200.0f, 500.0f}, {12,24,244}, 340, FONT_CAMO);
         break;
       case sceneType::SCENE_LOGIN:
-        //ctr.drawRectangle(login_button_position, {120, 12, 255});
-        ctr.drawTextInputBox(login_button_position_but,input_but,cursorExists,{235,235,235},{43,34,23},name);
-        if(input_but){
-          if (name.length() < MAX_INPUT_CHARS){
-            if(((framesCounter/20)%2) == 0){
-              cursorExists = true;
-            }
-            else{
-              cursorExists = false;
-            }
-          }
-          else{
-            cursorExists = false;
-          }
+        ctr.drawTextInputBox(login_button_position_but,login_input_but,cursorExists,{235,235,235},{43,34,23},name);
+
+        if (login_input_but) {
+          cursorExists = (name.length() < MAX_INPUT_CHARS) ? ((ctr.getFrameCounter()/20)%2) == 0 : false;
         }
-        //ctr.drawRectText(login_button_position_but, {120, 12, 255}, {0,0,0}, "button");
         break;
       default:
         break;
@@ -86,16 +73,10 @@ int main() {
     switch(current_scene) {
       case sceneType::SCENE_LOGIN:
         if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-          if (ctr.cursorInBox(login_button_position)) {
-              input_but = true;          
-          }
-          else{
-            input_but = false;
-          }
+          login_input_but = ctr.cursorInBox(login_button_position);
         }
 
-        if (input_but){
-          framesCounter++;
+        if (login_input_but){
           int key = GetCharPressed();
 
           while (key > 0){
@@ -112,9 +93,6 @@ int main() {
             }
           }
         }
-        else{
-          framesCounter = 0;
-        }
         break;
       default:
         break;
@@ -130,12 +108,3 @@ int main() {
   return 0;
 }
 
-bool IsAnyKeyPressed()
-{
-    bool keyPressed = false;
-    int key = GetKeyPressed();
-
-    if ((key >= 32) && (key <= 126)) keyPressed = true;
-
-    return keyPressed;
-}
