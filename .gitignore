@@ -1,0 +1,6 @@
+build/
+.clangd/
+.cache/
+bin/rec
+bin/rec.exe
+*.json
