@@ -18,7 +18,7 @@ constexpr int window_h = 900;
 const string window_title = "OverSEA receiver client ver.0";
 
 constexpr rectangle login_button_position = {window_w/2 - 100, window_h/2 - 50, 200, 100};
-constexpr rectText login_button_position_but = {window_w/2 - 100, window_h/2 - 50, 200, 100,24};
+constexpr rectText login_button_position_but = {{window_w/2 - 100, window_h/2 - 50, 200, 100},24};
 
 
 sceneType current_scene = sceneType::SCENE_LOGIN;
