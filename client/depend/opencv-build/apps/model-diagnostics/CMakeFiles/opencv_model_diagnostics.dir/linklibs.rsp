@@ -1,0 +1,1 @@
+ ../../lib/libopencv_core460.a ../../lib/libopencv_dnn460.a ../../lib/libopencv_imgproc460.a ../../lib/libopencv_core460.a ../../3rdparty/lib/libzlib.a ../../3rdparty/lib/liblibprotobuf.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

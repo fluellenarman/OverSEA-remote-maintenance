@@ -44,9 +44,12 @@ then
     rm -rf opencv-build
 
 
+    # NOTE: DirectShow (WITH_SHOW=OFF) is disabled on purpose do not enable it
+
     cmake -S ${SRCFOLDER} -B ${BINFOLDER} \
         -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_SYSTEM_NAME=Windows \
         -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=RELEASE -DWITH_OPENEXR=OFF -DWITH_FFMPEG=OFF -DOpenCV_STATIC=ON \
+        -DOPENCV_GENERATE_PKGCONFIG=ON \
         -DBUILD_opencv_python2=OFF \
         -DBUILD_opencv_python3=OFF \
         -DBUILD_EXAMPLES=OFF \
@@ -57,15 +60,23 @@ then
         -DBUILD_TESTS=OFF \
         -DBUILD_OPENEXR=OFF \
         -DWITH_WIN32UI=ON \
-        -DWITH_DSHOW=ON \
-        #-DWITH_DIRECTX=ON \
+        -DWITH_DSHOW=OFF \
         -DWITH_WEBP=OFF \
-        -BUILD_TIFF=OFF \
-        -BUILD_PNG=ON \
-        -BUILD_JPEG=ON \
+        -DWITH_TIFF=OFF \
+        -DWITH_PNG=OFF \
+        -DWITH_JPEG=OFF \
+        -DWITH_OPENJPEG=OFF \
+        -DWITH_JASPER=OFF \
+        -DBUILD_WEBP=OFF \
+        -DBUILD_TIFF=OFF \
+        -DBUILD_PNG=OFF \
+        -DBUILD_JPEG=OFF \
+        -DBUILD_OPENJPEG=OFF \
+        -DBUILD_JASPER=OFF \
         2>&1 | tee log_cmake.txt
+
     cd ${BINFOLDER}
-    make -j4 2>&1 | tee ../log_make.txt
+    make -j $(nproc) 2>&1 | tee ../log_make.txt
     make install 2>&1 | tee ../log_make-install.txt
 
     echo "compiled openCV $cvver"

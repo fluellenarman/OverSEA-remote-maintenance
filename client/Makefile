@@ -28,7 +28,19 @@ LFLAGS+=-lwinmm -lcomdlg32 -lgdi32
 
 ifeq ($(strip $(cv)), on)
 CFLAGS+=-I./depend/opencv-build/install/include/opencv4
-LFLAGS+=-L./depend/opencv-build/lib
+LFLAGS+=-L./depend/opencv-build/install/lib/opencv4/3rdparty
+LFLAGS+= \
+-lade \
+-llibprotobuf \
+-l:libquirc.a \
+-lzlib
+#-llibtiff \
+#-llibwebp \
+#-llibjpeg-turbo \
+#-llibopenjp2 \
+#-llibpng \
+
+LFLAGS+=-L./depend/opencv-build/install/lib
 LFLAGS+= \
 -lopencv_gapi460 \
 -lopencv_stitching460 \

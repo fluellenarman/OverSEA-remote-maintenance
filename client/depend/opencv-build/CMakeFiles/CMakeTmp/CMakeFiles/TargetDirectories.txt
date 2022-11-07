@@ -1,3 +1,0 @@
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_0f273.dir
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir

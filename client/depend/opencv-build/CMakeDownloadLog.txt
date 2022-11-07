@@ -1,1 +1,5 @@
 #use_cache "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/.cache"
+#do_unpack "v0.1.1f.zip" "b624b995ec9c439cbc2e9e6ee940d3a2" "https://github.com/opencv/ade/archive/v0.1.1f.zip" "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/ade"
+#check_md5 "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"
+#mkdir "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/ade"
+#unpack "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/ade" "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/.cache/ade/b624b995ec9c439cbc2e9e6ee940d3a2-v0.1.1f.zip"

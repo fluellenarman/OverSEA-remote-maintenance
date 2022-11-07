@@ -1,7 +1,7 @@
 
 #if defined(DEPEND_CROSS)
 #include "../depend/raylib/src/raylib.h"
-//#include "../depend/opencv/include/opencv2/opencv.hpp"
+#include "../depend/opencv/include/opencv2/opencv.hpp"
 #else
 #include <raylib.h>
 #include <opencv4/opencv2/opencv.hpp>
@@ -35,6 +35,13 @@ int main() {
 
   logW(LL_INFO, window_title);
   //cv::Mat image = cv::imread("bin/cvtest.png");
+  cv::Mat image; 
+  int capID = 0;
+  cv::VideoCapture cap(capID);
+
+  if (!cap.isOpened()) {
+    logW(LL_WARN, "unable to open capture device:", capID);
+  }
 
   //cv::imshow("test",image);
 
