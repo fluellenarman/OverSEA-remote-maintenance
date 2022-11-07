@@ -42,12 +42,12 @@ SRCSLOG=$(wildcard $(LOGDIR)/*.cc)
 OBJSLOG=$(patsubst $(LOGDIR)/%.cc, $(BUILDDIR)/%.o, $(SRCSLOG))
 
 all:
-ifeq ($(strip $(arch)),win)
-	@./depend/cross.sh
-endif
 	@$(MAKE) --no-print-directory $(NAME)
 
 re: clean
+ifeq ($(strip $(arch)),win)
+	@./depend/cross.sh
+endif
 	@$(MAKE) --no-print-directory
 
 f: clean

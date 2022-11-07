@@ -36,6 +36,7 @@ int main() {
   SetTraceLogLevel(LOG_ERROR);
   InitWindow(window_w, window_h, window_title.c_str());
   SetTargetFPS(60);
+  SetExitKey(KEY_F7);
   logW(LL_INFO, "window initialization OK");
 
   ctr.init();
@@ -87,10 +88,13 @@ int main() {
             key = GetCharPressed();
           }
 
-          if (IsKeyPressed(KEY_BACKSPACE)){
+          if (IsKeyPressed(KEY_BACKSPACE)) {
             if(name.length() > 0){
               name.pop_back();
             }
+          }
+          if (IsKeyPressed(KEY_ENTER)) {
+            current_scene = sceneType::SCENE_TEST;
           }
         }
         break;
