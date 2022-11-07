@@ -12,12 +12,19 @@ Then, grab the code.
 
 `git clone [git link]`
 
-
 Navigate to the "client" directory.
+
+Build dependencies only once. Doing it multiple times will waste your time.
+
+Do so with `make re` (linux) or `make re arch=win` (windows). Answer 'y' at every
+prompt in the dependency build script.
+
 To build for linux, use:
 
-`make re`
+`make`
 
 To build for windows (using WSL/debian):
 
-`make re arch=win`
+`make arch=win`
+
+Make sure you build dependencies before compiling.
