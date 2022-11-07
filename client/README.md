@@ -4,7 +4,7 @@ Use Debian for WSL to compile from Windows.
 
 You will need the following packages.
 
-`sudo apt-get install clang make g++-mingw-w64-x86-64 gcc-mingw-w64-x86-64 git`
+`sudo apt-get install clang make g++-mingw-w64-x86-64 gcc-mingw-w64-x86-64 git unzip cmake`
 
 Do this first if this is your first time using this code.
 

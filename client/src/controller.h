@@ -1,6 +1,6 @@
 #pragma once
 
-#if defined(LOCRAY)
+#if defined(DEPEND_CROSS)
 #include "../depend/raylib/src/raylib.h"
 #else
 #include <raylib.h>

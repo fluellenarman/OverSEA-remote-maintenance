@@ -3,6 +3,7 @@ ifeq ($(strip $(arch)),)
 CXX=clang++
 C=clang
 LD=-fuse-ld=mold
+CFLAGS=$(shell pkg-config --cflags opencv4)
 
 else ifeq ($(strip $(arch)),win)
 
@@ -10,19 +11,42 @@ CXX=x86_64-w64-mingw32-g++
 CC=x86_64-w64-mingw32-ld
 C=x86_64-w64-mingw32-gcc
 #LD=-fuse-ld=mold
-DEPDEF=-D__WINDOWS_MM__ -DLOCRAY -D_USE_MATH_DEFINES 
+DEPDEF=-D__WINDOWS_MM__ -DDEPEND_CROSS -D_USE_MATH_DEFINES 
 
 endif
 
 
 
-CFLAGS=--std=c++20 -Wall -Wextra $(DEPDEF) -Og -g
+CFLAGS+=--std=c++20 -Wall -Wextra $(DEPDEF) -Og -g
 
 ifeq ($(strip $(arch)),)
-LFLAGS+=$(LD) -lraylib 
+LFLAGS+=$(LD) -lraylib
+LFLAGS+=$(shell pkg-config --libs opencv4)
 else ifeq ($(strip $(arch)),win)
 LFLAGS+=-static -static-libgcc -static-libstdc++ -L./depend/raylib/src -lraylib
 LFLAGS+=-lwinmm -lcomdlg32 -lgdi32
+
+ifeq ($(strip $(cv)), on)
+CFLAGS+=-I./depend/opencv-build/install/include/opencv4
+LFLAGS+=-L./depend/opencv-build/lib
+LFLAGS+= \
+-lopencv_gapi460 \
+-lopencv_stitching460 \
+-lopencv_highgui460 \
+-lopencv_videoio460 \
+-lopencv_ml460 \
+-lopencv_video460 \
+-lopencv_objdetect460 \
+-lopencv_calib3d460 \
+-lopencv_imgcodecs460 \
+-lopencv_features2d460 \
+-lopencv_dnn460 \
+-lopencv_flann460 \
+-lopencv_photo460 \
+-lopencv_imgproc460 \
+-lopencv_core460 
+endif
+
 endif
 
 #PREREQ_DIR=@mkdir -p $(@D)

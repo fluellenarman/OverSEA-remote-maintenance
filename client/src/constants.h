@@ -1,6 +1,6 @@
 #pragma once
 
-#if defined(LOCRAY)
+#if defined(DEPEND_CROSS)
 #define FONT_YKLIGHT  "./yklight.ttf"
 #define FONT_CAMO     "./camo.ttf"
 #else

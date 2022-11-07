@@ -1,8 +1,10 @@
 
-#if defined(LOCRAY)
+#if defined(DEPEND_CROSS)
 #include "../depend/raylib/src/raylib.h"
+//#include "../depend/opencv/include/opencv2/opencv.hpp"
 #else
 #include <raylib.h>
+#include <opencv4/opencv2/opencv.hpp>
 #endif
 
 #include <string>
@@ -32,6 +34,9 @@ controller ctr;
 int main() {
 
   logW(LL_INFO, window_title);
+  //cv::Mat image = cv::imread("bin/cvtest.png");
+
+  //cv::imshow("test",image);
 
   SetTraceLogLevel(LOG_ERROR);
   InitWindow(window_w, window_h, window_title.c_str());
