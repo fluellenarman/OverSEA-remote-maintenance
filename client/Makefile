@@ -7,9 +7,15 @@ CFLAGS=$(shell pkg-config --cflags opencv4)
 
 else ifeq ($(strip $(arch)),win)
 
+ifeq ($(strip $(cv)),)
 CXX=x86_64-w64-mingw32-g++
 CC=x86_64-w64-mingw32-ld
 C=x86_64-w64-mingw32-gcc
+else 
+CXX=x86_64-w64-mingw32-g++-posix
+CC=x86_64-w64-mingw32-ld
+C=x86_64-w64-mingw32-gcc-posix
+endif
 #LD=-fuse-ld=mold
 DEPDEF=-D__WINDOWS_MM__ -DDEPEND_CROSS -D_USE_MATH_DEFINES 
 
