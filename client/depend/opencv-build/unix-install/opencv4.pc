@@ -8,6 +8,6 @@ includedir=${prefix}/include/opencv4
 Name: OpenCV
 Description: Open Source Computer Vision Library
 Version: 4.6.0
-Libs: -L${exec_prefix}/lib -lopencv_gapi460 -lopencv_highgui460 -lopencv_ml460 -lopencv_objdetect460 -lopencv_photo460 -lopencv_stitching460 -lopencv_video460 -lopencv_calib3d460 -lopencv_features2d460 -lopencv_dnn460 -lopencv_flann460 -lopencv_videoio460 -lopencv_imgcodecs460 -lopencv_imgproc460 -lopencv_core460
-Libs.private: -L${exec_prefix}/lib/opencv4/3rdparty -lzlib -llibprotobuf -lade -lquirc -lwsock32 -lcomctl32 -lgdi32 -lole32 -lsetupapi -lws2_32
+Libs: -L${exec_prefix}/lib -lopencv_gapi460 -lopencv_highgui460 -lopencv_ml460 -lopencv_objdetect460 -lopencv_photo460 -lopencv_stitching460 -lopencv_video460 -lopencv_calib3d460 -lopencv_features2d460 -lopencv_flann460 -lopencv_videoio460 -lopencv_imgcodecs460 -lopencv_imgproc460 -lopencv_core460
+Libs.private: -L${exec_prefix}/lib/opencv4/3rdparty -lzlib -lade -lquirc -lwsock32 -lcomctl32 -lgdi32 -lole32 -lsetupapi -lws2_32
 Cflags: -I${includedir}

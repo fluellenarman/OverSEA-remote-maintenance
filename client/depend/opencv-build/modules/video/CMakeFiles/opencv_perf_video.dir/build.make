@@ -320,7 +320,6 @@ bin/opencv_perf_video.exe: lib/libopencv_imgcodecs460.a
 bin/opencv_perf_video.exe: lib/libopencv_core460.a
 bin/opencv_perf_video.exe: lib/libopencv_flann460.a
 bin/opencv_perf_video.exe: lib/libopencv_imgproc460.a
-bin/opencv_perf_video.exe: lib/libopencv_dnn460.a
 bin/opencv_perf_video.exe: lib/libopencv_features2d460.a
 bin/opencv_perf_video.exe: lib/libopencv_calib3d460.a
 bin/opencv_perf_video.exe: lib/libopencv_core460.a
@@ -331,12 +330,10 @@ bin/opencv_perf_video.exe: lib/libopencv_highgui460.a
 bin/opencv_perf_video.exe: lib/libopencv_core460.a
 bin/opencv_perf_video.exe: lib/libopencv_flann460.a
 bin/opencv_perf_video.exe: lib/libopencv_imgproc460.a
-bin/opencv_perf_video.exe: lib/libopencv_dnn460.a
 bin/opencv_perf_video.exe: lib/libopencv_features2d460.a
 bin/opencv_perf_video.exe: lib/libopencv_calib3d460.a
 bin/opencv_perf_video.exe: lib/libopencv_videoio460.a
 bin/opencv_perf_video.exe: lib/libopencv_imgcodecs460.a
-bin/opencv_perf_video.exe: 3rdparty/lib/liblibprotobuf.a
 bin/opencv_perf_video.exe: lib/libopencv_features2d460.a
 bin/opencv_perf_video.exe: lib/libopencv_flann460.a
 bin/opencv_perf_video.exe: lib/libopencv_imgproc460.a

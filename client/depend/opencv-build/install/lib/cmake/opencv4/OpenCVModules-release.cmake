@@ -15,16 +15,6 @@ set_target_properties(zlib PROPERTIES
 list(APPEND _cmake_import_check_targets zlib )
 list(APPEND _cmake_import_check_files_for_zlib "${_IMPORT_PREFIX}/lib/opencv4/3rdparty/libzlib.a" )
 
-# Import target "libprotobuf" for configuration "RELEASE"
-set_property(TARGET libprotobuf APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(libprotobuf PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/opencv4/3rdparty/liblibprotobuf.a"
-  )
-
-list(APPEND _cmake_import_check_targets libprotobuf )
-list(APPEND _cmake_import_check_files_for_libprotobuf "${_IMPORT_PREFIX}/lib/opencv4/3rdparty/liblibprotobuf.a" )
-
 # Import target "quirc" for configuration "RELEASE"
 set_property(TARGET quirc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(quirc PROPERTIES
@@ -94,16 +84,6 @@ set_target_properties(opencv_photo PROPERTIES
 
 list(APPEND _cmake_import_check_targets opencv_photo )
 list(APPEND _cmake_import_check_files_for_opencv_photo "${_IMPORT_PREFIX}/lib/libopencv_photo460.a" )
-
-# Import target "opencv_dnn" for configuration "RELEASE"
-set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_dnn PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libopencv_dnn460.a"
-  )
-
-list(APPEND _cmake_import_check_targets opencv_dnn )
-list(APPEND _cmake_import_check_files_for_opencv_dnn "${_IMPORT_PREFIX}/lib/libopencv_dnn460.a" )
 
 # Import target "opencv_features2d" for configuration "RELEASE"
 set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)

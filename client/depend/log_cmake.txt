@@ -208,69 +208,19 @@ Call Stack (most recent call first):
 -- Could NOT find LAPACK (missing: LAPACK_LIBRARIES) 
     Reason given by package: LAPACK could not be found because dependency BLAS could not be found.
 
--- Performing Test HAVE_CXX_WNO_DEPRECATED
--- Performing Test HAVE_CXX_WNO_DEPRECATED - Success
--- Performing Test HAVE_CXX_WNO_MISSING_PROTOTYPES
--- Performing Test HAVE_CXX_WNO_MISSING_PROTOTYPES - Failed
--- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS
--- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS - Success
--- Performing Test HAVE_CXX_WNO_SHADOW
--- Performing Test HAVE_CXX_WNO_SHADOW - Success
--- Performing Test HAVE_CXX_WNO_UNUSED_PARAMETER
--- Performing Test HAVE_CXX_WNO_UNUSED_PARAMETER - Success
--- Performing Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS
--- Performing Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS - Success
--- Performing Test HAVE_CXX_WNO_SIGN_COMPARE
--- Performing Test HAVE_CXX_WNO_SIGN_COMPARE - Success
--- Performing Test HAVE_CXX_WNO_SIGN_PROMO
--- Performing Test HAVE_CXX_WNO_SIGN_PROMO - Success
--- Performing Test HAVE_CXX_WNO_UNDEF
--- Performing Test HAVE_CXX_WNO_UNDEF - Success
--- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE
--- Performing Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE - Failed
--- Performing Test HAVE_CXX_WNO_IGNORED_QUALIFIERS
--- Performing Test HAVE_CXX_WNO_IGNORED_QUALIFIERS - Success
--- Performing Test HAVE_CXX_WNO_EXTRA
--- Performing Test HAVE_CXX_WNO_EXTRA - Success
--- Performing Test HAVE_CXX_WNO_UNUSED_FUNCTION
--- Performing Test HAVE_CXX_WNO_UNUSED_FUNCTION - Success
--- Performing Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE
--- Performing Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE - Success
--- Performing Test HAVE_CXX_WNO_SHORTEN_64_TO_32
--- Performing Test HAVE_CXX_WNO_SHORTEN_64_TO_32 - Failed
--- Performing Test HAVE_CXX_WNO_INVALID_OFFSETOF
--- Performing Test HAVE_CXX_WNO_INVALID_OFFSETOF - Success
--- Performing Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH
--- Performing Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH - Failed
--- Performing Test HAVE_CXX_WNO_SUGGEST_OVERRIDE
--- Performing Test HAVE_CXX_WNO_SUGGEST_OVERRIDE - Success
--- Performing Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE
--- Performing Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE - Failed
--- Performing Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH
--- Performing Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH - Success
--- Performing Test HAVE_CXX_WNO_ARRAY_BOUNDS
--- Performing Test HAVE_CXX_WNO_ARRAY_BOUNDS - Success
--- Performing Test HAVE_CXX_WNO_CLASS_MEMACCESS
--- Performing Test HAVE_CXX_WNO_CLASS_MEMACCESS - Success
 -- Performing Test HAVE_C_WNO_UNUSED_VARIABLE
 -- Performing Test HAVE_C_WNO_UNUSED_VARIABLE - Success
 -- Performing Test HAVE_C_WNO_SHADOW
 -- Performing Test HAVE_C_WNO_SHADOW - Success
 -- ADE: Downloading v0.1.1f.zip from https://github.com/opencv/ade/archive/v0.1.1f.zip
+-- Performing Test HAVE_CXX_WNO_UNDEF
+-- Performing Test HAVE_CXX_WNO_UNDEF - Success
 -- Allocator metrics storage type: 'int'
 -- Excluding from source files list: modules/imgproc/src/corner.avx.cpp
 -- Excluding from source files list: modules/imgproc/src/imgwarp.avx2.cpp
 -- Excluding from source files list: modules/imgproc/src/imgwarp.sse4_1.cpp
 -- Excluding from source files list: modules/imgproc/src/resize.avx2.cpp
 -- Excluding from source files list: modules/imgproc/src/resize.sse4_1.cpp
--- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
--- opencv_dnn: filter out cuda4dnn source code
--- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx.cpp
--- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx2.cpp
--- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.avx512_skx.cpp
--- Excluding from source files list: <BUILD>/modules/dnn/layers/layers_common.rvv.cpp
--- Excluding from source files list: <BUILD>/modules/dnn/int8layers/layers_common.avx2.cpp
--- Excluding from source files list: <BUILD>/modules/dnn/int8layers/layers_common.avx512_skx.cpp
 -- Excluding from source files list: modules/features2d/src/fast.avx2.cpp
 -- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS
 -- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS - Success
@@ -280,10 +230,10 @@ Call Stack (most recent call first):
 -- Found 'gapi' Python modules from /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/gapi/misc/python/package
 -- 
 -- General configuration for OpenCV 4.6.0 =====================================
---   Version control:               d6c27eae-dirty
+--   Version control:               f82b5228-dirty
 -- 
 --   Platform:
---     Timestamp:                   2022-11-07T23:41:37Z
+--     Timestamp:                   2022-11-09T01:43:11Z
 --     Host:                        Linux 5.19.8-arch1-1 x86_64
 --     Target:                      Windows
 --     CMake:                       3.24.2
@@ -309,13 +259,13 @@ Call Stack (most recent call first):
 --     ccache:                      NO
 --     Precompiled headers:         NO
 --     Extra dependencies:          wsock32 comctl32 gdi32 ole32 setupapi ws2_32
---     3rdparty dependencies:       zlib libprotobuf ade quirc
+--     3rdparty dependencies:       zlib ade quirc
 -- 
 --   OpenCV modules:
---     To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo stitching ts video videoio
+--     To be built:                 calib3d core features2d flann gapi highgui imgcodecs imgproc ml objdetect photo stitching ts video videoio
 --     Disabled:                    world
 --     Disabled by dependency:      -
---     Unavailable:                 java python2 python3
+--     Unavailable:                 dnn java python2 python3
 --     Applications:                perf_tests apps
 --     Documentation:               NO
 --     Non-free algorithms:         NO
@@ -343,7 +293,6 @@ Call Stack (most recent call first):
 --   Other third-party libraries:
 --     Lapack:                      NO
 --     Custom HAL:                  NO
---     Protobuf:                    build (3.19.1)
 -- 
 --   OpenCL:                        YES (no extra features)
 --     Include path:                /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/3rdparty/include/opencl/1.2

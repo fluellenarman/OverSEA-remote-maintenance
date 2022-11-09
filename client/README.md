@@ -12,6 +12,16 @@ Then, grab the code.
 
 `git clone [git link]`
 
+
+<!--not needed?-->
+<!--Run this configuration command and choose the "posix" option for both.-->
+
+<!--```-->
+<!--sudo update-alternatives --config x86_64-w64-mingw32-gcc-->
+<!--sudo update-alternatives --config x86_64-w64-mingw32-g++-->
+<!--```-->
+
+
 Navigate to the "client" directory.
 
 Build dependencies only once. Doing it multiple times will waste your time.

@@ -7,20 +7,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e9231/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_e9231.dir/build.make CMakeFiles/cmTC_e9231.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7b255/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_7b255.dir/build.make CMakeFiles/cmTC_7b255.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e9231.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type  -Wnon-virtual-dtor -o CMakeFiles/cmTC_e9231.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_7b255.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type  -Wnon-virtual-dtor -o CMakeFiles/cmTC_7b255.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 cc1: warning: command-line option ‘-Wnon-virtual-dtor’ is valid for C++/ObjC++ but not for C
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking C executable cmTC_e9231.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9231.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_e9231.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_e9231.dir/objects.a @CMakeFiles/cmTC_e9231.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_e9231.dir/objects.a -Wl,--no-whole-archive -o cmTC_e9231.exe -Wl,--out-implib,libcmTC_e9231.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e9231.dir/linklibs.rsp
+Linking C executable cmTC_7b255.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b255.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_7b255.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_7b255.dir/objects.a @CMakeFiles/cmTC_7b255.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_7b255.dir/objects.a -Wl,--no-whole-archive -o cmTC_7b255.exe -Wl,--out-implib,libcmTC_7b255.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7b255.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -36,20 +36,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_8f31e/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_8f31e.dir/build.make CMakeFiles/cmTC_8f31e.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e366/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_4e366.dir/build.make CMakeFiles/cmTC_4e366.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8f31e.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wmissing-prototypes -std=c++11 -o CMakeFiles/cmTC_8f31e.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_4e366.dir/src.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wmissing-prototypes -std=c++11 -o CMakeFiles/cmTC_4e366.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
 cc1plus: warning: command-line option ‘-Wmissing-prototypes’ is valid for C/ObjC but not for C++
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking CXX executable cmTC_8f31e.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f31e.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_8f31e.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_8f31e.dir/objects.a @CMakeFiles/cmTC_8f31e.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++ -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_8f31e.dir/objects.a -Wl,--no-whole-archive -o cmTC_8f31e.exe -Wl,--out-implib,libcmTC_8f31e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_8f31e.dir/linklibs.rsp
+Linking CXX executable cmTC_4e366.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e366.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_4e366.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_4e366.dir/objects.a @CMakeFiles/cmTC_4e366.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++ -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_4e366.dir/objects.a -Wl,--no-whole-archive -o cmTC_4e366.exe -Wl,--out-implib,libcmTC_4e366.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_4e366.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -65,20 +65,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0e030/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_0e030.dir/build.make CMakeFiles/cmTC_0e030.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_05107/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_05107.dir/build.make CMakeFiles/cmTC_05107.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0e030.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wstrict-prototypes -std=c++11 -o CMakeFiles/cmTC_0e030.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_05107.dir/src.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations  -Wstrict-prototypes -std=c++11 -o CMakeFiles/cmTC_05107.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
 cc1plus: warning: command-line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking CXX executable cmTC_0e030.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e030.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_0e030.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_0e030.dir/objects.a @CMakeFiles/cmTC_0e030.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++ -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_0e030.dir/objects.a -Wl,--no-whole-archive -o cmTC_0e030.exe -Wl,--out-implib,libcmTC_0e030.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_0e030.dir/linklibs.rsp
+Linking CXX executable cmTC_05107.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05107.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_05107.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_05107.dir/objects.a @CMakeFiles/cmTC_05107.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++ -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_05107.dir/objects.a -Wl,--no-whole-archive -o cmTC_05107.exe -Wl,--out-implib,libcmTC_05107.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_05107.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -94,20 +94,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cce1/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_2cce1.dir/build.make CMakeFiles/cmTC_2cce1.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_abccc/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_abccc.dir/build.make CMakeFiles/cmTC_abccc.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2cce1.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo -o CMakeFiles/cmTC_2cce1.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_abccc.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow  -Wsign-promo -o CMakeFiles/cmTC_abccc.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 cc1: warning: command-line option ‘-Wsign-promo’ is valid for C++/ObjC++ but not for C
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking C executable cmTC_2cce1.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cce1.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_2cce1.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_2cce1.dir/objects.a @CMakeFiles/cmTC_2cce1.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_2cce1.dir/objects.a -Wl,--no-whole-archive -o cmTC_2cce1.exe -Wl,--out-implib,libcmTC_2cce1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2cce1.dir/linklibs.rsp
+Linking C executable cmTC_abccc.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abccc.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_abccc.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_abccc.dir/objects.a @CMakeFiles/cmTC_abccc.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_abccc.dir/objects.a -Wl,--no-whole-archive -o cmTC_abccc.exe -Wl,--out-implib,libcmTC_abccc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_abccc.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -123,20 +123,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_c73e3/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_c73e3.dir/build.make CMakeFiles/cmTC_c73e3.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7c91e/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_7c91e.dir/build.make CMakeFiles/cmTC_7c91e.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c73e3.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wsuggest-override -o CMakeFiles/cmTC_c73e3.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_7c91e.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wsuggest-override -o CMakeFiles/cmTC_7c91e.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 cc1: warning: command-line option ‘-Wsuggest-override’ is valid for C++/ObjC++ but not for C
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking C executable cmTC_c73e3.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c73e3.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_c73e3.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_c73e3.dir/objects.a @CMakeFiles/cmTC_c73e3.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_c73e3.dir/objects.a -Wl,--no-whole-archive -o cmTC_c73e3.exe -Wl,--out-implib,libcmTC_c73e3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_c73e3.dir/linklibs.rsp
+Linking C executable cmTC_7c91e.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c91e.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_7c91e.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_7c91e.dir/objects.a @CMakeFiles/cmTC_7c91e.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_7c91e.dir/objects.a -Wl,--no-whole-archive -o cmTC_7c91e.exe -Wl,--out-implib,libcmTC_7c91e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7c91e.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -152,20 +152,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a833a/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a833a.dir/build.make CMakeFiles/cmTC_a833a.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d1866/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_d1866.dir/build.make CMakeFiles/cmTC_d1866.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a833a.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_a833a.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_d1866.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-delete-non-virtual-dtor -o CMakeFiles/cmTC_d1866.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 cc1: warning: command-line option ‘-Wno-delete-non-virtual-dtor’ is valid for C++/ObjC++ but not for C
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking C executable cmTC_a833a.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a833a.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_a833a.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a833a.dir/objects.a @CMakeFiles/cmTC_a833a.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_a833a.dir/objects.a -Wl,--no-whole-archive -o cmTC_a833a.exe -Wl,--out-implib,libcmTC_a833a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_a833a.dir/linklibs.rsp
+Linking C executable cmTC_d1866.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1866.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_d1866.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_d1866.dir/objects.a @CMakeFiles/cmTC_d1866.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_d1866.dir/objects.a -Wl,--no-whole-archive -o cmTC_d1866.exe -Wl,--out-implib,libcmTC_d1866.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_d1866.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -181,20 +181,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_6aa97/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_6aa97.dir/build.make CMakeFiles/cmTC_6aa97.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eaa38/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_eaa38.dir/build.make CMakeFiles/cmTC_eaa38.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6aa97.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args -std=c++11 -o CMakeFiles/cmTC_6aa97.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_eaa38.dir/src.cxx.obj
+/usr/bin/x86_64-w64-mingw32-g++   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args -std=c++11 -o CMakeFiles/cmTC_eaa38.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
 cc1plus: note: unrecognized command-line option ‘-Wno-unnamed-type-template-args’ may have been intended to silence earlier diagnostics
-Linking CXX executable cmTC_6aa97.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6aa97.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_6aa97.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_6aa97.dir/objects.a @CMakeFiles/cmTC_6aa97.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++ -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_6aa97.dir/objects.a -Wl,--no-whole-archive -o cmTC_6aa97.exe -Wl,--out-implib,libcmTC_6aa97.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_6aa97.dir/linklibs.rsp
+Linking CXX executable cmTC_eaa38.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaa38.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_eaa38.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_eaa38.dir/objects.a @CMakeFiles/cmTC_eaa38.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++ -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_eaa38.dir/objects.a -Wl,--no-whole-archive -o cmTC_eaa38.exe -Wl,--out-implib,libcmTC_eaa38.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_eaa38.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -210,20 +210,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_43e16/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_43e16.dir/build.make CMakeFiles/cmTC_43e16.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_19d67/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_19d67.dir/build.make CMakeFiles/cmTC_19d67.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_43e16.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_43e16.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_19d67.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized  -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_19d67.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
 cc1: note: unrecognized command-line option ‘-Wno-unnamed-type-template-args’ may have been intended to silence earlier diagnostics
-Linking C executable cmTC_43e16.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43e16.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_43e16.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_43e16.dir/objects.a @CMakeFiles/cmTC_43e16.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_43e16.dir/objects.a -Wl,--no-whole-archive -o cmTC_43e16.exe -Wl,--out-implib,libcmTC_43e16.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_43e16.dir/linklibs.rsp
+Linking C executable cmTC_19d67.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19d67.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_19d67.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_19d67.dir/objects.a @CMakeFiles/cmTC_19d67.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_19d67.dir/objects.a -Wl,--no-whole-archive -o cmTC_19d67.exe -Wl,--out-implib,libcmTC_19d67.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_19d67.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -239,20 +239,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a2ec/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_4a2ec.dir/build.make CMakeFiles/cmTC_4a2ec.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f579b/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_f579b.dir/build.make CMakeFiles/cmTC_f579b.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4a2ec.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_4a2ec.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_f579b.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_f579b.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 cc1: warning: command-line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
-Linking C executable cmTC_4a2ec.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a2ec.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_4a2ec.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_4a2ec.dir/objects.a @CMakeFiles/cmTC_4a2ec.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_4a2ec.dir/objects.a -Wl,--no-whole-archive -o cmTC_4a2ec.exe -Wl,--out-implib,libcmTC_4a2ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_4a2ec.dir/linklibs.rsp
+Linking C executable cmTC_f579b.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f579b.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_f579b.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_f579b.dir/objects.a @CMakeFiles/cmTC_f579b.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_f579b.dir/objects.a -Wl,--no-whole-archive -o cmTC_f579b.exe -Wl,--out-implib,libcmTC_f579b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f579b.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -268,20 +268,20 @@ Compilation failed:
 ===== BUILD LOG =====
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_48d67/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_48d67.dir/build.make CMakeFiles/cmTC_48d67.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3ec39/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_3ec39.dir/build.make CMakeFiles/cmTC_3ec39.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_48d67.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG    -Wno-shorten-64-to-32 -o CMakeFiles/cmTC_48d67.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_3ec39.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG    -Wno-shorten-64-to-32 -o CMakeFiles/cmTC_3ec39.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
     1 | #pragma
       | 
 cc1: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics
-Linking C executable cmTC_48d67.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48d67.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_48d67.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_48d67.dir/objects.a @CMakeFiles/cmTC_48d67.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_48d67.dir/objects.a -Wl,--no-whole-archive -o cmTC_48d67.exe -Wl,--out-implib,libcmTC_48d67.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_48d67.dir/linklibs.rsp
+Linking C executable cmTC_3ec39.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec39.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_3ec39.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_3ec39.dir/objects.a @CMakeFiles/cmTC_3ec39.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_3ec39.dir/objects.a -Wl,--no-whole-archive -o cmTC_3ec39.exe -Wl,--out-implib,libcmTC_3ec39.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3ec39.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -291,167 +291,22 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_672d4/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_672d4.dir/build.make CMakeFiles/cmTC_672d4.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a9692/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_a9692.dir/build.make CMakeFiles/cmTC_a9692.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_672d4.dir/CheckFunctionExists.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_672d4.dir/CheckFunctionExists.c.obj -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_672d4.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_672d4.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_672d4.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_672d4.dir/objects.a @CMakeFiles/cmTC_672d4.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_672d4.dir/objects.a -Wl,--no-whole-archive -o cmTC_672d4.exe -Wl,--out-implib,libcmTC_672d4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_672d4.dir/linklibs.rsp
-/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/cmTC_672d4.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup.main+0x11): undefined reference to `sgemm_'
+Building C object CMakeFiles/cmTC_a9692.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_a9692.dir/CheckFunctionExists.c.obj -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a9692.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9692.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_a9692.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a9692.dir/objects.a @CMakeFiles/cmTC_a9692.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sgemm_ -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_a9692.dir/objects.a -Wl,--no-whole-archive -o cmTC_a9692.exe -Wl,--out-implib,libcmTC_a9692.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_a9692.dir/linklibs.rsp
+/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/cmTC_a9692.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup.main+0x11): undefined reference to `sgemm_'
 collect2: error: ld returned 1 exit status
-make[2]: *** [CMakeFiles/cmTC_672d4.dir/build.make:101: cmTC_672d4.exe] Error 1
+make[2]: *** [CMakeFiles/cmTC_a9692.dir/build.make:101: cmTC_a9692.exe] Error 1
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: *** [Makefile:127: cmTC_672d4/fast] Error 2
+make[1]: *** [Makefile:127: cmTC_a9692/fast] Error 2
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
 
-
-Build output check failed:
-    Regex: 'command[- ]line option .* is valid for .* but not for C\+\+'
-    Output line: 'cc1plus: warning: command-line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++'
-Compilation failed:
-    source file: '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx'
-    check option: ' -Wno-missing-prototypes'
-===== BUILD LOG =====
-Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_53ffd/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_53ffd.dir/build.make CMakeFiles/cmTC_53ffd.dir/build
-make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_53ffd.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated  -O3 -DNDEBUG  -DNDEBUG    -Wno-missing-prototypes -std=c++11 -o CMakeFiles/cmTC_53ffd.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
-cc1plus: warning: command-line option ‘-Wno-missing-prototypes’ is valid for C/ObjC but not for C++
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
-    1 | #pragma
-      | 
-Linking CXX executable cmTC_53ffd.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53ffd.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_53ffd.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_53ffd.dir/objects.a @CMakeFiles/cmTC_53ffd.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_53ffd.dir/objects.a -Wl,--no-whole-archive -o cmTC_53ffd.exe -Wl,--out-implib,libcmTC_53ffd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_53ffd.dir/linklibs.rsp
-make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-
-
-===== END =====
-
-Build output check failed:
-    Regex: 'unrecognized .*option'
-    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-tautological-undefined-compare’ may have been intended to silence earlier diagnostics'
-Compilation failed:
-    source file: '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx'
-    check option: ' -Wno-tautological-undefined-compare'
-===== BUILD LOG =====
-Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d0ddb/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d0ddb.dir/build.make CMakeFiles/cmTC_d0ddb.dir/build
-make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d0ddb.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG    -Wno-tautological-undefined-compare -std=c++11 -o CMakeFiles/cmTC_d0ddb.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
-    1 | #pragma
-      | 
-cc1plus: note: unrecognized command-line option ‘-Wno-tautological-undefined-compare’ may have been intended to silence earlier diagnostics
-Linking CXX executable cmTC_d0ddb.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0ddb.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_d0ddb.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_d0ddb.dir/objects.a @CMakeFiles/cmTC_d0ddb.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_d0ddb.dir/objects.a -Wl,--no-whole-archive -o cmTC_d0ddb.exe -Wl,--out-implib,libcmTC_d0ddb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_d0ddb.dir/linklibs.rsp
-make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-
-
-===== END =====
-
-Build output check failed:
-    Regex: 'unrecognized .*option'
-    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics'
-Compilation failed:
-    source file: '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx'
-    check option: ' -Wno-shorten-64-to-32'
-===== BUILD LOG =====
-Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_54ed0/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_54ed0.dir/build.make CMakeFiles/cmTC_54ed0.dir/build
-make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_54ed0.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG    -Wno-shorten-64-to-32 -std=c++11 -o CMakeFiles/cmTC_54ed0.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
-    1 | #pragma
-      | 
-cc1plus: note: unrecognized command-line option ‘-Wno-shorten-64-to-32’ may have been intended to silence earlier diagnostics
-Linking CXX executable cmTC_54ed0.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54ed0.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_54ed0.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_54ed0.dir/objects.a @CMakeFiles/cmTC_54ed0.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_54ed0.dir/objects.a -Wl,--no-whole-archive -o cmTC_54ed0.exe -Wl,--out-implib,libcmTC_54ed0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_54ed0.dir/linklibs.rsp
-make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-
-
-===== END =====
-
-Build output check failed:
-    Regex: 'unrecognized .*option'
-    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-enum-compare-switch’ may have been intended to silence earlier diagnostics'
-Compilation failed:
-    source file: '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx'
-    check option: ' -Wno-enum-compare-switch'
-===== BUILD LOG =====
-Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d0790/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d0790.dir/build.make CMakeFiles/cmTC_d0790.dir/build
-make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d0790.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG    -Wno-enum-compare-switch -std=c++11 -o CMakeFiles/cmTC_d0790.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
-    1 | #pragma
-      | 
-cc1plus: note: unrecognized command-line option ‘-Wno-enum-compare-switch’ may have been intended to silence earlier diagnostics
-Linking CXX executable cmTC_d0790.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0790.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_d0790.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_d0790.dir/objects.a @CMakeFiles/cmTC_d0790.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_d0790.dir/objects.a -Wl,--no-whole-archive -o cmTC_d0790.exe -Wl,--out-implib,libcmTC_d0790.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_d0790.dir/linklibs.rsp
-make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-
-
-===== END =====
-
-Build output check failed:
-    Regex: 'unrecognized .*option'
-    Output line: 'cc1plus: note: unrecognized command-line option ‘-Wno-inconsistent-missing-override’ may have been intended to silence earlier diagnostics'
-Compilation failed:
-    source file: '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx'
-    check option: ' -Wno-inconsistent-missing-override'
-===== BUILD LOG =====
-Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_87a7d/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_87a7d.dir/build.make CMakeFiles/cmTC_87a7d.dir/build
-make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_87a7d.dir/src.cxx.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG    -Wno-inconsistent-missing-override -std=c++11 -o CMakeFiles/cmTC_87a7d.dir/src.cxx.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.cxx:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas]
-    1 | #pragma
-      | 
-cc1plus: note: unrecognized command-line option ‘-Wno-inconsistent-missing-override’ may have been intended to silence earlier diagnostics
-Linking CXX executable cmTC_87a7d.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87a7d.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_87a7d.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_87a7d.dir/objects.a @CMakeFiles/cmTC_87a7d.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Winit-self -Wpointer-arith -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-invalid-offsetof -Wno-suggest-override  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_87a7d.dir/objects.a -Wl,--no-whole-archive -o cmTC_87a7d.exe -Wl,--out-implib,libcmTC_87a7d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_87a7d.dir/linklibs.rsp
-make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-
-
-===== END =====
 

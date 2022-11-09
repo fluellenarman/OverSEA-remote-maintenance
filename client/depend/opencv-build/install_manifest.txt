@@ -15,9 +15,6 @@
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/./setup_vars_opencv4.cmd
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/opencv4/3rdparty/libzlib.a
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/zlib-README
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/opencv4/3rdparty/liblibprotobuf.a
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/protobuf-LICENSE
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/protobuf-README.md
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/opencv4/3rdparty/libquirc.a
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/quirc-LICENSE
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/opencv.hpp
@@ -209,18 +206,6 @@
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/photo/cuda.hpp
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/photo/legacy/constants_c.h
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/photo/photo.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/libopencv_dnn460.a
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/all_layers.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/dict.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/dnn.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/dnn.inl.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/layer.details.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/layer.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/shape_utils.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/utils/debug_utils.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/utils/inference_engine.hpp
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/version.hpp
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/libopencv_features2d460.a
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/features2d.hpp
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/features2d/features2d.hpp
@@ -392,4 +377,3 @@
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_interactive-calibration.exe
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_version.exe
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_version_win32.exe
-/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_model_diagnostics.exe

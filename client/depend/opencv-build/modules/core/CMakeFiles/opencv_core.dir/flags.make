@@ -10,5 +10,3 @@ CXX_FLAGS =    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress
 
 # Custom defines: modules/core/CMakeFiles/opencv_core.dir/src/alloc.cpp.obj_DEFINES = HAVE_MALLOC_H=1;HAVE_WIN32_ALIGNED_MALLOC=1
 
-# Custom defines: modules/core/CMakeFiles/opencv_core.dir/src/parallel/parallel.cpp.obj_DEFINES = PARALLEL_ENABLE_PLUGINS=1;DEBUG_POSTFIX=d
-

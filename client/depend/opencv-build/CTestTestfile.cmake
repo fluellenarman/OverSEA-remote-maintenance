@@ -5,7 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("3rdparty/zlib")
-subdirs("3rdparty/protobuf")
 subdirs("3rdparty/quirc")
 subdirs("include")
 subdirs("modules/.firstpass/calib3d")
@@ -35,7 +34,6 @@ subdirs("modules/imgproc")
 subdirs("modules/ml")
 subdirs("modules/photo")
 subdirs("modules/python_tests")
-subdirs("modules/dnn")
 subdirs("modules/features2d")
 subdirs("modules/imgcodecs")
 subdirs("modules/videoio")

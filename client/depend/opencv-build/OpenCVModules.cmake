@@ -23,7 +23,7 @@ endif()
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS zlib libprotobuf quirc ade opencv_core opencv_flann opencv_imgproc opencv_ml opencv_photo opencv_dnn opencv_features2d opencv_imgcodecs opencv_videoio opencv_calib3d ocv.3rdparty.win32ui opencv_highgui opencv_objdetect opencv_stitching opencv_video opencv_gapi)
+foreach(_cmake_expected_target IN ITEMS zlib quirc ade opencv_core opencv_flann opencv_imgproc opencv_ml opencv_photo opencv_features2d opencv_imgcodecs opencv_videoio opencv_calib3d ocv.3rdparty.win32ui opencv_highgui opencv_objdetect opencv_stitching opencv_video opencv_gapi)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -52,13 +52,6 @@ unset(_cmake_expected_targets)
 
 # Create imported target zlib
 add_library(zlib STATIC IMPORTED)
-
-# Create imported target libprotobuf
-add_library(libprotobuf STATIC IMPORTED)
-
-set_target_properties(libprotobuf PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/3rdparty/protobuf/src"
-)
 
 # Create imported target quirc
 add_library(quirc STATIC IMPORTED)
@@ -103,13 +96,6 @@ add_library(opencv_photo STATIC IMPORTED)
 
 set_target_properties(opencv_photo PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_core;opencv_imgproc"
-)
-
-# Create imported target opencv_dnn
-add_library(opencv_dnn STATIC IMPORTED)
-
-set_target_properties(opencv_dnn PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_core;opencv_imgproc;\$<LINK_ONLY:libprotobuf>"
 )
 
 # Create imported target opencv_features2d
@@ -159,7 +145,7 @@ set_target_properties(opencv_highgui PROPERTIES
 add_library(opencv_objdetect STATIC IMPORTED)
 
 set_target_properties(opencv_objdetect PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;\$<LINK_ONLY:quirc>"
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;\$<LINK_ONLY:quirc>"
 )
 
 # Create imported target opencv_stitching
@@ -173,14 +159,14 @@ set_target_properties(opencv_stitching PROPERTIES
 add_library(opencv_video STATIC IMPORTED)
 
 set_target_properties(opencv_video PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d"
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d"
 )
 
 # Create imported target opencv_gapi
 add_library(opencv_gapi STATIC IMPORTED)
 
 set_target_properties(opencv_gapi PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_video;opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_video;\$<LINK_ONLY:ade>;\$<LINK_ONLY:wsock32>;\$<LINK_ONLY:ws2_32>"
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_video;opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_video;\$<LINK_ONLY:ade>;\$<LINK_ONLY:wsock32>;\$<LINK_ONLY:ws2_32>"
 )
 
 # Import target "zlib" for configuration "RELEASE"
@@ -188,13 +174,6 @@ set_property(TARGET zlib APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(zlib PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
   IMPORTED_LOCATION_RELEASE "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/lib/libzlib.a"
-  )
-
-# Import target "libprotobuf" for configuration "RELEASE"
-set_property(TARGET libprotobuf APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(libprotobuf PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/lib/liblibprotobuf.a"
   )
 
 # Import target "quirc" for configuration "RELEASE"
@@ -244,13 +223,6 @@ set_property(TARGET opencv_photo APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE
 set_target_properties(opencv_photo PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
   IMPORTED_LOCATION_RELEASE "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_photo460.a"
-  )
-
-# Import target "opencv_dnn" for configuration "RELEASE"
-set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_dnn PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_dnn460.a"
   )
 
 # Import target "opencv_features2d" for configuration "RELEASE"

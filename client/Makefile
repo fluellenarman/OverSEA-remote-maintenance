@@ -27,13 +27,13 @@ LFLAGS+=-static -static-libgcc -static-libstdc++ -L./depend/raylib/src -lraylib
 LFLAGS+=-lwinmm -lcomdlg32 -lgdi32
 
 ifeq ($(strip $(cv)), on)
-CFLAGS+=-I./depend/opencv-build/install/include/opencv4
+CFLAGS+=-I./depend/opencv-build/install/include/opencv4/
 LFLAGS+=-L./depend/opencv-build/install/lib/opencv4/3rdparty
 LFLAGS+= \
 -lade \
--llibprotobuf \
 -l:libquirc.a \
 -lzlib
+#-llibprotobuf \
 #-llibtiff \
 #-llibwebp \
 #-llibjpeg-turbo \
@@ -52,11 +52,12 @@ LFLAGS+= \
 -lopencv_calib3d460 \
 -lopencv_imgcodecs460 \
 -lopencv_features2d460 \
--lopencv_dnn460 \
 -lopencv_flann460 \
 -lopencv_photo460 \
 -lopencv_imgproc460 \
 -lopencv_core460 
+#-lopencv_dnn460 \
+
 endif
 
 endif

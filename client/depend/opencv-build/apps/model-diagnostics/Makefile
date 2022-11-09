@@ -191,44 +191,6 @@ depend:
 	cd /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/rule:
-	cd /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/rule
-.PHONY : apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/rule
-
-# Convenience name for target.
-opencv_model_diagnostics: apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/rule
-.PHONY : opencv_model_diagnostics
-
-# fast build rule for target.
-opencv_model_diagnostics/fast:
-	cd /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build && $(MAKE) $(MAKESILENT) -f apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build.make apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build
-.PHONY : opencv_model_diagnostics/fast
-
-model_diagnostics.obj: model_diagnostics.cpp.obj
-.PHONY : model_diagnostics.obj
-
-# target to build an object file
-model_diagnostics.cpp.obj:
-	cd /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build && $(MAKE) $(MAKESILENT) -f apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build.make apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/model_diagnostics.cpp.obj
-.PHONY : model_diagnostics.cpp.obj
-
-model_diagnostics.i: model_diagnostics.cpp.i
-.PHONY : model_diagnostics.i
-
-# target to preprocess a source file
-model_diagnostics.cpp.i:
-	cd /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build && $(MAKE) $(MAKESILENT) -f apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build.make apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/model_diagnostics.cpp.i
-.PHONY : model_diagnostics.cpp.i
-
-model_diagnostics.s: model_diagnostics.cpp.s
-.PHONY : model_diagnostics.s
-
-# target to generate assembly for a file
-model_diagnostics.cpp.s:
-	cd /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build && $(MAKE) $(MAKESILENT) -f apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build.make apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/model_diagnostics.cpp.s
-.PHONY : model_diagnostics.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -244,10 +206,6 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... opencv_model_diagnostics"
-	@echo "... model_diagnostics.obj"
-	@echo "... model_diagnostics.i"
-	@echo "... model_diagnostics.s"
 .PHONY : help
 
 

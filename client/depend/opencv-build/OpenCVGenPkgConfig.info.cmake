@@ -17,11 +17,11 @@ set(OPENCV_INCLUDE_INSTALL_PATH "include/opencv4")
 
 set(OPENCV_3P_LIB_INSTALL_PATH "lib/opencv4/3rdparty")
 
-set(_modules "opencv_gapi;opencv_highgui;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_calib3d;opencv_features2d;opencv_dnn;opencv_flann;opencv_videoio;opencv_imgcodecs;opencv_imgproc;opencv_core")
+set(_modules "opencv_gapi;opencv_highgui;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_calib3d;opencv_features2d;opencv_flann;opencv_videoio;opencv_imgcodecs;opencv_imgproc;opencv_core")
 
 set(_extra "wsock32;comctl32;gdi32;ole32;setupapi;ws2_32")
 
-set(_3rdparty "zlib;libprotobuf;ade;quirc")
+set(_3rdparty "zlib;ade;quirc")
 
 set(TARGET_LOCATION_opencv_gapi "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_gapi460.a")
 
@@ -41,8 +41,6 @@ set(TARGET_LOCATION_opencv_calib3d "/home/tsu/saki/notes/cs189a/OverSEA-remote-m
 
 set(TARGET_LOCATION_opencv_features2d "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_features2d460.a")
 
-set(TARGET_LOCATION_opencv_dnn "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_dnn460.a")
-
 set(TARGET_LOCATION_opencv_flann "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_flann460.a")
 
 set(TARGET_LOCATION_opencv_videoio "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_videoio460.a")
@@ -54,8 +52,6 @@ set(TARGET_LOCATION_opencv_imgproc "/home/tsu/saki/notes/cs189a/OverSEA-remote-m
 set(TARGET_LOCATION_opencv_core "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/lib/libopencv_core460.a")
 
 set(TARGET_LOCATION_zlib "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/lib/libzlib.a")
-
-set(TARGET_LOCATION_libprotobuf "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/lib/liblibprotobuf.a")
 
 set(TARGET_LOCATION_ade "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/lib/libade.a")
 

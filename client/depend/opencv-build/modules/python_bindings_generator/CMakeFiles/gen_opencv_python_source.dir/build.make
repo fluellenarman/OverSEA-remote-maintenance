@@ -137,13 +137,6 @@ modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/not
 modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/photo/include/opencv2/photo.hpp
 modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/photo/include/opencv2/photo/cuda.hpp
 modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/photo/include/opencv2/photo/photo.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/all_layers.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/dict.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/layer.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/shape_utils.hpp
-modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/version.hpp
 modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/features2d/include/opencv2/features2d.hpp
 modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/features2d/include/opencv2/features2d/features2d.hpp
 modules/python_bindings_generator/pyopencv_generated_enums.h: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp

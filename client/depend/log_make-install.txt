@@ -13,143 +13,131 @@ make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target zlib[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[  2%] Built target zlib
+[  3%] Built target zlib
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_core[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 12%] Built target opencv_core
+[ 16%] Built target opencv_core
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_imgproc[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 19%] Built target opencv_imgproc
+[ 26%] Built target opencv_imgproc
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_imgcodecs[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 22%] Built target opencv_imgcodecs
+[ 29%] Built target opencv_imgcodecs
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_videoio[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 23%] Built target opencv_videoio
+[ 30%] Built target opencv_videoio
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_highgui[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 23%] Built target opencv_highgui
+[ 31%] Built target opencv_highgui
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_ts[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 24%] Built target opencv_ts
+[ 32%] Built target opencv_ts
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_core[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 28%] Built target opencv_perf_core
+[ 37%] Built target opencv_perf_core
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_flann[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 28%] Built target opencv_flann
+[ 37%] Built target opencv_flann
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_imgproc[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 32%] Built target opencv_perf_imgproc
+[ 43%] Built target opencv_perf_imgproc
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_ml[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 34%] Built target opencv_ml
+[ 45%] Built target opencv_ml
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_photo[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 35%] Built target opencv_photo
+[ 48%] Built target opencv_photo
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_photo[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 36%] Built target opencv_perf_photo
-make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[35m[1mConsolidate compiler generated dependencies of target libprotobuf[0m
-make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 41%] Built target libprotobuf
-make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[35m[1mConsolidate compiler generated dependencies of target opencv_dnn[0m
-make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 57%] Built target opencv_dnn
-make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[35m[1mConsolidate compiler generated dependencies of target opencv_perf_dnn[0m
-make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 58%] Built target opencv_perf_dnn
+[ 48%] Built target opencv_perf_photo
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_features2d[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 61%] Built target opencv_features2d
+[ 53%] Built target opencv_features2d
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_features2d[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 62%] Built target opencv_perf_features2d
+[ 53%] Built target opencv_perf_features2d
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_imgcodecs[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 62%] Built target opencv_perf_imgcodecs
+[ 53%] Built target opencv_perf_imgcodecs
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_videoio[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 63%] Built target opencv_perf_videoio
+[ 53%] Built target opencv_perf_videoio
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_calib3d[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 69%] Built target opencv_calib3d
+[ 60%] Built target opencv_calib3d
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_calib3d[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 70%] Built target opencv_perf_calib3d
+[ 61%] Built target opencv_perf_calib3d
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target quirc[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 71%] Built target quirc
+[ 61%] Built target quirc
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_objdetect[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 72%] Built target opencv_objdetect
+[ 63%] Built target opencv_objdetect
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_objdetect[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 73%] Built target opencv_perf_objdetect
+[ 64%] Built target opencv_perf_objdetect
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_stitching[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 75%] Built target opencv_stitching
+[ 66%] Built target opencv_stitching
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_stitching[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 75%] Built target opencv_perf_stitching
+[ 67%] Built target opencv_perf_stitching
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_video[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 78%] Built target opencv_video
+[ 71%] Built target opencv_video
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_video[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 80%] Built target opencv_perf_video
+[ 74%] Built target opencv_perf_video
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target ade[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 82%] Built target ade
+[ 76%] Built target ade
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_gapi[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 96%] Built target opencv_gapi
+[ 93%] Built target opencv_gapi
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_perf_gapi[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 98%] Built target opencv_perf_gapi
+[ 96%] Built target opencv_perf_gapi
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_annotation[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 98%] Built target opencv_annotation
+[ 96%] Built target opencv_annotation
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_visualisation[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 98%] Built target opencv_visualisation
+[ 97%] Built target opencv_visualisation
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_interactive-calibration[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[ 99%] Built target opencv_interactive-calibration
+[ 98%] Built target opencv_interactive-calibration
 make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [35m[1mConsolidate compiler generated dependencies of target opencv_version[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
@@ -158,10 +146,6 @@ make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintena
 [35m[1mConsolidate compiler generated dependencies of target opencv_version_win32[0m
 make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [100%] Built target opencv_version_win32
-make[3]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[35m[1mConsolidate compiler generated dependencies of target opencv_model_diagnostics[0m
-make[3]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
-[100%] Built target opencv_model_diagnostics
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'
 [36mInstall the project...[0m
 -- Install configuration: "RELEASE"
@@ -182,9 +166,6 @@ make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/./setup_vars_opencv4.cmd
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/opencv4/3rdparty/libzlib.a
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/zlib-README
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/opencv4/3rdparty/liblibprotobuf.a
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/protobuf-LICENSE
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/protobuf-README.md
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/opencv4/3rdparty/libquirc.a
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/share/licenses/opencv4/quirc-LICENSE
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/opencv.hpp
@@ -376,18 +357,6 @@ make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/photo/cuda.hpp
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/photo/legacy/constants_c.h
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/photo/photo.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/libopencv_dnn460.a
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/all_layers.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/dict.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/dnn.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/dnn.inl.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/layer.details.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/layer.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/shape_utils.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/utils/debug_utils.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/utils/inference_engine.hpp
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/dnn/version.hpp
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/lib/libopencv_features2d460.a
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/features2d.hpp
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/include/opencv4/opencv2/features2d/features2d.hpp
@@ -559,5 +528,4 @@ make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_interactive-calibration.exe
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_version.exe
 -- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_version_win32.exe
--- Installing: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install/bin/opencv_model_diagnostics.exe
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build'

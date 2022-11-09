@@ -120,8 +120,8 @@ BUILD_PERF_TESTS:BOOL=ON
 //Build libpng from source
 BUILD_PNG:BOOL=OFF
 
-//Force to build libprotobuf runtime from sources
-BUILD_PROTOBUF:BOOL=ON
+//No help, variable specified on the command line.
+BUILD_PROTOBUF:UNINITIALIZED=OFF
 
 //Build shared libraries (.dll/.so) instead of static ones (.lib/.a)
 BUILD_SHARED_LIBS:BOOL=OFF
@@ -159,9 +159,6 @@ BUILD_opencv_calib3d:BOOL=ON
 
 //Include opencv_core module into the OpenCV build
 BUILD_opencv_core:BOOL=ON
-
-//Include opencv_dnn module into the OpenCV build
-BUILD_opencv_dnn:BOOL=ON
 
 //Include opencv_features2d module into the OpenCV build
 BUILD_opencv_features2d:BOOL=ON
@@ -720,21 +717,6 @@ OPENCV_CONFIG_FILE_INCLUDE_DIR:PATH=/home/tsu/saki/notes/cs189a/OverSEA-remote-m
 //Disable filesystem support
 OPENCV_DISABLE_FILESYSTEM_SUPPORT:BOOL=OFF
 
-//Build with CUDA support
-OPENCV_DNN_CUDA:BOOL=OFF
-
-//Build with OpenCL support
-OPENCV_DNN_OPENCL:BOOL=ON
-
-//Build with OpenVINO support (2021.4+)
-OPENCV_DNN_OPENVINO:BOOL=OFF
-
-//Add performance tests of Caffe framework
-OPENCV_DNN_PERF_CAFFE:BOOL=OFF
-
-//Add performance tests of clCaffe framework
-OPENCV_DNN_PERF_CLCAFFE:BOOL=OFF
-
 OPENCV_DOWNLOAD_MIRROR_ID:STRING=github
 
 //Download parameters to be passed to file(DOWNLOAD ...)
@@ -790,7 +772,7 @@ OPENCV_MATHJAX_RELPATH:STRING=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7
 OPENCV_PYTHON3_VERSION:BOOL=OFF
 
 //Timestamp of OpenCV build configuration
-OPENCV_TIMESTAMP:STRING=2022-11-07T23:41:37Z
+OPENCV_TIMESTAMP:STRING=2022-11-09T01:43:11Z
 
 //Treat warnings as errors
 OPENCV_WARNINGS_ARE_ERRORS:BOOL=OFF
@@ -835,10 +817,7 @@ OpenMP_gomp_LIBRARY:FILEPATH=/usr/x86_64-w64-mingw32/lib/libgomp.dll.a
 OpenMP_mingwthrd_LIBRARY:FILEPATH=/usr/x86_64-w64-mingw32/lib/libmingwthrd.a
 
 //Allow building parallel plugin support
-PARALLEL_ENABLE_PLUGINS:BOOL=ON
-
-//Force rebuilding .proto files (protoc should be available)
-PROTOBUF_UPDATE_FILES:BOOL=OFF
+PARALLEL_ENABLE_PLUGINS:BOOL=OFF
 
 //Path to Python interpreter
 PYTHON2_EXECUTABLE:FILEPATH=/usr/bin/python2.7
@@ -1016,10 +995,10 @@ WITH_PLAIDML:BOOL=OFF
 WITH_PNG:BOOL=OFF
 
 //Enable libprotobuf
-WITH_PROTOBUF:BOOL=ON
+WITH_PROTOBUF:BOOL=OFF
 
 //Use pthreads-based parallel_for
-WITH_PTHREADS_PF:BOOL=ON
+WITH_PTHREADS_PF:BOOL=OFF
 
 //Include Prosilica GigE support
 WITH_PVAPI:BOOL=OFF
@@ -1058,15 +1037,6 @@ WITH_WIN32UI:BOOL=ON
 WITH_XIMEA:BOOL=OFF
 
 //Value Computed by CMake
-libprotobuf_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/3rdparty/protobuf
-
-//Value Computed by CMake
-libprotobuf_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-libprotobuf_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/3rdparty/protobuf
-
-//Value Computed by CMake
 opencv_annotation_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/apps/annotation
 
 //Value Computed by CMake
@@ -1100,18 +1070,6 @@ opencv_core_LIB_DEPENDS:STATIC=general;zlib;
 opencv_core_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core
 
 //Value Computed by CMake
-opencv_dnn_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/dnn
-
-//Value Computed by CMake
-opencv_dnn_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-opencv_dnn_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;libprotobuf;
-
-//Value Computed by CMake
-opencv_dnn_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn
-
-//Value Computed by CMake
 opencv_features2d_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/features2d
 
 //Value Computed by CMake
@@ -1142,7 +1100,7 @@ opencv_gapi_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-mainten
 opencv_gapi_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-opencv_gapi_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_dnn;general;opencv_features2d;general;opencv_calib3d;general;opencv_video;general;ade;general;wsock32;general;ws2_32;
+opencv_gapi_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;opencv_video;general;ade;general;wsock32;general;ws2_32;
 
 //Value Computed by CMake
 opencv_gapi_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/gapi
@@ -1223,15 +1181,6 @@ opencv_ml_LIB_DEPENDS:STATIC=general;opencv_core;
 opencv_ml_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/ml
 
 //Value Computed by CMake
-opencv_model_diagnostics_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/apps/model-diagnostics
-
-//Value Computed by CMake
-opencv_model_diagnostics_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-opencv_model_diagnostics_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/apps/model-diagnostics
-
-//Value Computed by CMake
 opencv_objc_bindings_generator_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/objc_bindings_generator
 
 //Value Computed by CMake
@@ -1247,7 +1196,7 @@ opencv_objdetect_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-ma
 opencv_objdetect_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-opencv_objdetect_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_dnn;general;opencv_features2d;general;opencv_calib3d;general;quirc;
+opencv_objdetect_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;quirc;
 
 //Value Computed by CMake
 opencv_objdetect_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/objdetect
@@ -1331,7 +1280,7 @@ opencv_video_BINARY_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-mainte
 opencv_video_IS_TOP_LEVEL:STATIC=OFF
 
 //Dependencies for the target
-opencv_video_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_dnn;general;opencv_features2d;general;opencv_calib3d;
+opencv_video_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;
 
 //Value Computed by CMake
 opencv_video_SOURCE_DIR:STATIC=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/video
@@ -1567,7 +1516,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=62
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=60
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1685,60 +1634,18 @@ HAVE_CXX_WMISSING_DECLARATIONS:INTERNAL=1
 HAVE_CXX_WMISSING_PROTOTYPES:INTERNAL=
 //Test HAVE_CXX_WNON_VIRTUAL_DTOR
 HAVE_CXX_WNON_VIRTUAL_DTOR:INTERNAL=1
-//Test HAVE_CXX_WNO_ARRAY_BOUNDS
-HAVE_CXX_WNO_ARRAY_BOUNDS:INTERNAL=1
-//Test HAVE_CXX_WNO_CLASS_MEMACCESS
-HAVE_CXX_WNO_CLASS_MEMACCESS:INTERNAL=1
 //Test HAVE_CXX_WNO_COMMENT
 HAVE_CXX_WNO_COMMENT:INTERNAL=1
 //Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR
 HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR:INTERNAL=1
-//Test HAVE_CXX_WNO_DEPRECATED
-HAVE_CXX_WNO_DEPRECATED:INTERNAL=1
 //Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS
 HAVE_CXX_WNO_DEPRECATED_DECLARATIONS:INTERNAL=1
-//Test HAVE_CXX_WNO_ENUM_COMPARE_SWITCH
-HAVE_CXX_WNO_ENUM_COMPARE_SWITCH:INTERNAL=
-//Test HAVE_CXX_WNO_EXTRA
-HAVE_CXX_WNO_EXTRA:INTERNAL=1
-//Test HAVE_CXX_WNO_IGNORED_QUALIFIERS
-HAVE_CXX_WNO_IGNORED_QUALIFIERS:INTERNAL=1
-//Test HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH
-HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH:INTERNAL=1
-//Test HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE
-HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE:INTERNAL=
-//Test HAVE_CXX_WNO_INVALID_OFFSETOF
-HAVE_CXX_WNO_INVALID_OFFSETOF:INTERNAL=1
-//Test HAVE_CXX_WNO_MISSING_DECLARATIONS
-HAVE_CXX_WNO_MISSING_DECLARATIONS:INTERNAL=1
-//Test HAVE_CXX_WNO_MISSING_PROTOTYPES
-HAVE_CXX_WNO_MISSING_PROTOTYPES:INTERNAL=
-//Test HAVE_CXX_WNO_SHADOW
-HAVE_CXX_WNO_SHADOW:INTERNAL=1
-//Test HAVE_CXX_WNO_SHORTEN_64_TO_32
-HAVE_CXX_WNO_SHORTEN_64_TO_32:INTERNAL=
-//Test HAVE_CXX_WNO_SIGN_COMPARE
-HAVE_CXX_WNO_SIGN_COMPARE:INTERNAL=1
-//Test HAVE_CXX_WNO_SIGN_PROMO
-HAVE_CXX_WNO_SIGN_PROMO:INTERNAL=1
 //Test HAVE_CXX_WNO_STRICT_OVERFLOW
 HAVE_CXX_WNO_STRICT_OVERFLOW:INTERNAL=1
-//Test HAVE_CXX_WNO_SUGGEST_OVERRIDE
-HAVE_CXX_WNO_SUGGEST_OVERRIDE:INTERNAL=1
-//Test HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE
-HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE:INTERNAL=
 //Test HAVE_CXX_WNO_UNDEF
 HAVE_CXX_WNO_UNDEF:INTERNAL=1
 //Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
 HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS:INTERNAL=
-//Test HAVE_CXX_WNO_UNUSED_CONST_VARIABLE
-HAVE_CXX_WNO_UNUSED_CONST_VARIABLE:INTERNAL=1
-//Test HAVE_CXX_WNO_UNUSED_FUNCTION
-HAVE_CXX_WNO_UNUSED_FUNCTION:INTERNAL=1
-//Test HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS
-HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS:INTERNAL=1
-//Test HAVE_CXX_WNO_UNUSED_PARAMETER
-HAVE_CXX_WNO_UNUSED_PARAMETER:INTERNAL=1
 //Test HAVE_CXX_WPOINTER_ARITH
 HAVE_CXX_WPOINTER_ARITH:INTERNAL=1
 //Test HAVE_CXX_WRETURN_TYPE
@@ -1857,8 +1764,8 @@ HAVE_WIN32_ALIGNED_MALLOC:INTERNAL=1
 HAVE_opencv_calib3d:INTERNAL=ON
 //Module opencv_core will be built in current configuration
 HAVE_opencv_core:INTERNAL=ON
-//Module opencv_dnn will be built in current configuration
-HAVE_opencv_dnn:INTERNAL=ON
+//Module opencv_dnn can not be built in current configuration
+HAVE_opencv_dnn:INTERNAL=OFF
 //Module opencv_features2d will be built in current configuration
 HAVE_opencv_features2d:INTERNAL=ON
 //Module opencv_flann will be built in current configuration
@@ -1927,11 +1834,11 @@ OPENCV_JAVA_BINDINGS_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-mai
 OPENCV_JAVA_SIGNATURES_FILE:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/java_bindings_generator/opencv_java_signatures.json
 OPENCV_JS_BINDINGS_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/js_bindings_generator
 //List of OpenCV modules included into the build
-OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_python_tests;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_ts;opencv_video;opencv_gapi;opencv_java_bindings_generator;opencv_js_bindings_generator;opencv_objc_bindings_generator;opencv_python_bindings_generator
+OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_python_tests;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_ts;opencv_video;opencv_gapi;opencv_java_bindings_generator;opencv_js_bindings_generator;opencv_objc_bindings_generator;opencv_python_bindings_generator
 //List of OpenCV modules implicitly disabled due to dependencies
 OPENCV_MODULES_DISABLED_AUTO:INTERNAL=
 //List of OpenCV modules which can not be build in current configuration
-OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_java;opencv_python2;opencv_python3
+OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_dnn;opencv_java;opencv_python2;opencv_python3
 //List of OpenCV modules explicitly disabled by user
 OPENCV_MODULES_DISABLED_USER:INTERNAL=opencv_world
 //List of extra modules
@@ -1939,7 +1846,7 @@ OPENCV_MODULES_EXTRA:INTERNAL=java_bindings_generator;js_bindings_generator;objc
 //List of main modules
 OPENCV_MODULES_MAIN:INTERNAL=core;imgproc;imgcodecs;videoio;highgui;video;calib3d;features2d;objdetect;dnn;ml;flann;photo;stitching;gapi;java;ts;world
 //List of OpenCV modules marked for export
-OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
 OPENCV_MODULE_opencv_calib3d_BINARY_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/calib3d
 //The category of the module
 OPENCV_MODULE_opencv_calib3d_CLASS:INTERNAL=PUBLIC
@@ -2000,36 +1907,8 @@ OPENCV_MODULE_opencv_core_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_core_SOURCES:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/core/version_string.inc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/algorithm.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/alloc.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/arithm.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/arithm.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/array.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/async.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/batch_distance.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/bindings_utils.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/buffer_area.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/channels.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/check.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/command_line_parser.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/conjugate_gradient.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/convert.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/convert_c.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/convert_scale.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/copy.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/count_non_zero.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/cuda_gpu_mat.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/cuda_gpu_mat_nd.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/cuda_host_mem.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/cuda_info.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/cuda_stream.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/datastructs.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/directx.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/downhill_simplex.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/dxt.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/gl_core_3_1.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/glob.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/hal_internal.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/kmeans.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/lapack.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/lda.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/logger.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/lpsolver.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/lut.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/mathfuncs.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/mathfuncs_core.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matmul.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_c.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_decomp.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_expressions.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_iterator.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_operations.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_sparse.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_transform.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matrix_wrap.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/mean.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/merge.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/minmax.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/norm.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/ocl.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/opencl_clblas.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/opencl_clfft.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/opencl_core.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opengl.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/out.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/ovx.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/parallel.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/parallel_openmp.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/parallel_tbb.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel_impl.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/pca.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_base64_encoding.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_json.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_types.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_xml.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_yml.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/rand.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/softfloat.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/split.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/stat.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/stat_c.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/stl.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/sum.dispatch.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/system.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/tables.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/trace.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/types.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/umatrix.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/datafile.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/filesystem.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/logtagconfigparser.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/logtagmanager.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/samples.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/va_intel.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/arithm.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/convert.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/copymakeborder.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/copyset.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/cvtclr_dx.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/fft.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/flip.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/gemm.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/halfconvert.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/inrange.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/intel_gemm.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/lut.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/meanstddev.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/minmaxloc.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/mixchannels.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/mulspectrums.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/normalize.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/reduce.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/reduce2.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/repeat.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/set_identity.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/split_merge.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/transpose.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/core/opencl_kernels_core.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/core/opencl_kernels_core.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/arithm.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/arithm_ipp.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/bufferpool.impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/convert.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/convert.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/convert_scale.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/count_non_zero.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/directx.inc.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/gl_core_3_1.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/hal_internal.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/hal_replacement.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/intel_gpu_gemm.inl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/mathfuncs.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/mathfuncs_core.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/matmul.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/mean.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/merge.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/ocl_disabled.impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clblas_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clfft_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_static_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_gl_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_gl_static_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/opencl/runtime/runtime_common.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/factory_parallel.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/parallel.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/plugin_parallel_api.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/plugin_parallel_wrapper.impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/registry_parallel.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel/registry_parallel.impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/parallel_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_base64_encoding.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/persistence_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/precomp.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/split.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/stat.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/stat.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/sum.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/umatrix.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/logtagconfig.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/logtagconfigparser.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/logtagmanager.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/utils/plugin_loader.impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/core/src/va_wrapper.impl.hpp
 //List of wrappers supporting module opencv_core
 OPENCV_MODULE_opencv_core_WRAPPERS:INTERNAL=java;objc;python;js
-OPENCV_MODULE_opencv_dnn_BINARY_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/dnn
-//The category of the module
-OPENCV_MODULE_opencv_dnn_CLASS:INTERNAL=PUBLIC
-//Flattened dependencies of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_DEPS:INTERNAL=opencv_core;opencv_imgproc
-//Extra dependencies of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_DEPS_EXT:INTERNAL=
-//Flattened dependencies of opencv_dnn module (for linker)
-OPENCV_MODULE_opencv_dnn_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
-//Brief description of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_DESCRIPTION:INTERNAL=Deep neural network module. It allows to load models from different frameworks and to make forward pass
-//List of header files for opencv_dnn
-OPENCV_MODULE_opencv_dnn_HEADERS:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/all_layers.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/dict.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/layer.details.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/layer.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/layer_reg.private.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/shape_utils.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/utils/debug_utils.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/include/opencv2/dnn/version.hpp
-OPENCV_MODULE_opencv_dnn_IS_PART_OF_WORLD:INTERNAL=ON
-OPENCV_MODULE_opencv_dnn_LABEL:INTERNAL=Main;opencv_dnn
-OPENCV_MODULE_opencv_dnn_LINK_DEPS:INTERNAL=;libprotobuf
 //Location of opencv_dnn module sources
 OPENCV_MODULE_opencv_dnn_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn
-//Optional dependencies of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_OPT_DEPS:INTERNAL=
-//Optional private dependencies of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_PRIVATE_OPT_DEPS:INTERNAL=
-//Required private dependencies of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_PRIVATE_REQ_DEPS:INTERNAL=
-//Required dependencies of opencv_dnn module
-OPENCV_MODULE_opencv_dnn_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc
-//List of source files for opencv_dnn
-OPENCV_MODULE_opencv_dnn_SOURCES:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/caffe/opencv-caffe.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/onnx/opencv-onnx.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/attr_value.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/function.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/graph.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/op_def.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/tensor.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/tensor_shape.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/types.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/misc/tensorflow/versions.pb.cc;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/caffe/caffe_importer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/caffe/caffe_io.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/caffe/caffe_shrinker.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/darknet/darknet_importer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/darknet/darknet_io.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/debug_utils.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/dnn.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/dnn_params.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/dnn_read.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/dnn_utils.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/graph_simplifier.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/halide_scheduler.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ie_ngraph.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/init.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/batch_norm_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/convolution_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/elementwise_layers.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/eltwise_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/fully_connected_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/pooling_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/quantization_utils.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/reduce_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/scale_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/softmax_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layer_factory.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/accum_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/arg_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/batch_norm_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/blank_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/concat_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/const_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/convolution_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/correlation_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/crop_and_resize_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/cumsum_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/detection_output_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/elementwise_layers.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/eltwise_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/flatten_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/flow_warp_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/fully_connected_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/layers_common.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/lrn_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/max_unpooling_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/mvn_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/normalize_bbox_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/not_implemented_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/padding_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/permute_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/pooling_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/prior_box_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/proposal_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/recurrent_layers.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/reduce_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/region_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/reorg_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/reshape_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/resize_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/scale_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/shuffle_channel_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/slice_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/softmax_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/split_layer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/legacy_backend.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/model.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net_impl.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net_impl_backend.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net_impl_fuse.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net_openvino.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net_quantization.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/nms.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/common.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/math_functions.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/ocl4dnn_conv_spatial.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/ocl4dnn_inner_product.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/ocl4dnn_lrn.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/ocl4dnn_pool.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/src/ocl4dnn_softmax.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/onnx/onnx_graph_simplifier.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/onnx/onnx_importer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_cuda.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_halide.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_inf_engine.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_timvx.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_vkcom.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_webnn.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/registry.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tengine4dnn/src/tengine_graph_convolution.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tensorflow/tf_graph_simplifier.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tensorflow/tf_importer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tensorflow/tf_io.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THDiskFile.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THFile.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THGeneral.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/torch_importer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/avg_pool_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/concat_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/conv48_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/conv_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/dw_conv_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/lrn_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/max_pool_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/permute_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/prior_box_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/relu_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/softmax_spv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/buffer.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/context.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/internal.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_base.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_concat.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_conv.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_lrn.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_permute.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_pool.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_prior_box.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_relu.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/op_softmax.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/tensor.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/vulkan/vk_functions.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/vulkan/vk_loader.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/activations.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/batchnorm.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/col2im.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/concat.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/conv_layer_spatial.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/conv_spatial_helper.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/detection_output.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/dummy.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/eltwise.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/gemm_buffer.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/gemm_image.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/im2col.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/lrn.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/math.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/matvec_mul.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/mvn.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/ocl4dnn_lrn.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/ocl4dnn_pooling.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/permute.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/pooling.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/prior_box.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/region.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/slice.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/softmax.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/opencl/softmax_loss.cl;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/dnn/opencl_kernels_dnn.cpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/dnn/opencl_kernels_dnn.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/caffe/caffe_io.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/caffe/glog_emulator.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/array.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/atomics.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/bbox_utils.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/block_stride_range.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/execution.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/functors.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/grid_stride_range.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/index_helpers.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/kernel_dispatcher.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/limits.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/math.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/memory.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/types.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/cuda/vector_traits.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/darknet/darknet_io.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/dnn_common.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/graph_simplifier.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/halide_scheduler.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ie_ngraph.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/layers_common.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/int8layers/layers_common.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layer_internals.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/layers_common.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/layers/layers_common.simd.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/legacy_backend.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/math_utils.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/net_impl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/nms.inl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/include/common.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/include/default_kernel_config.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/include/math_functions.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/ocl4dnn/include/ocl4dnn.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/onnx/onnx_graph_simplifier.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_cuda.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_halide.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_inf_engine.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_timvx.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_vkcom.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/op_webnn.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/precomp.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tengine4dnn/include/tengine_graph_convolution.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tensorflow/tf_graph_simplifier.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/tensorflow/tf_io.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THDiskFile.h;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THFile.h;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THFilePrivate.h;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/torch/THGeneral.h;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/buffer.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_base.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_concat.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_conv.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_lrn.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_permute.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_pool.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_prior_box.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_relu.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/op_softmax.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/tensor.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/include/vkcom.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/shader/spv_shader.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/common.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/context.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/src/internal.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/vulkan/function_list.inl.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/vulkan/vk_functions.hpp;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/src/vkcom/vulkan/vk_loader.hpp
-//List of wrappers supporting module opencv_dnn
-OPENCV_MODULE_opencv_dnn_WRAPPERS:INTERNAL=python;java;objc;js
 OPENCV_MODULE_opencv_features2d_BINARY_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/modules/features2d
 //The category of the module
 OPENCV_MODULE_opencv_features2d_CLASS:INTERNAL=PUBLIC
@@ -2094,11 +1973,11 @@ OPENCV_MODULE_opencv_gapi_BINARY_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverSE
 //The category of the module
 OPENCV_MODULE_opencv_gapi_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_gapi module
-OPENCV_MODULE_opencv_gapi_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_video
+OPENCV_MODULE_opencv_gapi_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_video
 //Extra dependencies of opencv_gapi module
 OPENCV_MODULE_opencv_gapi_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_gapi module (for linker)
-OPENCV_MODULE_opencv_gapi_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_video
+OPENCV_MODULE_opencv_gapi_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_video
 //Brief description of opencv_gapi module
 OPENCV_MODULE_opencv_gapi_DESCRIPTION:INTERNAL=OpenCV G-API Core Module
 //List of header files for opencv_gapi
@@ -2213,7 +2092,7 @@ OPENCV_MODULE_opencv_imgproc_WRAPPERS:INTERNAL=java;objc;python;js
 //Location of opencv_java module sources
 OPENCV_MODULE_opencv_java_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/java
 //Optional dependencies of opencv_java module
-OPENCV_MODULE_opencv_java_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_java_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_java module
 OPENCV_MODULE_opencv_java_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_java module
@@ -2226,12 +2105,12 @@ OPENCV_MODULE_opencv_java_bindings_generator_BINARY_DIR:INTERNAL=/home/tsu/saki/
 //The category of the module
 OPENCV_MODULE_opencv_java_bindings_generator_CLASS:INTERNAL=INTERNAL
 //Flattened dependencies of opencv_java_bindings_generator module
-OPENCV_MODULE_opencv_java_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_video
+OPENCV_MODULE_opencv_java_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_video
 //Extra dependencies of opencv_java_bindings_generator module
 OPENCV_MODULE_opencv_java_bindings_generator_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_java_bindings_generator module
 // (for linker)
-OPENCV_MODULE_opencv_java_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_video
+OPENCV_MODULE_opencv_java_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_video
 //Brief description of opencv_java_bindings_generator module
 OPENCV_MODULE_opencv_java_bindings_generator_DESCRIPTION:INTERNAL=The java_bindings_generator OpenCV module
 OPENCV_MODULE_opencv_java_bindings_generator_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -2240,7 +2119,7 @@ OPENCV_MODULE_opencv_java_bindings_generator_LINK_DEPS:INTERNAL=
 //Location of opencv_java_bindings_generator module sources
 OPENCV_MODULE_opencv_java_bindings_generator_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/java/generator
 //Optional dependencies of opencv_java_bindings_generator module
-OPENCV_MODULE_opencv_java_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_java_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_java_bindings_generator
 // module
 OPENCV_MODULE_opencv_java_bindings_generator_PRIVATE_OPT_DEPS:INTERNAL=
@@ -2252,7 +2131,7 @@ OPENCV_MODULE_opencv_java_bindings_generator_REQ_DEPS:INTERNAL=
 //List of wrappers supporting module opencv_java_bindings_generator
 OPENCV_MODULE_opencv_java_bindings_generator_WRAPPERS:INTERNAL=
 //Optional dependencies of opencv_js module
-OPENCV_MODULE_opencv_js_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_imgproc;opencv_objdetect;opencv_photo;opencv_video
+OPENCV_MODULE_opencv_js_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_imgproc;opencv_objdetect;opencv_photo;opencv_video
 //Optional private dependencies of opencv_js module
 OPENCV_MODULE_opencv_js_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_js module
@@ -2265,12 +2144,12 @@ OPENCV_MODULE_opencv_js_bindings_generator_BINARY_DIR:INTERNAL=/home/tsu/saki/no
 //The category of the module
 OPENCV_MODULE_opencv_js_bindings_generator_CLASS:INTERNAL=INTERNAL
 //Flattened dependencies of opencv_js_bindings_generator module
-OPENCV_MODULE_opencv_js_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_photo;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_video
+OPENCV_MODULE_opencv_js_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_photo;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_video
 //Extra dependencies of opencv_js_bindings_generator module
 OPENCV_MODULE_opencv_js_bindings_generator_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_js_bindings_generator module
 // (for linker)
-OPENCV_MODULE_opencv_js_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_photo;opencv_dnn;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_video
+OPENCV_MODULE_opencv_js_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_photo;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_video
 //Brief description of opencv_js_bindings_generator module
 OPENCV_MODULE_opencv_js_bindings_generator_DESCRIPTION:INTERNAL=The js_bindings_generator OpenCV module
 OPENCV_MODULE_opencv_js_bindings_generator_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -2279,7 +2158,7 @@ OPENCV_MODULE_opencv_js_bindings_generator_LINK_DEPS:INTERNAL=
 //Location of opencv_js_bindings_generator module sources
 OPENCV_MODULE_opencv_js_bindings_generator_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/js/generator
 //Optional dependencies of opencv_js_bindings_generator module
-OPENCV_MODULE_opencv_js_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_imgproc;opencv_objdetect;opencv_photo;opencv_video
+OPENCV_MODULE_opencv_js_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_imgproc;opencv_objdetect;opencv_photo;opencv_video
 //Optional private dependencies of opencv_js_bindings_generator
 // module
 OPENCV_MODULE_opencv_js_bindings_generator_PRIVATE_OPT_DEPS:INTERNAL=
@@ -2321,7 +2200,7 @@ OPENCV_MODULE_opencv_ml_SOURCES:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-rem
 //List of wrappers supporting module opencv_ml
 OPENCV_MODULE_opencv_ml_WRAPPERS:INTERNAL=java;objc;python
 //Optional dependencies of opencv_objc module
-OPENCV_MODULE_opencv_objc_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_objc_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_objc module
 OPENCV_MODULE_opencv_objc_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_objc module
@@ -2334,12 +2213,12 @@ OPENCV_MODULE_opencv_objc_bindings_generator_BINARY_DIR:INTERNAL=/home/tsu/saki/
 //The category of the module
 OPENCV_MODULE_opencv_objc_bindings_generator_CLASS:INTERNAL=INTERNAL
 //Flattened dependencies of opencv_objc_bindings_generator module
-OPENCV_MODULE_opencv_objc_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_objdetect;opencv_video
+OPENCV_MODULE_opencv_objc_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_objdetect;opencv_video
 //Extra dependencies of opencv_objc_bindings_generator module
 OPENCV_MODULE_opencv_objc_bindings_generator_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_objc_bindings_generator module
 // (for linker)
-OPENCV_MODULE_opencv_objc_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_objdetect;opencv_video
+OPENCV_MODULE_opencv_objc_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_objdetect;opencv_video
 //Brief description of opencv_objc_bindings_generator module
 OPENCV_MODULE_opencv_objc_bindings_generator_DESCRIPTION:INTERNAL=The objc_bindings_generator OpenCV module
 OPENCV_MODULE_opencv_objc_bindings_generator_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -2348,7 +2227,7 @@ OPENCV_MODULE_opencv_objc_bindings_generator_LINK_DEPS:INTERNAL=
 //Location of opencv_objc_bindings_generator module sources
 OPENCV_MODULE_opencv_objc_bindings_generator_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/objc/generator
 //Optional dependencies of opencv_objc_bindings_generator module
-OPENCV_MODULE_opencv_objc_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_objc_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_objc_bindings_generator
 // module
 OPENCV_MODULE_opencv_objc_bindings_generator_PRIVATE_OPT_DEPS:INTERNAL=
@@ -2363,11 +2242,11 @@ OPENCV_MODULE_opencv_objdetect_BINARY_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/O
 //The category of the module
 OPENCV_MODULE_opencv_objdetect_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_objdetect module
-OPENCV_MODULE_opencv_objdetect_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d
+OPENCV_MODULE_opencv_objdetect_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d
 //Extra dependencies of opencv_objdetect module
 OPENCV_MODULE_opencv_objdetect_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_objdetect module (for linker)
-OPENCV_MODULE_opencv_objdetect_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d
+OPENCV_MODULE_opencv_objdetect_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d
 //Brief description of opencv_objdetect module
 OPENCV_MODULE_opencv_objdetect_DESCRIPTION:INTERNAL=Object Detection
 //List of header files for opencv_objdetect
@@ -2422,7 +2301,7 @@ OPENCV_MODULE_opencv_photo_WRAPPERS:INTERNAL=java;objc;python;js
 //Location of opencv_python2 module sources
 OPENCV_MODULE_opencv_python2_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/python/python2
 //Optional dependencies of opencv_python2 module
-OPENCV_MODULE_opencv_python2_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python2_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_python2 module
 OPENCV_MODULE_opencv_python2_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_python2 module
@@ -2434,7 +2313,7 @@ OPENCV_MODULE_opencv_python2_WRAPPERS:INTERNAL=
 //Location of opencv_python3 module sources
 OPENCV_MODULE_opencv_python3_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/python/python3
 //Optional dependencies of opencv_python3 module
-OPENCV_MODULE_opencv_python3_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python3_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_python3 module
 OPENCV_MODULE_opencv_python3_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_python3 module
@@ -2447,12 +2326,12 @@ OPENCV_MODULE_opencv_python_bindings_generator_BINARY_DIR:INTERNAL=/home/tsu/sak
 //The category of the module
 OPENCV_MODULE_opencv_python_bindings_generator_CLASS:INTERNAL=INTERNAL
 //Flattened dependencies of opencv_python_bindings_generator module
-OPENCV_MODULE_opencv_python_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_video;opencv_gapi
+OPENCV_MODULE_opencv_python_bindings_generator_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_video;opencv_gapi
 //Extra dependencies of opencv_python_bindings_generator module
 OPENCV_MODULE_opencv_python_bindings_generator_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_python_bindings_generator module
 // (for linker)
-OPENCV_MODULE_opencv_python_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_video;opencv_gapi
+OPENCV_MODULE_opencv_python_bindings_generator_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_video;opencv_gapi
 //Brief description of opencv_python_bindings_generator module
 OPENCV_MODULE_opencv_python_bindings_generator_DESCRIPTION:INTERNAL=The python_bindings_generator OpenCV module
 OPENCV_MODULE_opencv_python_bindings_generator_IS_PART_OF_WORLD:INTERNAL=OFF
@@ -2461,7 +2340,7 @@ OPENCV_MODULE_opencv_python_bindings_generator_LINK_DEPS:INTERNAL=
 //Location of opencv_python_bindings_generator module sources
 OPENCV_MODULE_opencv_python_bindings_generator_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/python/bindings
 //Optional dependencies of opencv_python_bindings_generator module
-OPENCV_MODULE_opencv_python_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python_bindings_generator_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_python_bindings_generator
 // module
 OPENCV_MODULE_opencv_python_bindings_generator_PRIVATE_OPT_DEPS:INTERNAL=
@@ -2562,11 +2441,11 @@ OPENCV_MODULE_opencv_video_BINARY_DIR:INTERNAL=/home/tsu/saki/notes/cs189a/OverS
 //The category of the module
 OPENCV_MODULE_opencv_video_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_video module
-OPENCV_MODULE_opencv_video_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d
+OPENCV_MODULE_opencv_video_DEPS:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d
 //Extra dependencies of opencv_video module
 OPENCV_MODULE_opencv_video_DEPS_EXT:INTERNAL=
 //Flattened dependencies of opencv_video module (for linker)
-OPENCV_MODULE_opencv_video_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_dnn;opencv_features2d;opencv_calib3d
+OPENCV_MODULE_opencv_video_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d
 //Brief description of opencv_video module
 OPENCV_MODULE_opencv_video_DESCRIPTION:INTERNAL=Video Analysis
 //List of header files for opencv_video
@@ -2628,7 +2507,7 @@ OPENCV_MODULE_opencv_world_LINK_DEPS:INTERNAL=
 //Location of opencv_world module sources
 OPENCV_MODULE_opencv_world_LOCATION:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/world
 //Optional dependencies of opencv_world module
-OPENCV_MODULE_opencv_world_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_world_OPT_DEPS:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
 //Optional private dependencies of opencv_world module
 OPENCV_MODULE_opencv_world_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_world module
@@ -2649,7 +2528,7 @@ OpenBLAS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OpenBLAS_LIB
 OpenBLAS_LIB-ADVANCED:INTERNAL=1
 //List of OpenCVModules targets
-OpenCVModules_TARGETS:INTERNAL=zlib;libprotobuf;quirc;ade;opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_dnn;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_video;opencv_gapi
+OpenCVModules_TARGETS:INTERNAL=zlib;quirc;ade;opencv_core;opencv_flann;opencv_imgproc;opencv_ml;opencv_photo;opencv_features2d;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_video;opencv_gapi
 //Result of TRY_COMPILE
 OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
 //Result of TRY_COMPILE
@@ -2692,7 +2571,6 @@ PYTHON3_NUMPY_VERSION:INTERNAL=
 PYTHON3_VERSION_MAJOR:INTERNAL=3
 PYTHON3_VERSION_MINOR:INTERNAL=10
 PYTHON3_VERSION_STRING:INTERNAL=3.10.7
-Protobuf_VERSION:INTERNAL=3.19.1
 //ADVANCED property for variable: VIDEOIO_ENABLE_PLUGINS
 VIDEOIO_ENABLE_PLUGINS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VIDEOIO_PLUGIN_LIST
@@ -2705,7 +2583,6 @@ Z_HAVE_UNISTD_H:INTERNAL=1
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install
-__OPENCV_CMAKE_HOOKS_INIT_MODULE_SOURCES_opencv_dnn:INTERNAL=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
 //Result of TRY_COMPILE
 __VALID_DIRECTX:INTERNAL=FALSE
 //Result of TRY_COMPILE

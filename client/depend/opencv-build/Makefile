@@ -296,19 +296,6 @@ zlib/fast:
 .PHONY : zlib/fast
 
 #=============================================================================
-# Target rules for targets named libprotobuf
-
-# Build rule for target.
-libprotobuf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libprotobuf
-.PHONY : libprotobuf
-
-# fast build rule for target.
-libprotobuf/fast:
-	$(MAKE) $(MAKESILENT) -f 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/build.make 3rdparty/protobuf/CMakeFiles/libprotobuf.dir/build
-.PHONY : libprotobuf/fast
-
-#=============================================================================
 # Target rules for targets named quirc
 
 # Build rule for target.
@@ -437,32 +424,6 @@ opencv_perf_photo: cmake_check_build_system
 opencv_perf_photo/fast:
 	$(MAKE) $(MAKESILENT) -f modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make modules/photo/CMakeFiles/opencv_perf_photo.dir/build
 .PHONY : opencv_perf_photo/fast
-
-#=============================================================================
-# Target rules for targets named opencv_dnn
-
-# Build rule for target.
-opencv_dnn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opencv_dnn
-.PHONY : opencv_dnn
-
-# fast build rule for target.
-opencv_dnn/fast:
-	$(MAKE) $(MAKESILENT) -f modules/dnn/CMakeFiles/opencv_dnn.dir/build.make modules/dnn/CMakeFiles/opencv_dnn.dir/build
-.PHONY : opencv_dnn/fast
-
-#=============================================================================
-# Target rules for targets named opencv_perf_dnn
-
-# Build rule for target.
-opencv_perf_dnn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opencv_perf_dnn
-.PHONY : opencv_perf_dnn
-
-# fast build rule for target.
-opencv_perf_dnn/fast:
-	$(MAKE) $(MAKESILENT) -f modules/dnn/CMakeFiles/opencv_perf_dnn.dir/build.make modules/dnn/CMakeFiles/opencv_perf_dnn.dir/build
-.PHONY : opencv_perf_dnn/fast
 
 #=============================================================================
 # Target rules for targets named opencv_features2d
@@ -840,19 +801,6 @@ opencv_version_win32: cmake_check_build_system
 opencv_version_win32/fast:
 	$(MAKE) $(MAKESILENT) -f apps/version/CMakeFiles/opencv_version_win32.dir/build.make apps/version/CMakeFiles/opencv_version_win32.dir/build
 .PHONY : opencv_version_win32/fast
-
-#=============================================================================
-# Target rules for targets named opencv_model_diagnostics
-
-# Build rule for target.
-opencv_model_diagnostics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opencv_model_diagnostics
-.PHONY : opencv_model_diagnostics
-
-# fast build rule for target.
-opencv_model_diagnostics/fast:
-	$(MAKE) $(MAKESILENT) -f apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build.make apps/model-diagnostics/CMakeFiles/opencv_model_diagnostics.dir/build
-.PHONY : opencv_model_diagnostics/fast
 
 3rdparty/ade/ade-0.1.1f/sources/ade/source/alloc.obj: 3rdparty/ade/ade-0.1.1f/sources/ade/source/alloc.cpp.obj
 .PHONY : 3rdparty/ade/ade-0.1.1f/sources/ade/source/alloc.obj
@@ -1291,11 +1239,9 @@ help:
 	@echo "... opencv_videoio_plugins"
 	@echo "... uninstall"
 	@echo "... ade"
-	@echo "... libprotobuf"
 	@echo "... opencv_annotation"
 	@echo "... opencv_calib3d"
 	@echo "... opencv_core"
-	@echo "... opencv_dnn"
 	@echo "... opencv_features2d"
 	@echo "... opencv_flann"
 	@echo "... opencv_gapi"
@@ -1304,11 +1250,9 @@ help:
 	@echo "... opencv_imgproc"
 	@echo "... opencv_interactive-calibration"
 	@echo "... opencv_ml"
-	@echo "... opencv_model_diagnostics"
 	@echo "... opencv_objdetect"
 	@echo "... opencv_perf_calib3d"
 	@echo "... opencv_perf_core"
-	@echo "... opencv_perf_dnn"
 	@echo "... opencv_perf_features2d"
 	@echo "... opencv_perf_gapi"
 	@echo "... opencv_perf_imgcodecs"
