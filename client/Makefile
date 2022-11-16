@@ -74,6 +74,7 @@ CFLAGS+=-I./depend/websocketpp/
 
 LOGDIR=depend/logq/src
 EWSDIR=depend/easywsclient
+ESCDIR=depend/escapi3
 SRCDIR=src
 BUILDDIR=build
 BINDIR=bin
@@ -89,6 +90,12 @@ OBJSLOG=$(patsubst $(LOGDIR)/%.cc, $(BUILDDIR)/%.o, $(SRCSLOG))
 
 SRCSEWS=$(EWSDIR)/easywsclient.cpp
 OBJSEWS=$(BUILDDIR)/easywsclient.o
+
+ifeq ($(strip $(arch)),win)
+SRCSESC=$(ESCDIR)/escapi.cpp
+OBJSESC=$(BUILDDIR)/escapi.o
+LFLAGS+=-L./depend/escapi3/bin/x64/ -l:escapi.dll
+endif
 
 all:
 	@$(MAKE) --no-print-directory $(NAME)
@@ -109,8 +116,8 @@ pre:
 	@./tool/generate.sh ON
 	@./tool/codepoint.sh
 
-$(NAME): $(OBJS) $(OBJSLOG) $(OBJSEWS)
-	$(CXX) $(CFLAGSSTD) -o $(NAME) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(LFLAGS)
+$(NAME): $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSESC)
+	$(CXX) $(CFLAGSSTD) -o $(NAME) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSESC) $(LFLAGS)
 
 $(OBJS): $(BUILDDIR)/%.o: $(SRCDIR)/%.cc
 	$(CXX) $(CFLAGS) $(DFLAGS) -o $@ -c $<
@@ -120,6 +127,9 @@ $(OBJSLOG): $(BUILDDIR)/%.o: $(LOGDIR)/%.cc
 
 $(OBJSEWS): 
 	$(CXX) $(CFLAGS) -Wno-unused-parameter -o $(OBJSEWS) -c $(SRCSEWS) 
+
+$(OBJSESC): 
+	$(CXX) $(CFLAGS) -Wno-unused-parameter -Wno-cast-function-type -o $(OBJSESC) -c $(SRCSESC) 
 
 clean:
 	@echo

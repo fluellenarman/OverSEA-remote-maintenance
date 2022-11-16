@@ -3,6 +3,7 @@
 #include "../depend/raylib/src/raylib.h"
 //#include "../depend/opencv/include/opencv2/opencv.hpp"
 #include "../depend/easywsclient/easywsclient.hpp"
+#include "../depend/escapi3/escapi.h"
 #else
 #include <raylib.h>
 #include <opencv4/opencv2/opencv.hpp>
@@ -51,6 +52,14 @@ int main() {
   using easywsclient::WebSocket;
   WebSocket::pointer ws = WebSocket::from_url("ws://localhost:8126/foo");
 
+  int devices = 0;
+  #if defined (DEPEND_CROSS)
+  devices = setupESCAPI();
+
+  if (devices == 0) {
+    logW(LL_WARN, "ESCAPI initialization failure or no devices found");
+  }
+  #endif
 
   SetTraceLogLevel(LOG_ERROR);
   InitWindow(window_w, window_h, window_title.c_str());
@@ -66,6 +75,7 @@ int main() {
 
   while (!WindowShouldClose()) {
 
+    logQ(devices);
     ctr.beginRender();
 
     switch(current_scene) {
