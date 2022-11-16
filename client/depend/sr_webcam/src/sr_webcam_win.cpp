@@ -6,6 +6,7 @@
 #	include <mfapi.h>
 
 #	include <mfplay.h>
+#	include <mfidl.h>
 #	include <mfreadwrite.h>
 #	include <mferror.h>
 #	include <cmath>
