@@ -30,7 +30,7 @@ LFLAGS+=$(LD) -lraylib
 LFLAGS+=$(shell pkg-config --libs opencv4)
 else ifeq ($(strip $(arch)),win)
 LFLAGS+=-static -static-libgcc -static-libstdc++ -L./depend/raylib/src -lraylib
-LFLAGS+=-lwinmm -lcomdlg32 -lgdi32
+LFLAGS+=-lwinmm -lcomdlg32 -lgdi32 -lws2_32
 
 ifeq ($(strip $(cv)), on)
 CFLAGS+=-I./depend/opencv-build/install/include/opencv4/
@@ -68,9 +68,12 @@ endif
 
 endif
 
+CFLAGS+=-I./depend/websocketpp/
+
 #PREREQ_DIR=@mkdir -p $(@D)
 
 LOGDIR=depend/logq/src
+EWSDIR=depend/easywsclient
 SRCDIR=src
 BUILDDIR=build
 BINDIR=bin
@@ -83,6 +86,9 @@ OBJS=$(patsubst $(SRCDIR)/%.cc, $(BUILDDIR)/%.o, $(SRCS))
 
 SRCSLOG=$(wildcard $(LOGDIR)/*.cc)
 OBJSLOG=$(patsubst $(LOGDIR)/%.cc, $(BUILDDIR)/%.o, $(SRCSLOG))
+
+SRCSEWS=$(EWSDIR)/easywsclient.cpp
+OBJSEWS=$(BUILDDIR)/easywsclient.o
 
 all:
 	@$(MAKE) --no-print-directory $(NAME)
@@ -103,14 +109,17 @@ pre:
 	@./tool/generate.sh ON
 	@./tool/codepoint.sh
 
-$(NAME): $(OBJS) $(OBJSLOG)
-	$(CXX) $(CFLAGSSTD) -o $(NAME) $(OBJS) $(OBJSLOG) $(LFLAGS)
+$(NAME): $(OBJS) $(OBJSLOG) $(OBJSEWS)
+	$(CXX) $(CFLAGSSTD) -o $(NAME) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(LFLAGS)
 
 $(OBJS): $(BUILDDIR)/%.o: $(SRCDIR)/%.cc
 	$(CXX) $(CFLAGS) $(DFLAGS) -o $@ -c $<
 
 $(OBJSLOG): $(BUILDDIR)/%.o: $(LOGDIR)/%.cc
 	$(CXX) $(CFLAGSLOG) -o $@ -c $< 
+
+$(OBJSEWS): 
+	$(CXX) $(CFLAGS) -Wno-unused-parameter -o $(OBJSEWS) -c $(SRCSEWS) 
 
 clean:
 	@echo

@@ -230,10 +230,10 @@ Call Stack (most recent call first):
 -- Found 'gapi' Python modules from /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/modules/gapi/misc/python/package
 -- 
 -- General configuration for OpenCV 4.6.0 =====================================
---   Version control:               f82b5228-dirty
+--   Version control:               f56fbcf5-dirty
 -- 
 --   Platform:
---     Timestamp:                   2022-11-09T01:43:11Z
+--     Timestamp:                   2022-11-11T17:06:48Z
 --     Host:                        Linux 5.19.8-arch1-1 x86_64
 --     Target:                      Windows
 --     CMake:                       3.24.2

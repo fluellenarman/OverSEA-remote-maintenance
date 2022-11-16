@@ -1331,11 +1331,11 @@ CPACK_INSTALLED_DIRECTORIES=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 CPACK_INSTALL_CMAKE_PROJECTS=
 CPACK_INSTALL_PREFIX=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install
 CPACK_MODULE_PATH=
-CPACK_NSIS_DISPLAY_NAME=OpenCV f82b5228-dirty
+CPACK_NSIS_DISPLAY_NAME=OpenCV f56fbcf5-dirty
 CPACK_NSIS_INSTALLER_ICON_CODE=
 CPACK_NSIS_INSTALLER_MUI_ICON_CODE=
 CPACK_NSIS_INSTALL_ROOT=$PROGRAMFILES64
-CPACK_NSIS_PACKAGE_NAME=OpenCV f82b5228-dirty
+CPACK_NSIS_PACKAGE_NAME=OpenCV f56fbcf5-dirty
 CPACK_NSIS_UNINSTALL_NAME=Uninstall
 CPACK_OUTPUT_CONFIG_FILE=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CPackConfig.cmake
 CPACK_PACKAGE_CONTACT=admin@opencv.org
@@ -1347,13 +1347,13 @@ machine perception in the commercial products. Being a BSD-licensed product,
 OpenCV makes it easy for businesses to utilize and modify the code.
 CPACK_PACKAGE_DESCRIPTION_FILE=/usr/share/cmake/Templates/CPack.GenericDescription.txt
 CPACK_PACKAGE_DESCRIPTION_SUMMARY=Open Computer Vision Library
-CPACK_PACKAGE_FILE_NAME=OpenCV-f82b5228-dirty-
-CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV f82b5228-dirty
-CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV f82b5228-dirty
+CPACK_PACKAGE_FILE_NAME=OpenCV-f56fbcf5-dirty-
+CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV f56fbcf5-dirty
+CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV f56fbcf5-dirty
 CPACK_PACKAGE_NAME=OpenCV
 CPACK_PACKAGE_RELOCATABLE=true
 CPACK_PACKAGE_VENDOR=OpenCV Foundation
-CPACK_PACKAGE_VERSION=f82b5228-dirty
+CPACK_PACKAGE_VERSION=f56fbcf5-dirty
 CPACK_PACKAGE_VERSION_MAJOR=4
 CPACK_PACKAGE_VERSION_MINOR=6
 CPACK_PACKAGE_VERSION_PATCH=0
@@ -1376,7 +1376,7 @@ CPACK_SOURCE_GENERATOR=7Z;ZIP
 CPACK_SOURCE_IGNORE_FILES=/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#
 CPACK_SOURCE_INSTALLED_DIRECTORIES=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv;/
 CPACK_SOURCE_OUTPUT_CONFIG_FILE=/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CPackSourceConfig.cmake
-CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-f82b5228-dirty-
+CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-f56fbcf5-dirty-
 CPACK_SOURCE_TOPLEVEL_TAG=win64-Source
 CPACK_SOURCE_ZIP=ON
 CPACK_STRIP_FILES=
@@ -2656,9 +2656,9 @@ OPENCV_SOVERSION=406
 OPENCV_SUPPRESS_DEPRECATIONS=1
 OPENCV_TEST_DATA_INSTALL_PATH=share/opencv4/testdata
 OPENCV_TEST_INSTALL_PATH=bin
-OPENCV_TIMESTAMP=2022-11-09T01:43:11Z
+OPENCV_TIMESTAMP=2022-11-11T17:06:48Z
 OPENCV_TRACE=1
-OPENCV_VCSVERSION=f82b5228-dirty
+OPENCV_VCSVERSION=f56fbcf5-dirty
 OPENCV_VERIFICATIONS=WITH_1394;WITH_AVFOUNDATION;WITH_CAP_IOS;WITH_CPUFEATURES;WITH_VTK;WITH_CUDA;WITH_CUFFT;WITH_CUBLAS;WITH_CUDNN;WITH_NVCUVID;WITH_EIGEN;WITH_FFMPEG;WITH_GSTREAMER;WITH_GTK;WITH_GTK_2_X;WITH_IPP;WITH_HALIDE;WITH_VULKAN;WITH_OPENVINO;WITH_WEBNN;WITH_JASPER;WITH_OPENJPEG;WITH_JPEG;WITH_WEBP;WITH_OPENEXR;WITH_OPENGL;WITH_OPENVX;WITH_OPENNI;WITH_OPENNI2;WITH_PNG;WITH_GDCM;WITH_PVAPI;WITH_ARAVIS;WITH_QT;WITH_WIN32UI;WITH_TBB;WITH_HPX;WITH_OPENMP;WITH_PTHREADS_PF;WITH_TIFF;WITH_V4L;WITH_DSHOW;WITH_MSMF;WITH_MSMF_DXVA;WITH_XIMEA;WITH_UEYE;WITH_XINE;WITH_CLP;WITH_OPENCL;WITH_OPENCL_SVM;WITH_OPENCLAMDFFT;WITH_OPENCLAMDBLAS;WITH_DIRECTX;WITH_OPENCL_D3D11_NV;WITH_LIBREALSENSE;WITH_VA;WITH_VA_INTEL;WITH_MFX;WITH_GDAL;WITH_GPHOTO2;WITH_LAPACK;WITH_ITT;WITH_PROTOBUF;WITH_IMGCODEC_HDR;WITH_IMGCODEC_SUNRASTER;WITH_IMGCODEC_PXM;WITH_IMGCODEC_PFM;WITH_QUIRC;WITH_ANDROID_MEDIANDK;WITH_ANDROID_NATIVE_CAMERA;WITH_TENGINE;WITH_ONNX;WITH_TIMVX
 OPENCV_VERIFY_WITH_1394=HAVE_DC1394_2
 OPENCV_VERIFY_WITH_ANDROID_MEDIANDK=HAVE_ANDROID_MEDIANDK
@@ -2756,21 +2756,21 @@ OPENMP_FOUND=TRUE
 OPT=
 OUTPUT=Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d49b/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_7d49b.dir/build.make CMakeFiles/cmTC_7d49b.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fc8f1/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_fc8f1.dir/build.make CMakeFiles/cmTC_fc8f1.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d49b.dir/CheckSymbolExists.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_7d49b.dir/CheckSymbolExists.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_7d49b.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d49b.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_7d49b.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_7d49b.dir/objects.a @CMakeFiles/cmTC_7d49b.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_7d49b.dir/objects.a -Wl,--no-whole-archive -o cmTC_7d49b.exe -Wl,--out-implib,libcmTC_7d49b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7d49b.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_fc8f1.dir/CheckSymbolExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_fc8f1.dir/CheckSymbolExists.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fc8f1.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc8f1.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_fc8f1.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_fc8f1.dir/objects.a @CMakeFiles/cmTC_fc8f1.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_fc8f1.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc8f1.exe -Wl,--out-implib,libcmTC_fc8f1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fc8f1.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
 
-OUTPUT_LINES=Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp;;Run Build Command(s):/usr/bin/make -f Makefile cmTC_f579b/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';/usr/bin/make  -f CMakeFiles/cmTC_f579b.dir/build.make CMakeFiles/cmTC_f579b.dir/build;make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';Building C object CMakeFiles/cmTC_f579b.dir/src.c.obj;/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_f579b.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c;cc1: warning: command-line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas];    1 | #pragma;      | ;Linking C executable cmTC_f579b.exe;/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f579b.dir/link.txt --verbose=1;/usr/bin/cmake -E rm -f CMakeFiles/cmTC_f579b.dir/objects.a;/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_f579b.dir/objects.a @CMakeFiles/cmTC_f579b.dir/objects1.rsp;/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_f579b.dir/objects.a -Wl,--no-whole-archive -o cmTC_f579b.exe -Wl,--out-implib,libcmTC_f579b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f579b.dir/linklibs.rsp;make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';;
+OUTPUT_LINES=Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp;;Run Build Command(s):/usr/bin/make -f Makefile cmTC_8caf4/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';/usr/bin/make  -f CMakeFiles/cmTC_8caf4.dir/build.make CMakeFiles/cmTC_8caf4.dir/build;make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';Building C object CMakeFiles/cmTC_8caf4.dir/src.c.obj;/usr/bin/x86_64-w64-mingw32-gcc   -O3 -DNDEBUG    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_8caf4.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c;cc1: warning: command-line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C;/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring ‘#pragma  ’ [-Wunknown-pragmas];    1 | #pragma;      | ;Linking C executable cmTC_8caf4.exe;/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8caf4.dir/link.txt --verbose=1;/usr/bin/cmake -E rm -f CMakeFiles/cmTC_8caf4.dir/objects.a;/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_8caf4.dir/objects.a @CMakeFiles/cmTC_8caf4.dir/objects1.rsp;/usr/bin/x86_64-w64-mingw32-gcc -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/cmTC_8caf4.dir/objects.a -Wl,--no-whole-archive -o cmTC_8caf4.exe -Wl,--out-implib,libcmTC_8caf4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_8caf4.dir/linklibs.rsp;make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp';;
 OpenBLAS=
 OpenBLAS_FOUND=OFF
 OpenBLAS_INCLUDE_DIR=/usr/include
@@ -2890,24 +2890,24 @@ THREAD=
 THREADS_FOUND=TRUE
 TRY_OUT=Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_66475/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_66475.dir/build.make CMakeFiles/cmTC_66475.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ac1f9/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_ac1f9.dir/build.make CMakeFiles/cmTC_ac1f9.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_66475.dir/directx.cpp.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_66475.dir/directx.cpp.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/cmake/checks/directx.cpp
+Building CXX object CMakeFiles/cmTC_ac1f9.dir/directx.cpp.obj
+/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_ac1f9.dir/directx.cpp.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/cmake/checks/directx.cpp
 /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv/cmake/checks/directx.cpp:4: warning: ignoring ‘#pragma comment ’ [-Wunknown-pragmas]
     4 | #pragma comment (lib, "d3d11.lib")
       | 
-Linking CXX executable cmTC_66475.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66475.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_66475.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_66475.dir/objects.a @CMakeFiles/cmTC_66475.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_66475.dir/objects.a -Wl,--no-whole-archive -o cmTC_66475.exe -Wl,--out-implib,libcmTC_66475.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_66475.dir/linklibs.rsp
-/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/cmTC_66475.dir/objects.a(directx.cpp.obj):directx.cpp:(.text.startup.main+0x119): undefined reference to `D3D11CreateDeviceAndSwapChain'
+Linking CXX executable cmTC_ac1f9.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac1f9.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_ac1f9.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_ac1f9.dir/objects.a @CMakeFiles/cmTC_ac1f9.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_ac1f9.dir/objects.a -Wl,--no-whole-archive -o cmTC_ac1f9.exe -Wl,--out-implib,libcmTC_ac1f9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_ac1f9.dir/linklibs.rsp
+/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/cmTC_ac1f9.dir/objects.a(directx.cpp.obj):directx.cpp:(.text.startup.main+0x119): undefined reference to `D3D11CreateDeviceAndSwapChain'
 collect2: error: ld returned 1 exit status
-make[2]: *** [CMakeFiles/cmTC_66475.dir/build.make:101: cmTC_66475.exe] Error 1
+make[2]: *** [CMakeFiles/cmTC_ac1f9.dir/build.make:101: cmTC_ac1f9.exe] Error 1
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-make[1]: *** [Makefile:127: cmTC_66475/fast] Error 2
+make[1]: *** [Makefile:127: cmTC_ac1f9/fast] Error 2
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
 
@@ -3071,11 +3071,11 @@ set(CPACK_INSTALLED_DIRECTORIES "/home/tsu/saki/notes/cs189a/OverSEA-remote-main
 set(CPACK_INSTALL_CMAKE_PROJECTS "")
 set(CPACK_INSTALL_PREFIX "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/install")
 set(CPACK_MODULE_PATH "")
-set(CPACK_NSIS_DISPLAY_NAME "OpenCV f82b5228-dirty")
+set(CPACK_NSIS_DISPLAY_NAME "OpenCV f56fbcf5-dirty")
 set(CPACK_NSIS_INSTALLER_ICON_CODE "")
 set(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
 set(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES64")
-set(CPACK_NSIS_PACKAGE_NAME "OpenCV f82b5228-dirty")
+set(CPACK_NSIS_PACKAGE_NAME "OpenCV f56fbcf5-dirty")
 set(CPACK_NSIS_UNINSTALL_NAME "Uninstall")
 set(CPACK_OUTPUT_CONFIG_FILE "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CPackConfig.cmake")
 set(CPACK_PACKAGE_CONTACT "admin@opencv.org")
@@ -3087,13 +3087,13 @@ machine perception in the commercial products. Being a BSD-licensed product,
 OpenCV makes it easy for businesses to utilize and modify the code.")
 set(CPACK_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake/Templates/CPack.GenericDescription.txt")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Open Computer Vision Library")
-set(CPACK_PACKAGE_FILE_NAME "OpenCV-f82b5228-dirty-")
-set(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV f82b5228-dirty")
-set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV f82b5228-dirty")
+set(CPACK_PACKAGE_FILE_NAME "OpenCV-f56fbcf5-dirty-")
+set(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV f56fbcf5-dirty")
+set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV f56fbcf5-dirty")
 set(CPACK_PACKAGE_NAME "OpenCV")
 set(CPACK_PACKAGE_RELOCATABLE "true")
 set(CPACK_PACKAGE_VENDOR "OpenCV Foundation")
-set(CPACK_PACKAGE_VERSION "f82b5228-dirty")
+set(CPACK_PACKAGE_VERSION "f56fbcf5-dirty")
 set(CPACK_PACKAGE_VERSION_MAJOR "4")
 set(CPACK_PACKAGE_VERSION_MINOR "6")
 set(CPACK_PACKAGE_VERSION_PATCH "0")
@@ -3116,7 +3116,7 @@ set(CPACK_SOURCE_GENERATOR "7Z;ZIP")
 set(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
 set(CPACK_SOURCE_INSTALLED_DIRECTORIES "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv;/")
 set(CPACK_SOURCE_OUTPUT_CONFIG_FILE "/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CPackSourceConfig.cmake")
-set(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-f82b5228-dirty-")
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-f56fbcf5-dirty-")
 set(CPACK_SOURCE_TOPLEVEL_TAG "win64-Source")
 set(CPACK_SOURCE_ZIP "ON")
 set(CPACK_STRIP_FILES "")

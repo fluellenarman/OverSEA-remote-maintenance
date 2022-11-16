@@ -29,11 +29,11 @@ The C compiler identification is GNU, found in "/home/tsu/saki/notes/cs189a/Over
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d8df/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_2d8df.dir/build.make CMakeFiles/cmTC_2d8df.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_72783/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_72783.dir/build.make CMakeFiles/cmTC_72783.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj
-/usr/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++
 Target: x86_64-w64-mingw32
@@ -41,8 +41,8 @@ Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecd
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d8df.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2d8df.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccf5JZ8b.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72783.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_72783.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccmxMqs3.s
 GNU C++17 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.25-GMP
 
@@ -62,17 +62,17 @@ GNU C++17 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: b97c0459bd38c5dd6251a7971ac45623
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d8df.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccf5JZ8b.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72783.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccmxMqs3.s
 GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_2d8df.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d8df.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_2d8df.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_2d8df.dir/objects.a @CMakeFiles/cmTC_2d8df.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++  -v -Wl,--whole-archive CMakeFiles/cmTC_2d8df.dir/objects.a -Wl,--no-whole-archive -o cmTC_2d8df.exe -Wl,--out-implib,libcmTC_2d8df.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_72783.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72783.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_72783.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_72783.dir/objects.a @CMakeFiles/cmTC_72783.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++  -v -Wl,--whole-archive CMakeFiles/cmTC_72783.dir/objects.a -Wl,--no-whole-archive -o cmTC_72783.exe -Wl,--out-implib,libcmTC_72783.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper
@@ -83,9 +83,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.0 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2d8df.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2d8df.'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIJR4UR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2d8df.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_2d8df.dir/objects.a --no-whole-archive --out-implib libcmTC_2d8df.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2d8df.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2d8df.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_72783.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_72783.'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaiafbg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_72783.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_72783.dir/objects.a --no-whole-archive --out-implib libcmTC_72783.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_72783.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_72783.'
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -114,11 +114,11 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-w64-mingw32-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d8df/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_2d8df.dir/build.make CMakeFiles/cmTC_2d8df.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_72783/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_72783.dir/build.make CMakeFiles/cmTC_72783.dir/build]
   ignore line: [make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-g++   -v -o CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++]
   ignore line: [Target: x86_64-w64-mingw32]
@@ -126,8 +126,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d8df.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_2d8df.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccf5JZ8b.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72783.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_72783.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccmxMqs3.s]
   ignore line: [GNU C++17 (GCC) version 12.2.0 (x86_64-w64-mingw32)]
   ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.25-GMP]
   ignore line: []
@@ -147,17 +147,17 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: b97c0459bd38c5dd6251a7971ac45623]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d8df.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccf5JZ8b.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72783.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccmxMqs3.s]
   ignore line: [GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2d8df.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_2d8df.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d8df.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_2d8df.dir/objects.a]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_2d8df.dir/objects.a @CMakeFiles/cmTC_2d8df.dir/objects1.rsp]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-g++  -v -Wl --whole-archive CMakeFiles/cmTC_2d8df.dir/objects.a -Wl --no-whole-archive -o cmTC_2d8df.exe -Wl --out-implib libcmTC_2d8df.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_72783.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_72783.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72783.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_72783.dir/objects.a]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_72783.dir/objects.a @CMakeFiles/cmTC_72783.dir/objects1.rsp]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-g++  -v -Wl --whole-archive CMakeFiles/cmTC_72783.dir/objects.a -Wl --no-whole-archive -o cmTC_72783.exe -Wl --out-implib libcmTC_72783.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper]
@@ -168,13 +168,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 12.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2d8df.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2d8df.']
-  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIJR4UR.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2d8df.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_2d8df.dir/objects.a --no-whole-archive --out-implib libcmTC_2d8df.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_72783.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_72783.']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaiafbg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_72783.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_72783.dir/objects.a --no-whole-archive --out-implib libcmTC_72783.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccIJR4UR.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccaiafbg.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -198,17 +198,17 @@ Parsed CXX implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_2d8df.exe] ==> ignore
+    arg [cmTC_72783.exe] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_2d8df.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_72783.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_2d8df.dll.a] ==> ignore
+    arg [libcmTC_72783.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -249,11 +249,11 @@ Parsed CXX implicit link information from above output:
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_41aa9/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_41aa9.dir/build.make CMakeFiles/cmTC_41aa9.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b34dc/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_b34dc.dir/build.make CMakeFiles/cmTC_b34dc.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
 Target: x86_64-w64-mingw32
@@ -261,8 +261,8 @@ Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecd
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_41aa9.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_41aa9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccVdsgLZ.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b34dc.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b34dc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjsNaGl.s
 GNU C17 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.25-GMP
 
@@ -279,17 +279,17 @@ GNU C17 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: a439a4b6b1c3072966986d393b429811
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_41aa9.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj /tmp/ccVdsgLZ.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b34dc.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj /tmp/ccjsNaGl.s
 GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_41aa9.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41aa9.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_41aa9.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_41aa9.dir/objects.a @CMakeFiles/cmTC_41aa9.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc  -v -Wl,--whole-archive CMakeFiles/cmTC_41aa9.dir/objects.a -Wl,--no-whole-archive -o cmTC_41aa9.exe -Wl,--out-implib,libcmTC_41aa9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_b34dc.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b34dc.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_b34dc.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_b34dc.dir/objects.a @CMakeFiles/cmTC_b34dc.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc  -v -Wl,--whole-archive CMakeFiles/cmTC_b34dc.dir/objects.a -Wl,--no-whole-archive -o cmTC_b34dc.exe -Wl,--out-implib,libcmTC_b34dc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper
@@ -300,9 +300,9 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.0 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_41aa9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_41aa9.'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs63QIs.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_41aa9.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_41aa9.dir/objects.a --no-whole-archive --out-implib libcmTC_41aa9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_41aa9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_41aa9.'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b34dc.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b34dc.'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccW5VCm8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b34dc.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_b34dc.dir/objects.a --no-whole-archive --out-implib libcmTC_b34dc.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b34dc.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b34dc.'
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -325,11 +325,11 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-w64-mingw32-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_41aa9/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_41aa9.dir/build.make CMakeFiles/cmTC_41aa9.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_b34dc/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b34dc.dir/build.make CMakeFiles/cmTC_b34dc.dir/build]
   ignore line: [make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc   -v -o CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc]
   ignore line: [Target: x86_64-w64-mingw32]
@@ -337,8 +337,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_41aa9.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_41aa9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccVdsgLZ.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b34dc.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b34dc.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjsNaGl.s]
   ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-w64-mingw32)]
   ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.25-GMP]
   ignore line: []
@@ -355,17 +355,17 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: a439a4b6b1c3072966986d393b429811]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_41aa9.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj /tmp/ccVdsgLZ.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b34dc.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj /tmp/ccjsNaGl.s]
   ignore line: [GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_41aa9.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_41aa9.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41aa9.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_41aa9.dir/objects.a]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_41aa9.dir/objects.a @CMakeFiles/cmTC_41aa9.dir/objects1.rsp]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc  -v -Wl --whole-archive CMakeFiles/cmTC_41aa9.dir/objects.a -Wl --no-whole-archive -o cmTC_41aa9.exe -Wl --out-implib libcmTC_41aa9.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b34dc.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_b34dc.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b34dc.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_b34dc.dir/objects.a]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_b34dc.dir/objects.a @CMakeFiles/cmTC_b34dc.dir/objects1.rsp]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc  -v -Wl --whole-archive CMakeFiles/cmTC_b34dc.dir/objects.a -Wl --no-whole-archive -o cmTC_b34dc.exe -Wl --out-implib libcmTC_b34dc.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper]
@@ -376,13 +376,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 12.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_41aa9.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_41aa9.']
-  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs63QIs.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_41aa9.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_41aa9.dir/objects.a --no-whole-archive --out-implib libcmTC_41aa9.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b34dc.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b34dc.']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccW5VCm8.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_b34dc.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib --whole-archive CMakeFiles/cmTC_b34dc.dir/objects.a --no-whole-archive --out-implib libcmTC_b34dc.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccs63QIs.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccW5VCm8.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -406,17 +406,17 @@ Parsed C implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_41aa9.exe] ==> ignore
+    arg [cmTC_b34dc.exe] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_41aa9.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_b34dc.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_41aa9.dll.a] ==> ignore
+    arg [libcmTC_b34dc.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -458,16 +458,16 @@ Parsed C implicit link information from above output:
 Determining if the include file malloc.h exists passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_957d5/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_957d5.dir/build.make CMakeFiles/cmTC_957d5.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ddbc7/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_ddbc7.dir/build.make CMakeFiles/cmTC_ddbc7.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_957d5.dir/CheckIncludeFile.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_957d5.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_957d5.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_957d5.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_957d5.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_957d5.dir/objects.a @CMakeFiles/cmTC_957d5.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_957d5.dir/objects.a -Wl,--no-whole-archive -o cmTC_957d5.exe -Wl,--out-implib,libcmTC_957d5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_957d5.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_ddbc7.dir/CheckIncludeFile.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_ddbc7.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ddbc7.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddbc7.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_ddbc7.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_ddbc7.dir/objects.a @CMakeFiles/cmTC_ddbc7.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_ddbc7.dir/objects.a -Wl,--no-whole-archive -o cmTC_ddbc7.exe -Wl,--out-implib,libcmTC_ddbc7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_ddbc7.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -476,16 +476,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining if the _aligned_malloc exist passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d49b/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_7d49b.dir/build.make CMakeFiles/cmTC_7d49b.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fc8f1/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_fc8f1.dir/build.make CMakeFiles/cmTC_fc8f1.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d49b.dir/CheckSymbolExists.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_7d49b.dir/CheckSymbolExists.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_7d49b.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d49b.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_7d49b.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_7d49b.dir/objects.a @CMakeFiles/cmTC_7d49b.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_7d49b.dir/objects.a -Wl,--no-whole-archive -o cmTC_7d49b.exe -Wl,--out-implib,libcmTC_7d49b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7d49b.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_fc8f1.dir/CheckSymbolExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_fc8f1.dir/CheckSymbolExists.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fc8f1.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc8f1.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_fc8f1.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_fc8f1.dir/objects.a @CMakeFiles/cmTC_fc8f1.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_fc8f1.dir/objects.a -Wl,--no-whole-archive -o cmTC_fc8f1.exe -Wl,--out-implib,libcmTC_fc8f1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fc8f1.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -507,16 +507,16 @@ int main(int argc, char** argv)
 Determining if the function fseeko exists passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_672ce/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_672ce.dir/build.make CMakeFiles/cmTC_672ce.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa885/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_aa885.dir/build.make CMakeFiles/cmTC_aa885.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_672ce.dir/CheckFunctionExists.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_672ce.dir/CheckFunctionExists.c.obj -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_672ce.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_672ce.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_672ce.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_672ce.dir/objects.a @CMakeFiles/cmTC_672ce.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_672ce.dir/objects.a -Wl,--no-whole-archive -o cmTC_672ce.exe -Wl,--out-implib,libcmTC_672ce.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_672ce.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_aa885.dir/CheckFunctionExists.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_aa885.dir/CheckFunctionExists.c.obj -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aa885.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa885.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_aa885.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_aa885.dir/objects.a @CMakeFiles/cmTC_aa885.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_aa885.dir/objects.a -Wl,--no-whole-archive -o cmTC_aa885.exe -Wl,--out-implib,libcmTC_aa885.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_aa885.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -525,16 +525,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e9889/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_e9889.dir/build.make CMakeFiles/cmTC_e9889.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fd0ce/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_fd0ce.dir/build.make CMakeFiles/cmTC_fd0ce.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e9889.dir/CheckIncludeFile.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_e9889.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_e9889.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9889.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_e9889.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_e9889.dir/objects.a @CMakeFiles/cmTC_e9889.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_e9889.dir/objects.a -Wl,--no-whole-archive -o cmTC_e9889.exe -Wl,--out-implib,libcmTC_e9889.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e9889.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_fd0ce.dir/CheckIncludeFile.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_fd0ce.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fd0ce.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd0ce.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_fd0ce.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_fd0ce.dir/objects.a @CMakeFiles/cmTC_fd0ce.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_fd0ce.dir/objects.a -Wl,--no-whole-archive -o cmTC_fd0ce.exe -Wl,--out-implib,libcmTC_fd0ce.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fd0ce.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -543,16 +543,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa03a/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_fa03a.dir/build.make CMakeFiles/cmTC_fa03a.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_68ea8/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_68ea8.dir/build.make CMakeFiles/cmTC_68ea8.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fa03a.dir/CheckIncludeFile.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_fa03a.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_fa03a.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa03a.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_fa03a.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_fa03a.dir/objects.a @CMakeFiles/cmTC_fa03a.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_fa03a.dir/objects.a -Wl,--no-whole-archive -o cmTC_fa03a.exe -Wl,--out-implib,libcmTC_fa03a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fa03a.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_68ea8.dir/CheckIncludeFile.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_68ea8.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_68ea8.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68ea8.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_68ea8.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_68ea8.dir/objects.a @CMakeFiles/cmTC_68ea8.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_68ea8.dir/objects.a -Wl,--no-whole-archive -o cmTC_68ea8.exe -Wl,--out-implib,libcmTC_68ea8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_68ea8.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -561,16 +561,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2e98e/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_2e98e.dir/build.make CMakeFiles/cmTC_2e98e.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f5cef/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_f5cef.dir/build.make CMakeFiles/cmTC_f5cef.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2e98e.dir/CheckIncludeFile.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_2e98e.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_2e98e.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e98e.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_2e98e.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_2e98e.dir/objects.a @CMakeFiles/cmTC_2e98e.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_2e98e.dir/objects.a -Wl,--no-whole-archive -o cmTC_2e98e.exe -Wl,--out-implib,libcmTC_2e98e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2e98e.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_f5cef.dir/CheckIncludeFile.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_f5cef.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f5cef.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5cef.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_f5cef.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_f5cef.dir/objects.a @CMakeFiles/cmTC_f5cef.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_f5cef.dir/objects.a -Wl,--no-whole-archive -o cmTC_f5cef.exe -Wl,--out-implib,libcmTC_f5cef.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f5cef.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -579,16 +579,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining if the include file stddef.h exists passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_e9193/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_e9193.dir/build.make CMakeFiles/cmTC_e9193.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2f516/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_2f516.dir/build.make CMakeFiles/cmTC_2f516.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e9193.dir/CheckIncludeFile.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_e9193.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_e9193.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9193.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_e9193.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_e9193.dir/objects.a @CMakeFiles/cmTC_e9193.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_e9193.dir/objects.a -Wl,--no-whole-archive -o cmTC_e9193.exe -Wl,--out-implib,libcmTC_e9193.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e9193.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_2f516.dir/CheckIncludeFile.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_2f516.dir/CheckIncludeFile.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2f516.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f516.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_2f516.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_2f516.dir/objects.a @CMakeFiles/cmTC_2f516.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_2f516.dir/objects.a -Wl,--no-whole-archive -o cmTC_2f516.exe -Wl,--out-implib,libcmTC_2f516.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2f516.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -597,16 +597,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Determining size of off64_t passed with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_1303c/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_1303c.dir/build.make CMakeFiles/cmTC_1303c.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cb1ca/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_cb1ca.dir/build.make CMakeFiles/cmTC_cb1ca.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1303c.dir/OFF64_T.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_1303c.dir/OFF64_T.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CheckTypeSize/OFF64_T.c
-Linking C executable cmTC_1303c.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1303c.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_1303c.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_1303c.dir/objects.a @CMakeFiles/cmTC_1303c.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_1303c.dir/objects.a -Wl,--no-whole-archive -o cmTC_1303c.exe -Wl,--out-implib,libcmTC_1303c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_1303c.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_cb1ca.dir/OFF64_T.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_cb1ca.dir/OFF64_T.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CheckTypeSize/OFF64_T.c
+Linking C executable cmTC_cb1ca.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb1ca.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_cb1ca.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_cb1ca.dir/objects.a @CMakeFiles/cmTC_cb1ca.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_cb1ca.dir/objects.a -Wl,--no-whole-archive -o cmTC_cb1ca.exe -Wl,--out-implib,libcmTC_cb1ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_cb1ca.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -615,16 +615,16 @@ make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenan
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_a07e6/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_a07e6.dir/build.make CMakeFiles/cmTC_a07e6.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_80836/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_80836.dir/build.make CMakeFiles/cmTC_80836.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a07e6.dir/src.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_a07e6.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_a07e6.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a07e6.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_a07e6.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_a07e6.dir/objects.a @CMakeFiles/cmTC_a07e6.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_a07e6.dir/objects.a -Wl,--no-whole-archive -o cmTC_a07e6.exe -Wl,--out-implib,libcmTC_a07e6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_a07e6.dir/linklibs.rsp
+Building C object CMakeFiles/cmTC_80836.dir/src.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_80836.dir/src.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_80836.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80836.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_80836.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_80836.dir/objects.a @CMakeFiles/cmTC_80836.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_80836.dir/objects.a -Wl,--no-whole-archive -o cmTC_80836.exe -Wl,--out-implib,libcmTC_80836.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_80836.dir/linklibs.rsp
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -653,11 +653,11 @@ int main(void)
 Detecting C OpenMP compiler ABI info compiled with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_96828/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_96828.dir/build.make CMakeFiles/cmTC_96828.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a8d7/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_4a8d7.dir/build.make CMakeFiles/cmTC_4a8d7.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj
-/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Building C object CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj
+/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
 Target: x86_64-w64-mingw32
@@ -665,8 +665,8 @@ Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecd
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_96828.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_96828.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fopenmp -o /tmp/ccq5gei0.s
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a8d7.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_4a8d7.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fopenmp -o /tmp/ccFDMji3.s
 GNU C17 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.25-GMP
 
@@ -683,17 +683,17 @@ GNU C17 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: a439a4b6b1c3072966986d393b429811
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_96828.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj /tmp/ccq5gei0.s
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a8d7.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj /tmp/ccFDMji3.s
 GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.'
-Linking C executable cmTC_96828.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96828.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_96828.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_96828.dir/objects.a @CMakeFiles/cmTC_96828.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_96828.dir/objects.a -Wl,--no-whole-archive -o cmTC_96828.exe -Wl,--out-implib,libcmTC_96828.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_96828.dir/linklibs.rsp
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.'
+Linking C executable cmTC_4a8d7.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a8d7.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_4a8d7.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_4a8d7.dir/objects.a @CMakeFiles/cmTC_4a8d7.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_4a8d7.dir/objects.a -Wl,--no-whole-archive -o cmTC_4a8d7.exe -Wl,--out-implib,libcmTC_4a8d7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_4a8d7.dir/linklibs.rsp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper
@@ -705,9 +705,9 @@ gcc version 12.2.0 (GCC)
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
 Reading specs from /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libgomp.spec
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_96828.exe' '-v' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_96828.'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWRu93o.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_96828.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/cc3bpOnw -lgomp -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_96828.exe' '-v' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_96828.'
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_4a8d7.exe' '-v' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_4a8d7.'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3JwEet.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4a8d7.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/ccajhlN2 -lgomp -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_4a8d7.exe' '-v' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_4a8d7.'
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -717,11 +717,11 @@ Parsed C OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-w64-mingw32-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_96828/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_96828.dir/build.make CMakeFiles/cmTC_96828.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a8d7/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_4a8d7.dir/build.make CMakeFiles/cmTC_4a8d7.dir/build]
   ignore line: [make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Building C object CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -o CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc]
   ignore line: [Target: x86_64-w64-mingw32]
@@ -729,8 +729,8 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_96828.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_96828.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fopenmp -o /tmp/ccq5gei0.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a8d7.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1 -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_4a8d7.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fopenmp -o /tmp/ccFDMji3.s]
   ignore line: [GNU C17 (GCC) version 12.2.0 (x86_64-w64-mingw32)]
   ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.25-GMP]
   ignore line: []
@@ -747,17 +747,17 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: a439a4b6b1c3072966986d393b429811]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_96828.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj /tmp/ccq5gei0.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a8d7.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj /tmp/ccFDMji3.s]
   ignore line: [GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_96828.dir/OpenMPTryFlag.c.']
-  ignore line: [Linking C executable cmTC_96828.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96828.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_96828.dir/objects.a]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_96828.dir/objects.a @CMakeFiles/cmTC_96828.dir/objects1.rsp]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl --gc-sections  -Wl --whole-archive CMakeFiles/cmTC_96828.dir/objects.a -Wl --no-whole-archive -o cmTC_96828.exe -Wl --out-implib libcmTC_96828.dll.a -Wl --major-image-version 0 --minor-image-version 0 @CMakeFiles/cmTC_96828.dir/linklibs.rsp]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_4a8d7.dir/OpenMPTryFlag.c.']
+  ignore line: [Linking C executable cmTC_4a8d7.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a8d7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_4a8d7.dir/objects.a]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_4a8d7.dir/objects.a @CMakeFiles/cmTC_4a8d7.dir/objects1.rsp]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-gcc    -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl --gc-sections  -Wl --whole-archive CMakeFiles/cmTC_4a8d7.dir/objects.a -Wl --no-whole-archive -o cmTC_4a8d7.exe -Wl --out-implib libcmTC_4a8d7.dll.a -Wl --major-image-version 0 --minor-image-version 0 @CMakeFiles/cmTC_4a8d7.dir/linklibs.rsp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper]
@@ -769,13 +769,13 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [Reading specs from /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_96828.exe' '-v' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_96828.']
-  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWRu93o.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_96828.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/cc3bpOnw -lgomp -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wmissing-prototypes' '-Wstrict-prototypes' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wuninitialized' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_4a8d7.exe' '-v' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_4a8d7.']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3JwEet.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4a8d7.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/ccajhlN2 -lgomp -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccWRu93o.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3JwEet.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingwthrd] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -801,11 +801,11 @@ Parsed C OpenMP implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_96828.exe] ==> ignore
+    arg [cmTC_4a8d7.exe] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib]
-    arg [@/tmp/cc3bpOnw] ==> ignore
+    arg [@/tmp/ccajhlN2] ==> ignore
     arg [-lgomp] ==> lib [gomp]
     arg [-lmingwthrd] ==> lib [mingwthrd]
     arg [-lmingw32] ==> lib [mingw32]
@@ -844,11 +844,11 @@ Parsed C OpenMP implicit link information from above output:
 Detecting CXX OpenMP compiler ABI info compiled with the following output:
 Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3ec00/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3ec00.dir/build.make CMakeFiles/cmTC_3ec00.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee221/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_ee221.dir/build.make CMakeFiles/cmTC_ee221.dir/build
 make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj
-/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Building CXX object CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj
+/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++
 Target: x86_64-w64-mingw32
@@ -856,8 +856,8 @@ Configured with: /build/mingw-w64-gcc/src/gcc/configure --prefix=/usr --libexecd
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.2.0 (GCC) 
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3ec00.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_3ec00.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -std=c++11 -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -o /tmp/ccfYxBLo.s
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee221.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_ee221.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -std=c++11 -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -o /tmp/ccW8oOYA.s
 GNU C++11 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.25-GMP
 
@@ -877,17 +877,17 @@ GNU C++11 (GCC) version 12.2.0 (x86_64-w64-mingw32)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: b97c0459bd38c5dd6251a7971ac45623
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3ec00.dir/'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj /tmp/ccfYxBLo.s
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee221.dir/'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj /tmp/ccW8oOYA.s
 GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.'
-Linking CXX executable cmTC_3ec00.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec00.dir/link.txt --verbose=1
-/usr/bin/cmake -E rm -f CMakeFiles/cmTC_3ec00.dir/objects.a
-/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_3ec00.dir/objects.a @CMakeFiles/cmTC_3ec00.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_3ec00.dir/objects.a -Wl,--no-whole-archive -o cmTC_3ec00.exe -Wl,--out-implib,libcmTC_3ec00.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3ec00.dir/linklibs.rsp
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.'
+Linking CXX executable cmTC_ee221.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee221.dir/link.txt --verbose=1
+/usr/bin/cmake -E rm -f CMakeFiles/cmTC_ee221.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_ee221.dir/objects.a @CMakeFiles/cmTC_ee221.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles/cmTC_ee221.dir/objects.a -Wl,--no-whole-archive -o cmTC_ee221.exe -Wl,--out-implib,libcmTC_ee221.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_ee221.dir/linklibs.rsp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper
@@ -899,9 +899,9 @@ gcc version 12.2.0 (GCC)
 COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/
 Reading specs from /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libgomp.spec
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_3ec00.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_3ec00.'
- /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGfY7J7.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_3ec00.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/ccZhB3T9 -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_3ec00.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_3ec00.'
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_ee221.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_ee221.'
+ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc05Flo6.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ee221.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/ccrJw8vn -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_ee221.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_ee221.'
 make[2]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 make[1]: Leaving directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp'
 
@@ -911,11 +911,11 @@ Parsed CXX OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-w64-mingw32-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_3ec00/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_3ec00.dir/build.make CMakeFiles/cmTC_3ec00.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_ee221/fast && make[1]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_ee221.dir/build.make CMakeFiles/cmTC_ee221.dir/build]
   ignore line: [make[2]: Entering directory '/home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-g++   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG -std=c++11 -o CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj -c /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++]
   ignore line: [Target: x86_64-w64-mingw32]
@@ -923,8 +923,8 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 12.2.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3ec00.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_3ec00.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -std=c++11 -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -o /tmp/ccfYxBLo.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee221.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/cc1plus -quiet -v -D_MT -D_REENTRANT -U_REENTRANT -D NDEBUG -D NDEBUG /home/tsu/saki/notes/cs189a/OverSEA-remote-maintenance/client/depend/opencv-build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_ee221.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mthreads -O3 -Wextra -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat=1 -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -std=c++11 -version -fsigned-char -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -o /tmp/ccW8oOYA.s]
   ignore line: [GNU C++11 (GCC) version 12.2.0 (x86_64-w64-mingw32)]
   ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.25-GMP]
   ignore line: []
@@ -944,17 +944,17 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: b97c0459bd38c5dd6251a7971ac45623]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3ec00.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj /tmp/ccfYxBLo.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee221.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/as -v -o CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj /tmp/ccW8oOYA.s]
   ignore line: [GNU assembler version 2.38 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3ec00.dir/OpenMPTryFlag.cpp.']
-  ignore line: [Linking CXX executable cmTC_3ec00.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec00.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_3ec00.dir/objects.a]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_3ec00.dir/objects.a @CMakeFiles/cmTC_3ec00.dir/objects1.rsp]
-  ignore line: [/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl --gc-sections  -Wl --whole-archive CMakeFiles/cmTC_3ec00.dir/objects.a -Wl --no-whole-archive -o cmTC_3ec00.exe -Wl --out-implib libcmTC_3ec00.dll.a -Wl --major-image-version 0 --minor-image-version 0 @CMakeFiles/cmTC_3ec00.dir/linklibs.rsp]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-std=c++11' '-o' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_ee221.dir/OpenMPTryFlag.cpp.']
+  ignore line: [Linking CXX executable cmTC_ee221.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee221.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E rm -f CMakeFiles/cmTC_ee221.dir/objects.a]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/cmTC_ee221.dir/objects.a @CMakeFiles/cmTC_ee221.dir/objects1.rsp]
+  ignore line: [/usr/bin/x86_64-w64-mingw32-g++    -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -fopenmp -v -O3 -DNDEBUG  -DNDEBUG   -Wl --gc-sections  -Wl --whole-archive CMakeFiles/cmTC_ee221.dir/objects.a -Wl --no-whole-archive -o cmTC_ee221.exe -Wl --out-implib libcmTC_ee221.dll.a -Wl --major-image-version 0 --minor-image-version 0 @CMakeFiles/cmTC_ee221.dir/linklibs.rsp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper]
@@ -966,13 +966,13 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/:/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [Reading specs from /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_3ec00.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_3ec00.']
-  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGfY7J7.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_3ec00.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/ccZhB3T9 -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fsigned-char' '-Wextra' '-Wall' '-Wreturn-type' '-Wnon-virtual-dtor' '-Waddress' '-Wsequence-point' '-Wformat=1' '-Wformat-security' '-Wmissing-declarations' '-Wundef' '-Winit-self' '-Wpointer-arith' '-Wshadow' '-Wsign-promo' '-Wuninitialized' '-Wsuggest-override' '-Wno-delete-non-virtual-dtor' '-Wno-comment' '-Wimplicit-fallthrough=3' '-Wno-strict-overflow' '-fdiagnostics-show-option' '-fomit-frame-pointer' '-ffunction-sections' '-fdata-sections' '-fvisibility=hidden' '-fvisibility-inlines-hidden' '-fopenmp' '-v' '-O3' '-D' 'NDEBUG' '-D' 'NDEBUG' '-o' 'cmTC_ee221.exe' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mthreads' '-pthread' '-dumpdir' 'cmTC_ee221.']
+  link line: [ /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2 -plugin /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc05Flo6.res -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingwthrd -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_ee221.exe /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0 -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib -L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib @/tmp/ccrJw8vn -lgomp -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingwthrd -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/x86_64-w64-mingw32/12.2.0/crtend.o]
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccGfY7J7.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc05Flo6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingwthrd] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
@@ -998,11 +998,11 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_3ec00.exe] ==> ignore
+    arg [cmTC_ee221.exe] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [/usr/lib/gcc/x86_64-w64-mingw32/12.2.0/../../../../x86_64-w64-mingw32/lib]
-    arg [@/tmp/ccZhB3T9] ==> ignore
+    arg [@/tmp/ccrJw8vn] ==> ignore
     arg [-lgomp] ==> lib [gomp]
     arg [-lmingwthrd] ==> lib [mingwthrd]
     arg [-lmingw32] ==> lib [mingw32]
