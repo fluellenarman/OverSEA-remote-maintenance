@@ -23,7 +23,9 @@ endif
 
 
 
-CFLAGS+=--std=c++20 -Wall -Wextra $(DEPDEF) -Og -g
+CFLAGS+=-Wall -Wextra $(DEPDEF) -Og -g
+
+CSTDFLAG=--std=c++20
 
 ifeq ($(strip $(arch)),)
 LFLAGS+=$(LD) -lraylib
@@ -70,11 +72,13 @@ endif
 
 CFLAGS+=-I./depend/websocketpp/
 
+LIBWARNING=-Wno-unused-parameter -Wno-unknown-pragmas -Wno-missing-field-initializers -Wno-unused-variable
+
 #PREREQ_DIR=@mkdir -p $(@D)
 
 LOGDIR=depend/logq/src
 EWSDIR=depend/easywsclient
-ESCDIR=depend/escapi3
+SRDIR=depend/sr_webcam
 SRCDIR=src
 BUILDDIR=build
 BINDIR=bin
@@ -92,10 +96,19 @@ SRCSEWS=$(EWSDIR)/easywsclient.cpp
 OBJSEWS=$(BUILDDIR)/easywsclient.o
 
 ifeq ($(strip $(arch)),win)
-SRCSESC=$(ESCDIR)/escapi.cpp
-OBJSESC=$(BUILDDIR)/escapi.o
-LFLAGS+=-L./depend/escapi3/bin/x64/ -l:escapi.dll
+SRCSSR=$(SRDIR)/src/sr_webcam.c
+SRCSSR1=$(SRDIR)/src/sr_webcam_win.cpp
+OBJSSR=$(BUILDDIR)/sr_webcam.o
+OBJSSR1=$(SRDIR)/src/sr_webcam_win.o
+LFLAGS+=-lmfplat -lmf -lmfuuid -lmfreadwrite -lshlwapi -lole32
+else
+SRCSSR=$(SRDIR)/src/sr_webcam.c
+SRCSSR1=$(SRDIR)/src/sr_webcam_lin.c
+OBJSSR=$(BUILDDIR)/sr_webcam.o
+OBJSSR1=$(SRDIR)/src/sr_webcam_lin.o
+LFLAGS+=-lpthread
 endif
+
 
 all:
 	@$(MAKE) --no-print-directory $(NAME)
@@ -116,20 +129,28 @@ pre:
 	@./tool/generate.sh ON
 	@./tool/codepoint.sh
 
-$(NAME): $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSESC)
-	$(CXX) $(CFLAGSSTD) -o $(NAME) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSESC) $(LFLAGS)
+$(NAME): $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSSR) $(OBJSSR1)
+	$(CXX) $(CSTDFLAG) $(CFLAGSSTD) -o $(NAME) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSSR) $(OBJSSR1) $(LFLAGS)
 
 $(OBJS): $(BUILDDIR)/%.o: $(SRCDIR)/%.cc
-	$(CXX) $(CFLAGS) $(DFLAGS) -o $@ -c $<
+	$(CXX) $(CSTDFLAG) $(CFLAGS) $(DFLAGS) -o $@ -c $<
 
 $(OBJSLOG): $(BUILDDIR)/%.o: $(LOGDIR)/%.cc
-	$(CXX) $(CFLAGSLOG) -o $@ -c $< 
+	$(CXX) $(CSTDFLAG) $(CFLAGSLOG) -o $@ -c $< 
+
 
 $(OBJSEWS): 
-	$(CXX) $(CFLAGS) -Wno-unused-parameter -o $(OBJSEWS) -c $(SRCSEWS) 
+	$(CXX) $(CSTDFLAG) $(CFLAGS) $(LIBWARNING) -o $(OBJSEWS) -c $(SRCSEWS) 
 
-$(OBJSESC): 
-	$(CXX) $(CFLAGS) -Wno-unused-parameter -Wno-cast-function-type -o $(OBJSESC) -c $(SRCSESC) 
+$(OBJSSR):
+	$(CXX) $(CSTDFLAG) $(CFLAGS) $(LIBWARNING) -o $(OBJSSR) -c $(SRCSSR)
+
+$(OBJSSR1):
+ifeq ($(strip $(arch)),win)
+	$(CXX) $(CSTDFLAG) $(CFLAGS) $(LIBWARNING) -o $(OBJSSR1) -c $(SRCSSR1)
+else
+	$(C) -std=c99 $(CFLAGS) $(LIBWARNING) -o $(OBJSSR1) -c $(SRCSSR1)
+endif
 
 clean:
 	@echo
