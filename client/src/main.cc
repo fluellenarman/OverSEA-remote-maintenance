@@ -11,8 +11,8 @@
 
 #include <string>
 #include "../depend/logq/src/log.h"
-#include "../depend/sr_webcam/src/sr_webcam.h"
-#include "../depend/sr_webcam/src/sr_webcam_internal.h"
+//#include "../depend/sr_webcam/src/sr_webcam.h"
+//#include "../depend/sr_webcam/src/sr_webcam_internal.h"
 #include "controller.h"
 #include "enum.h"
 #include "geometry.h"
@@ -51,7 +51,7 @@ int main() {
 
 
   using easywsclient::WebSocket;
-  WebSocket::pointer ws = WebSocket::from_url("ws://localhost:8126/foo");
+  WebSocket::pointer ws = WebSocket::from_url("ws://localhost:8126/");
 
   int devices = 0;
   #if defined (DEPEND_CROSS)

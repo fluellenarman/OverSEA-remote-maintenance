@@ -96,11 +96,11 @@ SRCSEWS=$(EWSDIR)/easywsclient.cpp
 OBJSEWS=$(BUILDDIR)/easywsclient.o
 
 ifeq ($(strip $(arch)),win)
-SRCSSR=$(SRDIR)/src/sr_webcam.c
-SRCSSR1=$(SRDIR)/src/sr_webcam_win.cpp
-OBJSSR=$(BUILDDIR)/sr_webcam.o
-OBJSSR1=$(SRDIR)/src/sr_webcam_win.o
-LFLAGS+=-lmfplat -lmf -lmfuuid -lmfreadwrite -lshlwapi -lole32
+#SRCSSR=$(SRDIR)/src/sr_webcam.c
+#SRCSSR1=$(SRDIR)/src/sr_webcam_win.cpp
+#OBJSSR=$(BUILDDIR)/sr_webcam.o
+#OBJSSR1=$(SRDIR)/src/sr_webcam_win.o
+#LFLAGS+=-lmfplat -lmf -lmfuuid -lmfreadwrite -lshlwapi -lole32
 else
 SRCSSR=$(SRDIR)/src/sr_webcam.c
 SRCSSR1=$(SRDIR)/src/sr_webcam_lin.c
