@@ -1,4 +1,4 @@
-
+#pragma once
 
 struct colorRGB {
   double r;

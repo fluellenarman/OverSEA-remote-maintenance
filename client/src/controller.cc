@@ -155,4 +155,15 @@ bool controller::anyKeyPressed() {
     if ((key >= 32) && (key <= 126)) keyPressed = true;
 
     return keyPressed;
+
+    return char_pressed.size() > 0;
+}
+
+void controller::update() {
+  char_pressed.clear();
+  int key = GetCharPressed();
+  while (key > 0) {
+    char_pressed.push_back(key);
+    key = GetCharPressed();
+  }
 }

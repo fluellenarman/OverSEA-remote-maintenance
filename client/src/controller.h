@@ -10,6 +10,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <vector>
 #include <map>
 #include "color.h"
 #include "geometry.h"
@@ -18,6 +19,7 @@
 using std::string;
 using std::unordered_map;
 using std::map;
+using std::vector;
 using std::pair;
 using std::move;
 using std::is_same;
@@ -61,7 +63,10 @@ class controller {
     void endRender();
 
 
+    void update();
     void unload();
+
+    vector<int> char_pressed;
 
   private:
 
