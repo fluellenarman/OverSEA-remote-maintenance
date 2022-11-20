@@ -1,0 +1,15 @@
+build/
+.clangd/
+.cache/
+bin/rec
+bin/rec.exe
+*.o
+*.json
+.cclsbuild/
+.clangd/
+.cache/
+bin/rec
+bin/rec.exe
+*.o
+*.json
+.ccls
