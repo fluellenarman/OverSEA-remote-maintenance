@@ -6,26 +6,27 @@
 
 #include "../src/input.h"
 #include "../src/controller.h"
+#include "../src/geometry.h"
 
 using criterion::logging::info;
-using criterion::logging::warn;
-using criterion::logging::error;
+//using criterion::logging::warn;
+//using criterion::logging::error;
 
-using std::vector;
 using std::string;
+using std::endl;
 
 //int main() {return 0;}
 
 controller ctr;
 
-Test(generator, show)
-{
-    vector<string> empty = { };
+Test(input_method, input_clicked) {
 
-    cr_expect(empty.size()==0);
+  info << "testing input button click detector" << endl;
+
+  inputBox box({10,10,1,1});
 
 
-    vector<int> some = { 1, -2, 3 };
+  // without rendering, the button cannot be shown as clicked
+  cr_assert(!box.clicked());
 
-    cr_assert(true);
 }
