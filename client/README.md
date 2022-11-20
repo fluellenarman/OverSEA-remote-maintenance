@@ -38,3 +38,8 @@ To build for windows (using WSL/debian):
 `make arch=win`
 
 Make sure you build dependencies before compiling.
+
+To run the testing suite (linux only), the Criterion TDD library is required (linked dynamically).
+Then, build and run the test suite as follows:
+
+`make -B test test=on`

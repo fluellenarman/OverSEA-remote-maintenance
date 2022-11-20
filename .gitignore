@@ -5,3 +5,4 @@ bin/rec
 bin/rec.exe
 *.o
 *.json
+.ccls

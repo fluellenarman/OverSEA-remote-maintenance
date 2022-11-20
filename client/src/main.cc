@@ -29,7 +29,6 @@ const string window_title = "OverSEA receiver client ver.0";
 
 sceneType current_scene = sceneType::SCENE_LOGIN;
 
-
 controller ctr;
 
 inputBox login_button({window_w/2 - 100, window_h/2 - 50, 200, 100}, 40);

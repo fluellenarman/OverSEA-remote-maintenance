@@ -82,6 +82,8 @@ SRDIR=depend/sr_webcam
 SRCDIR=src
 BUILDDIR=build
 BINDIR=bin
+TESTDIR=test
+TESTBUILDDIR=test/build
 
 NAME= $(addprefix $(BINDIR)/, rec)
 
@@ -91,6 +93,9 @@ OBJS=$(patsubst $(SRCDIR)/%.cc, $(BUILDDIR)/%.o, $(SRCS))
 
 SRCSLOG=$(wildcard $(LOGDIR)/*.cc)
 OBJSLOG=$(patsubst $(LOGDIR)/%.cc, $(BUILDDIR)/%.o, $(SRCSLOG))
+
+SRCSTEST=$(wildcard $(TESTDIR)/*.cc)
+OBJSTEST=$(patsubst $(TESTDIR)/%.cc, $(TESTBUILDDIR)/%.o, $(SRCSTEST))
 
 SRCSEWS=$(EWSDIR)/easywsclient.cpp
 OBJSEWS=$(BUILDDIR)/easywsclient.o
@@ -109,6 +114,16 @@ OBJSSR1=$(SRDIR)/src/sr_webcam_lin.o
 LFLAGS+=-lpthread
 endif
 
+
+ifeq ($(strip $(arch)),)
+ifeq ($(strip $(test)),on)
+
+TSRCS := $(SRCS)
+SRCS = $(filter-out src/main.cc,$(TSRCS))
+TOBJS := $(OBJS)
+OBJS = $(filter-out build/main.o,$(TOBJS))
+endif
+endif
 
 all:
 	@$(MAKE) --no-print-directory $(NAME)
@@ -143,14 +158,35 @@ $(OBJSEWS):
 	$(CXX) $(CSTDFLAG) $(CFLAGS) $(LIBWARNING) -o $(OBJSEWS) -c $(SRCSEWS) 
 
 $(OBJSSR):
+ifeq ($(strip $(arch)),win)
 	$(CXX) $(CSTDFLAG) $(CFLAGS) $(LIBWARNING) -o $(OBJSSR) -c $(SRCSSR)
+else
+	$(C) $(CFLAGS) $(LIBWARNING) -o $(OBJSSR) -c $(SRCSSR)
+endif
 
 $(OBJSSR1):
 ifeq ($(strip $(arch)),win)
 	$(CXX) $(CSTDFLAG) $(CFLAGS) $(LIBWARNING) -o $(OBJSSR1) -c $(SRCSSR1)
 else
-	$(C) -std=c99 $(CFLAGS) $(LIBWARNING) -o $(OBJSSR1) -c $(SRCSSR1)
+	clang $(CFLAGS) $(LIBWARNING) -o $(OBJSSR1) -c $(SRCSSR1)
 endif
+
+$(OBJSTEST): $(TESTBUILDDIR)/%.o: $(TESTDIR)/%.cc
+	$(CXX) $(CSTDFLAG) $(CFLAGS) -o $@ -c $< 
+
+# WARNING: you MUST invoke this via "make -B test test=on" or you will get an error
+test: $(OBJSTEST) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSSR) $(OBJSSR1)
+	@mkdir -p test
+	@mkdir -p test/build
+	$(CXX) -otest/test $(OBJSTEST) $(OBJS) $(OBJSLOG) $(OBJSEWS) $(OBJSSR) $(OBJSSR1) -lnanomsg -lgit2 -lcriterion -lraylib $(LFLAGS)
+	#@rm -rf test/build/*
+	
+	@echo
+	@echo "init testing suite"
+	@echo
+	
+	@./test/test
+
 
 clean:
 	@echo
