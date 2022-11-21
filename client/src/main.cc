@@ -17,8 +17,7 @@
 #include "enum.h"
 #include "geometry.h"
 #include "input.h"
-
-#define MAX_INPUT_CHARS 10
+#include "constants.h"
 
 using std::string;
 
@@ -66,7 +65,7 @@ int main() {
     //logQ(devices);
     ctr.beginRender();
 
-    ctr.sendData(8126, "hello");
+    ctr.sendData(WS_PORT, "hello");
 
     switch(current_scene) {
       case sceneType::SCENE_TEST:
