@@ -1,7 +1,7 @@
 #include "wsclient.h"
 #ifdef _WIN32
 #pragma comment( lib, "ws2_32" )
-#include <Winsock2.h>
+#include <winsock2.h>
 #endif
 
 #include "../depend/logq/src/log.h"
