@@ -1,2 +1,0 @@
-/usr/bin/x86_64-w64-mingw32-ar qc ../../lib/libopencv_ts460.a CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.obj CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.obj CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.obj CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.obj CMakeFiles/opencv_ts.dir/src/ts.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_func.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_tags.cpp.obj
-/usr/bin/x86_64-w64-mingw32-ranlib ../../lib/libopencv_ts460.a

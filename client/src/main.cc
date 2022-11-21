@@ -2,11 +2,11 @@
 #if defined(DEPEND_CROSS)
 #include "../depend/raylib/src/raylib.h"
 //#include "../depend/opencv/include/opencv2/opencv.hpp"
-#include "../depend/easywsclient/easywsclient.hpp"
+//#include "../depend/easywsclient/easywsclient.hpp"
 #else
 #include <raylib.h>
 #include <opencv4/opencv2/opencv.hpp>
-#include "../depend/easywsclient/easywsclient.hpp"
+//#include "../depend/easywsclient/easywsclient.hpp"
 #endif
 
 #include <string>
@@ -17,7 +17,6 @@
 #include "enum.h"
 #include "geometry.h"
 #include "input.h"
-
 
 #define MAX_INPUT_CHARS 10
 
@@ -48,8 +47,7 @@ int main() {
   //cv::imshow("test",image);
 
 
-  using easywsclient::WebSocket;
-  WebSocket::pointer ws = WebSocket::from_url("ws://localhost:8126/");
+  //using easywsclient::WebSocket;
 
   int devices = 0;
   #if defined (DEPEND_CROSS)
@@ -67,6 +65,8 @@ int main() {
 
     //logQ(devices);
     ctr.beginRender();
+
+    ctr.sendData(8126, "hello");
 
     switch(current_scene) {
       case sceneType::SCENE_TEST:
@@ -110,7 +110,7 @@ int main() {
   }
 
 
-
+  ctr.cleanup();
   ctr.unload();
   return 0;
 }

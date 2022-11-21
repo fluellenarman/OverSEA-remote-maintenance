@@ -12,9 +12,11 @@
 #include <unordered_map>
 #include <vector>
 #include <map>
+
 #include "color.h"
 #include "geometry.h"
 #include "constants.h"
+#include "wsclient.h"
 
 using std::string;
 using std::unordered_map;
@@ -54,6 +56,10 @@ class controller {
     bool anyKeyPressed();
     unsigned int getFrameCounter() { return counter; }
 
+    // wsClient functions
+    void sendData(int portNum, const string& data); // send data to a port number
+    void cleanup(); //clean up websocket after while(render)
+
     void beginRender();
     void endRender();
 
@@ -66,6 +72,7 @@ class controller {
   private:
 
     unordered_map<string, map<int, Font>> fontMap;
+    wsClient client;
 
 
     unsigned int counter = 0;

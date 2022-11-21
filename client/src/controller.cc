@@ -6,6 +6,9 @@ void controller::init() {
   fontMap.insert(make_pair(FONT_YKLIGHT, map<int, Font>{}));
   fontMap.insert(make_pair(FONT_CAMO, map<int, Font>{}));
 
+  // init wsClient client
+  client.init();
+
 }
 
 Font* controller::getFont(const string& id, int size) {
@@ -43,6 +46,7 @@ void controller::drawRectLines(rectangle rect, const colorRGB& col) {
   Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
   DrawRectangleLines(rect.x, rect.y, rect.width, rect.height, color);
 }
+
 void drawLineEx(float xi, float yi, float xf, float yf, float thick, const colorRGB& col) {
   Color color = (Color){(unsigned char)col.r, (unsigned char)col.g, (unsigned char)col.b, 255};
   DrawLineEx((const Vector2){(float)xi, (float)yi}, (const Vector2){(float)xf, (float)yf}, thick, color);
@@ -88,10 +92,26 @@ bool controller::anyKeyPressed() {
 }
 
 void controller::update() {
+  // check for websocket updates here, end render loop
+  client.receive();
+
   char_pressed.clear();
   int key = GetCharPressed();
   while (key > 0) {
     char_pressed.push_back(key);
     key = GetCharPressed();
   }
+}
+
+// wsClient functions
+void controller::sendData(int portNum, const string& data) {
+  // send data to a port number
+  client.setPort(portNum);
+  client.send(data);
+
+} 
+
+void controller::cleanup() {
+  //clean up websocket after while(render)
+  client.clean();
 }
