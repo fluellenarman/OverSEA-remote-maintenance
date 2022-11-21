@@ -17,7 +17,7 @@ class wsClient {
   public:
 
     // constructor
-    void init();
+    void init() = delete;
     void init(int portNumber);
 
     // functions
@@ -32,8 +32,8 @@ class wsClient {
     void clean();
 
   private:
-    WebSocket::pointer ws = NULL;
-    int portNum;
+    WebSocket::pointer ws = nullptr;
+    int portNum = 0;
     string url;
 
     //void handle_message(const string& msg);

@@ -1,13 +1,15 @@
 #include "controller.h"
 #include "../depend/logq/src/log.h"
 
+using std::move;
+
 void controller::init() {
 
   fontMap.insert(make_pair(FONT_YKLIGHT, map<int, Font>{}));
   fontMap.insert(make_pair(FONT_CAMO, map<int, Font>{}));
 
   // init wsClient client
-  client.init();
+  client.init(WS_PORT);
 
 }
 

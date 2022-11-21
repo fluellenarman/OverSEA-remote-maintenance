@@ -25,9 +25,9 @@ int main()
     }
 #endif
 
-    client.init();
+    client.init(8126);
 
-    client.setPort(8126);
+    //client.setPort(8126);
     client.send("goodbye");
     client.send("hello");
 

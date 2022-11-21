@@ -22,8 +22,6 @@ using std::string;
 using std::unordered_map;
 using std::map;
 using std::vector;
-using std::pair;
-using std::move;
 using std::is_same;
 
 class controller {

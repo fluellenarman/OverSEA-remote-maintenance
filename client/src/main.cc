@@ -49,7 +49,7 @@ int main() {
 
   //using easywsclient::WebSocket;
 
-  int devices = 0;
+  //int devices = 0;
   #if defined (DEPEND_CROSS)
   #endif
 

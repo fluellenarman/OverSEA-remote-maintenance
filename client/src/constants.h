@@ -7,3 +7,6 @@
 #define FONT_YKLIGHT  "bin/yklight.ttf"
 #define FONT_CAMO     "bin/camo.ttf"
 #endif
+
+
+#define WS_PORT 16242

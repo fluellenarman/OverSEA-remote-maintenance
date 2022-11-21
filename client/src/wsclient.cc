@@ -1,6 +1,6 @@
 #include "wsclient.h"
 #ifdef _WIN32
-#pragma comment( lib, "ws2_32" )
+//#pragma comment( lib, "ws2_32" )
 #include <winsock2.h>
 #endif
 
@@ -13,19 +13,6 @@ void handle_message(const std::string & message)
 }
 
 // constructors
-void wsClient::init() {
-    // #ifdef _WIN32
-    //     INT rc;
-    //     WSADATA wsaData;
-
-    //     rc = WSAStartup(MAKEWORD(2, 2), &wsaData);
-    //     if (rc) {
-    //         printf("WSAStartup Failed.\n");
-    //         assert(rc);
-    //     }
-    // #endif
-    ws = NULL;
-}
 
 void wsClient::init(int portNumber) {
     // #ifdef _WIN32
@@ -38,13 +25,20 @@ void wsClient::init(int portNumber) {
     //         assert(rc);
     //     }
     // #endif
+    #ifdef _WIN32
+    INT rc;
+    WSADATA wsaData;
+
+    rc = WSAStartup(MAKEWORD(2, 2), &wsaData);
+    if (rc) {
+        logW(LL_CRIT, "WSAStartup failed");
+        return;
+    }
+    #endif
 
     portNum = portNumber;
 
-    string url1 = "ws://localhost:";
-    string url2 = std::to_string(portNum);
-    string url3 = "/foo";
-    url = url1 + url2 + url3;
+    setPort(portNumber);
 
     // establish connection with url
     ws = WebSocket::from_url(url);
@@ -57,7 +51,11 @@ void wsClient::setPort(int p) {
     string url2 = std::to_string(portNum);
     string url3 = "/foo";
     url = url1 + url2 + url3;
-    
+   
+    if (portNum != 0) {
+      delete ws;
+    }
+
     // reestablish connection w/ new port num
     ws = WebSocket::from_url(url);
 }
@@ -65,23 +63,23 @@ void wsClient::setPort(int p) {
 void wsClient::send(const string& data) {
     //printf("BEFORE ASSERT");
     //assert(ws);
-    if (ws != NULL) {
-        printf("SEND SUCCESSFUL");
+    if (ws != nullptr) {
+        logQ("SEND SUCCESSFUL");
         ws->send(data);
     }
 }
 
 void wsClient::receive() {
     //assert(ws);
-    if (ws != NULL && ws->getReadyState() != WebSocket::CLOSED) {
-        printf("RECEIVE SUCCESSFUL");
+    if (ws != nullptr && ws->getReadyState() != WebSocket::CLOSED) {
+        logQ("RECEIVE SUCCESSFUL");
         ws->poll();
         ws->dispatch(handle_message);
     }
 }
 
 void wsClient::clean() {
-    if(ws == NULL){
+    if(ws == nullptr){
         return;
     }
 
