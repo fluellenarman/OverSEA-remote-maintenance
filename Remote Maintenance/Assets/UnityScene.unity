@@ -164,9 +164,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 93267129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 581f96faacaeaa34f9c2b367be1608c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ac217db4dad5436d9927ea08182cd9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  address: 
+  port: 0
+  onOpen:
+    m_PersistentCalls:
+      m_Calls: []
+  onMessage:
+    m_PersistentCalls:
+      m_Calls: []
+  onClose:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &619189178
 GameObject:
   m_ObjectHideFlags: 0
