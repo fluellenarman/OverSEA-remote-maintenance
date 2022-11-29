@@ -38,8 +38,10 @@ void inputBox::render() {
   
   ctr.drawTextEx(text.c_str(), pos, textColor, fontSize, textFont);
 
-  if (((ctr.getFrameCounter()/20)%2) == 0) {
-    ctr.drawTextEx("_", {pos.x+textDim.x+2, pos.y}, textColor, fontSize, textFont);
+  if (isClicked){
+    if (((ctr.getFrameCounter()/20)%2) == 0) {
+      ctr.drawTextEx("_", {pos.x+textDim.x+2, pos.y}, textColor, fontSize, textFont);
+    }
   }
 
   EndScissorMode();
@@ -80,4 +82,11 @@ void inputBox::processInput() {
   }
 
   updateClicked();
+}
+
+bool inputBox::isEmpty(){
+  if (text.length() == 0){
+    return 1;
+  }
+  return 0;
 }

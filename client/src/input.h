@@ -23,6 +23,7 @@ class inputBox {
     void render();
     void processInput();
     bool clicked();
+    bool isEmpty();
 
   private:
 

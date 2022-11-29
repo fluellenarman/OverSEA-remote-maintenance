@@ -17,6 +17,7 @@
 #include "enum.h"
 #include "geometry.h"
 #include "input.h"
+#include "button.h"
 #include "constants.h"
 
 using std::string;
@@ -24,12 +25,21 @@ using std::string;
 constexpr int window_w = 1600;
 constexpr int window_h = 900;
 const string window_title = "OverSEA receiver client ver.0";
+const string auth_title = "Synchronous Remote Maintenance Systems";
+const string login_string = "Login";
+const string username_string = "Username";
+const string password_string = "Password";
+string username_error = "";
+string password_error = "";
 
 sceneType current_scene = sceneType::SCENE_LOGIN;
 
 controller ctr;
 
-inputBox login_button({window_w/2 - 100, window_h/2 - 50, 200, 100}, 40);
+inputBox username({window_w/2 - 375, window_h/2 + 75, 750, 60}, 30);
+inputBox password({window_w/2 - 375, window_h/2 + 200, 750, 60}, 30);
+
+loginButton login_button({window_w/2 - 100, window_h/2 + 300, 200, 75}, 40, {0, 0, 0}, {255, 255, 255}, FONT_YKLIGHT, "       Log In");
 
 int main() {
 
@@ -65,8 +75,6 @@ int main() {
     //logQ(devices);
     ctr.beginRender();
 
-    ctr.sendData(WS_PORT, "hello");
-
     switch(current_scene) {
       case sceneType::SCENE_TEST:
         ctr.drawTextEx(window_title.c_str(), {200.0f, 200.0f}, {12,24,244}, 24, FONT_CAMO);
@@ -75,10 +83,17 @@ int main() {
         ctr.drawTextEx(window_title.c_str(), {200.0f, 500.0f}, {12,24,244}, 340, FONT_CAMO);
         break;
       case sceneType::SCENE_LOGIN:
+        ctr.drawTextEx(auth_title.c_str(), {100.0f, 150.0f}, {0,0,0}, 100);
+        ctr.drawTextEx(login_string.c_str(), {(window_w/2 - 75), (window_h/2 - 80)}, {0,0,0}, 60);
+        ctr.drawTextEx(username_string.c_str(), {(window_w/2 - 370), (window_h/2 + 25)}, {0,0,0}, 40);
+        ctr.drawTextEx(password_string.c_str(), {(window_w/2 - 370), (window_h/2 + 150)}, {0,0,0}, 40);
+        ctr.drawTextEx(username_error.c_str(), {(window_w/2 + 200), (window_h/2 + 35)}, {255,0,0}, 30);
+        ctr.drawTextEx(password_error.c_str(), {(window_w/2 + 200), (window_h/2 + 160)}, {255,0,0}, 30);
+        
         //ctr.drawTextInputBox(login_button_position_but,login_input_but,cursorExists,{235,235,235},{43,34,23},name);
 
-
-
+        username.render();
+        password.render();
         login_button.render();
 
         //if (login_input_but) {
@@ -94,9 +109,27 @@ int main() {
     
     switch(current_scene) {
       case sceneType::SCENE_LOGIN:
+        username.processInput();
+        password.processInput();
         login_button.processInput();
-        if (IsKeyPressed(KEY_ENTER)) {
-          current_scene = sceneType::SCENE_TEST;
+        if (login_button.auth()) {
+          // can make funtion return string, use that to check
+          // is username and password are correct
+          // can create temp username and password for now?
+          if (username.isEmpty()){
+            username_error = "Invalid Username";
+          } else {
+            username_error = "";
+          }
+          if (password.isEmpty()){
+            password_error = "Invalid Password";
+          } else {
+            password_error = "";
+          }
+          if (username_error == "" && password_error == ""){
+            current_scene = sceneType::SCENE_TEST;
+            ctr.sendData(WS_PORT, "hello");
+          }
         }
         break;
       default:
