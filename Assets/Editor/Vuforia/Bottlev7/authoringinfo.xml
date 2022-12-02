@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.11.3">
+<ModelTarget name="Bottlev7" targetId="4cfaf88070784e98a4c8a4e5354f66da" version="14.0" toolVersion="10.11.3" bbox="-0.030238 -0.030210 -0.225497 0.030210 0.030238 0.000110" previewImage="4cfaf88070784e98a4c8a4e5354f66da_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Bottlev7s_assembly" assemblyId="fef161ffc84245b3aa6f8e92966e406a">
+<Part name="Bottlev7" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="2.18861e-06 -0.099374 0.416087" rotation="AD: 0.586256 1.6706 -1.00085 160.404" image="Bottlev7_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0001" translation="-1.97627e-05 -0.0966139 0.324545" rotation="AD: 0.997044 0.410083 -0.232093 125.803" image="Bottlev7_GuideView_0001.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0002" translation="0 -0.0399496 0.20978" rotation="AD: 0.927922 2.2402 -0.410196 172.095" image="Bottlev7_GuideView_0002.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0003" translation="0.00962233 -0.0154152 0.561557" rotation="AD: 0.999931 0.109181 -1.02404 17.4035" image="Bottlev7_GuideView_0003.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

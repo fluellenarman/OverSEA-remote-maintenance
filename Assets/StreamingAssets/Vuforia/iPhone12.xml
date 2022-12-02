@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="iPhone12" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="iPhone12s_assembly" assemblyId="02ca0d441fed47e38c377cc6a3fa88ad">
+<Part name="iPhone12" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="-1.37942 1.7334 6.94318" rotation="AD: 0.0193182 -1.05336 3.17694 180.219" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0001" translation="-0.627001 1.71984 9.38614" rotation="AD: 0.160164 -0.987803 26.3394 180.026" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0002" translation="-1.85727 1.39764 4.24402" rotation="AD: 0.279478 0.960379 45.9611 179.985" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.11.3">
+<ModelTarget name="macbook-13_01" targetId="2253f2997b3740489158e59e5a31f8fa" version="14.0" toolVersion="10.11.3" bbox="-0.004132 -0.002887 -0.000004 0.004132 0.003086 0.005948" previewImage="2253f2997b3740489158e59e5a31f8fa_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="macbook-13_01s_assembly" assemblyId="99e3e5530c374267b21e2f2bf75b6018">
+<Part name="macbook-13_01" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.00037711 0.0022974 0.015304" rotation="AD: 1 -0.0178264 0.00776815 132.916" image="macbook-13_01_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

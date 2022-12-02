@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="SurfaceProPen" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="SurfaceProPens_assembly" assemblyId="884b4e67f5454abb91e75c330ff036ce">
+<Part name="SurfaceProPen" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="-0.0599496 0.0198228 0.325025" rotation="AD: 1 -0.0020018 0.0241454 189.476" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0001" translation="-0.0599647 0.0199839 0.148217" rotation="AD: 1 -0.00200426 0.0272199 188.419" trained="no">
+
+</EntryPoint>
+<EntryPoint name="GuideView_0002" translation="-0.0627762 0.0164207 0.0937508" rotation="AD: 1 -0.00200426 0.0272199 188.419" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

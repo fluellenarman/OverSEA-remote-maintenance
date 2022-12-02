@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="macbook-13_01" motionHint="static" trackingMode="car" optimizeTrackingFor="low_feature_objects"/>
+
+</Tracking>
+
+<Assembly name="macbook-13_01s_assembly" assemblyId="99e3e5530c374267b21e2f2bf75b6018">
+<Part name="macbook-13_01" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.00037711 0.0022974 0.015304" rotation="AD: 1 -0.0178264 0.00776815 132.916" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
