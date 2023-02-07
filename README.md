@@ -2,6 +2,10 @@
 Hololens Readme.
 Not yet finished! Add more stuff when needed!
 
+## Currently Working On
+Arman - UI Bug when Hololens start streaming
+Daniel - 
+
 # Packages
 - Mixed Reality OpenXR Plugin
 - Mixed Reality Toolkit Examples
