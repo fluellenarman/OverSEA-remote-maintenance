@@ -344,6 +344,7 @@ MonoBehaviour:
   LocalPeerId: UNITY
   RemotePeerId: HOLOLENS
   HttpServerAddress: http://169.231.184.132:3000/
+  doesServerExist: 1
   PollTimeMs: 500
 --- !u!1 &666380895
 GameObject:

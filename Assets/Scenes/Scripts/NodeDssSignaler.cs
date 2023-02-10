@@ -40,6 +40,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         [Header("Server")]
         [Tooltip("The node-dss server to connect to")]
         public string HttpServerAddress = "http://169.231.184.132:3000/";
+        public bool doesServerExist = true;
 
         /// <summary>
         /// The interval (in ms) that the server is polled at
@@ -284,6 +285,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
 
             if (!www.isNetworkError && !www.isHttpError)
             {
+                doesServerExist = true;
                 var json = www.downloadHandler.text;
 
                 var msg = JsonUtility.FromJson<NodeDssMessage>(json);
@@ -332,7 +334,8 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             }
             else if (AutoLogErrors && www.isNetworkError)
             {
-                Debug.LogError($"Network error trying to send data to {HttpServerAddress}: {www.error}");
+                doesServerExist = false;
+                Debug.Log($"Network error trying to send data to {HttpServerAddress}: {www.error}");
             }
             else
             {
@@ -348,6 +351,11 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// <inheritdoc/>
         protected override void Update()
         {
+            if (!doesServerExist) {
+                //StartCoroutine(CO_GetAndProcessFromServer());
+                Debug.Log("Server does not exist");
+                return;
+            }
             // Do not forget to call the base class Update(), which processes events from background
             // threads to fire the callbacks implemented in this class.
             base.Update();
