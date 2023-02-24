@@ -209,6 +209,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// <remarks>
         /// https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
         /// </remarks>
+        
         private void Start()
         {
             if (string.IsNullOrEmpty(HttpServerAddress))
@@ -348,14 +349,25 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             
         }
 
+        // counter is to set a timer on the server dne error msg so that it doesnt spam
+        private int counter = 1000;
         /// <inheritdoc/>
         protected override void Update()
         {
             if (!doesServerExist) {
                 //StartCoroutine(CO_GetAndProcessFromServer());
-                Debug.Log("Server does not exist");
-                return;
+
+                if (counter == 1000){
+                    Debug.Log("Server does not exist");
+                    counter = 0;
+                    return;
+                }
+                else {
+                    counter++;
+                    return;
+                }
             }
+
             // Do not forget to call the base class Update(), which processes events from background
             // threads to fire the callbacks implemented in this class.
             base.Update();
