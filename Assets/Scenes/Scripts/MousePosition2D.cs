@@ -3,33 +3,81 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.WebRTC;
 using System.Threading.Tasks;
+using System.Text;
 
 public class MousePosition2D : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
-    PeerConnection _peerConnection = new PeerConnection();
+    [SerializeField] private Microsoft.MixedReality.WebRTC.Unity.PeerConnection _peerConnection;
     //public event PeerConnection.DataChannelAddedDelegate DataChannelAdded;
 
-    private void Start() {
-        _peerConnection.InitializeAsync();
+    private DataChannel data1;
+    private DataChannel data2;
+    private bool IsData1Created = false;
+
+    public void CreateChannels()
+    {
+        _peerConnection.Peer.DataChannelAdded += this.OnDataChannelAdded;
+        _peerConnection.Peer.AddDataChannelAsync(40, "dummy", false, false).Wait();
+    }
+
+    private void OnDataChannelAdded(DataChannel channel)
+    {
+        Debug.Log("Hello " + channel.Label);
+        switch (channel.Label)
+        {
+            case "dummy":
+                data1 = channel;
+                data1.StateChanged += this.OnStateChangedDummy;
+                break;
+        }
+    }
+    private void OnStateChangedDummy()
+    {
+        Debug.Log("data1: " + data1.State);
+
+        if (data1.State + "" == "Open")
+        {
+            //data1.SendMessage(Encoding.ASCII.GetBytes("Hello over there... from Dummy"));
+            //Debug.Log("Message sended... from Dummy");
+        }
     }
 
     private void Update() {
-        if(_peerConnection.Initialized) {
-            if (_peerConnection.DataChannels.Count == 0){
-                CreateDC();
-                _peerConnection.DataChannelAdded += OnDataChannelAdded;
-                Debug.Log("The number of data channels: " + _peerConnection.DataChannels.Count);
+        
+        if (data1 != null)
+        {
+            //Debug.Log("data1 is NOT null");
+            if (data1.State == DataChannel.ChannelState.Open)
+            {
+                //Debug.Log("data1 is open");
+                //Debug.Log("the state of data1 is: " + data1.State);
+
+                data1.MessageReceived += (byte[] message) =>
+                {
+                    string text = System.Text.Encoding.UTF8.GetString(message);
+                    //Debug.Log("MESSAGE RECEIVED: " + text);
+                };
+            }
+            else{
+                //Debug.Log("data1 is closed");
             }
         }
         else{
-            Debug.Log("peer connection not initialized");
+            //Debug.Log("data1 is NULL");
         }
-        // data1 = PeerConnection.AddDataChannelAsync("name", true, true, System.Threading.CancellationToken.None);
-        
+
         // when mouse click
         if(Input.GetMouseButtonDown(0)){
             // converts the screen position (input.mousePosition) into World position (-10,10)
+            if( IsData1Created == false) {
+                CreateChannels();
+                IsData1Created = true;
+            }
+
+            // on mouse click and in video, send coordinate to hololens
+            // FORMAT -> x,y,z | typeMarker
+
             Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             
             Vector3 mouseRemVidPos = Vector3.zero;
@@ -53,6 +101,10 @@ public class MousePosition2D : MonoBehaviour
                 mouseRemVidPos.y = mouseWorldPosition.y - 0.405f;
 
                 Debug.Log("Remote Video Coords: " + mouseRemVidPos);
+
+                string text = string.Format("{0:N3}", mouseRemVidPos.x) + "," + string.Format("{0:N3}", mouseRemVidPos.y) + "," + string.Format("{0:N3}", mouseRemVidPos.z); 
+                data1.SendMessage(Encoding.ASCII.GetBytes(text));
+                Debug.Log("Message sent: " + text );
                 
             }
             else{
@@ -60,39 +112,5 @@ public class MousePosition2D : MonoBehaviour
             }
 
         }
-    }
-
-    private void OnDataChannelAdded(DataChannel channel)
-    {
-        Debug.Log("data channel has been added");
-        // Logger.Log($"Added data channel '{channel.Label}' (#{channel.ID}).");
-        // ThreadHelper.RunOnMainThread(() =>
-        // {
-        //     var chat = new ChatChannelModel(channel);
-        //     ChatChannels.Add(chat);
-        // });
-    }
-
-    public async Task CreateDC()
-    {
-    
-        Debug.Log("Beginning of CreateDC");
-        await _peerConnection.AddDataChannelAsync("name", true, true, System.Threading.CancellationToken.None);
-        Debug.Log("The number of data channels: " + _peerConnection.DataChannels.Count);
-        Debug.Log("End of CreateDC");
-        // // Send data
-        // {
-        //     var c2 = new ManualResetEventSlim(false);
-        //     string sentText = "Some sample text";
-        //     byte[] msg = Encoding.UTF8.GetBytes(sentText);
-        //     data2.MessageReceived += (byte[] _msg) =>
-        //     {
-        //         var receivedText = Encoding.UTF8.GetString(_msg);
-        //         Assert.AreEqual(sentText, receivedText);
-        //         c2.Set();
-        //     };
-        //     data1.SendMessage(msg);
-        //     Assert.True(c2.Wait(TimeSpan.FromSeconds(60.0)));
-        // }
     }
 }
