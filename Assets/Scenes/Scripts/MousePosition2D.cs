@@ -77,7 +77,6 @@ public class MousePosition2D : MonoBehaviour
 
             // on mouse click and in video, send coordinate to hololens
             // FORMAT -> x,y,z | typeMarker
-
             Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             
             Vector3 mouseRemVidPos = Vector3.zero;
@@ -102,9 +101,12 @@ public class MousePosition2D : MonoBehaviour
 
                 Debug.Log("Remote Video Coords: " + mouseRemVidPos);
 
-                string text = string.Format("{0:N3}", mouseRemVidPos.x) + "," + string.Format("{0:N3}", mouseRemVidPos.y) + "," + string.Format("{0:N3}", mouseRemVidPos.z); 
-                data1.SendMessage(Encoding.ASCII.GetBytes(text));
-                Debug.Log("Message sent: " + text );
+                // if data channel is open and can send information to the hololens
+                if ( data1.State == DataChannel.ChannelState.Open){
+                    string text = string.Format("{0:N3}", mouseRemVidPos.x) + "," + string.Format("{0:N3}", mouseRemVidPos.y) + "," + string.Format("{0:N3}", mouseRemVidPos.z); 
+                    data1.SendMessage(Encoding.ASCII.GetBytes(text));
+                    Debug.Log("Message sent: " + text );
+                }
                 
             }
             else{

@@ -6,6 +6,7 @@ using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
+using System.Net;
 
 namespace Microsoft.MixedReality.WebRTC.Unity
 {
@@ -212,6 +213,11 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         
         private void Start()
         {
+
+            // set the httpserveraddress
+            string f = new WebClient().DownloadString("https://www.icanhazip.com/");
+            HttpServerAddress = "http://" + f.Remove(f.Length - 1, 1) + ":3000/";
+
             if (string.IsNullOrEmpty(HttpServerAddress))
             {
                 throw new ArgumentNullException("HttpServerAddress");
