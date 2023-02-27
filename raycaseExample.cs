@@ -86,9 +86,11 @@ public class raycaseExample : MonoBehaviour
     private string text = "";
     public bool isMarkerPlaced = false;
     public float markerTimer = 5.00f;
+    public float dataChannelTimer = 5.00f;
     // Update is called once per frame
     void Update()
     {
+
         if (markerTimer > 0 && isMarkerPlaced == true)
         {
             markerTimer -= Time.deltaTime;
@@ -96,6 +98,18 @@ public class raycaseExample : MonoBehaviour
         {
             isMarkerPlaced = false;
             markerTimer = 5;
+        }
+
+        if (dataChannelTimer > 0)
+        {
+            dataChannelTimer -= Time.deltaTime;
+        } else
+        {
+            if (IsData1Created == false)
+            {
+                CreateChannels();
+                IsData1Created = true;
+            }
         }
 
         // Receiving Coordinates for raycasting
@@ -160,6 +174,7 @@ public class raycaseExample : MonoBehaviour
                 Instantiate(prefab, hit.point, Quaternion.identity);
             }
         }
+
 
         if (Input.GetMouseButtonDown(0))
         { 
