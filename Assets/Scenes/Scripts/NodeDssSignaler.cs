@@ -216,7 +216,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
 
             // set the httpserveraddress
             string f = new WebClient().DownloadString("https://www.icanhazip.com/");
-            HttpServerAddress = "http://" + f.Remove(f.Length - 1, 1) + ":3000/";
+           //HttpServerAddress = "http://" + f.Remove(f.Length - 1, 1) + ":3000/";
 
             if (string.IsNullOrEmpty(HttpServerAddress))
             {

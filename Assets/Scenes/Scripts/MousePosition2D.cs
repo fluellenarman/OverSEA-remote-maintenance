@@ -43,6 +43,19 @@ public class MousePosition2D : MonoBehaviour
         }
     }
 
+    private void Start() {
+        _peerConnection.OnInitialized.AddListener(OnInitialized1);
+    }
+
+    private void OnInitialized1() {
+        // check if peerconnection is init, if so, init the data channels
+        if( IsData1Created == false) {
+            CreateChannels();
+            IsData1Created = true;
+            Debug.Log("Data channel has been created");
+        }
+    }
+
     private void Update() {
         
         if (data1 != null)
@@ -70,10 +83,10 @@ public class MousePosition2D : MonoBehaviour
         // when mouse click
         if(Input.GetMouseButtonDown(0)){
             // converts the screen position (input.mousePosition) into World position (-10,10)
-            if( IsData1Created == false) {
-                CreateChannels();
-                IsData1Created = true;
-            }
+            // if( IsData1Created == false) {
+            //     CreateChannels();
+            //     IsData1Created = true;
+            // }
 
             // on mouse click and in video, send coordinate to hololens
             // FORMAT -> x,y,z | typeMarker
