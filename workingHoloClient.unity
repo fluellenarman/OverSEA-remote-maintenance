@@ -201,7 +201,7 @@ MonoBehaviour:
   AutoLogErrors: 1
   LocalPeerId: HOLOLENS
   RemotePeerId: UNITY
-  HttpServerAddress: http://169.231.51.16:3000/
+  HttpServerAddress: http://169.231.58.30:3000/
   doesServerExist: 1
   PollTimeMs: 500
 --- !u!4 &260608277
@@ -269,7 +269,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &630359249
+--- !u!1 &573861660
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,10 +277,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 630359253}
-  - component: {fileID: 630359252}
-  - component: {fileID: 630359251}
-  - component: {fileID: 630359250}
+  - component: {fileID: 573861664}
+  - component: {fileID: 573861663}
+  - component: {fileID: 573861662}
+  - component: {fileID: 573861661}
   m_Layer: 0
   m_Name: wall (1)
   m_TagString: Untagged
@@ -288,26 +288,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &630359250
+--- !u!65 &573861661
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630359249}
+  m_GameObject: {fileID: 573861660}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &630359251
+--- !u!23 &573861662
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630359249}
+  m_GameObject: {fileID: 573861660}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -343,24 +343,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &630359252
+--- !u!33 &573861663
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630359249}
+  m_GameObject: {fileID: 573861660}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &630359253
+--- !u!4 &573861664
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630359249}
+  m_GameObject: {fileID: 573861660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.51, y: -0.1478, z: 0.69}
-  m_LocalScale: {x: 18.81014, y: 4.6269436, z: 0.25526053}
+  m_LocalPosition: {x: -0.29, y: -0.1478, z: 1.549}
+  m_LocalScale: {x: 9.669948, y: 4.6269436, z: 0.22670239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -519,6 +519,7 @@ GameObject:
   - component: {fileID: 963194231}
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -650,6 +651,26 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec319cd4e697a04191b92210be8c03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoStreamStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  VideoStreamStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  SourceCamera: {fileID: 0}
+  CameraEvent: 20
 --- !u!1 &1142269593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1732596411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1478,7 @@ MonoBehaviour:
     _receiver: {fileID: 428209137}
     _senderTrackName: 
   - _mediaKind: 1
-    _source: {fileID: 1226116941}
+    _source: {fileID: 963194232}
     _receiver: {fileID: 1877636551}
     _senderTrackName: 
 --- !u!4 &2129254037
@@ -1521,7 +1542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
   pC: {fileID: 2129254036}
-  prefab: {fileID: 7292890310267760898, guid: f0940087d13602e4595362150e606212, type: 3}
+  prefab: {fileID: 1329002528574780, guid: 088efeed31a081c419979a80a12c5b0f, type: 3}
   isMarkerPlaced: 0
   markerTimer: 5
   dataChannelTimer: 5

@@ -85,7 +85,7 @@ public class raycaseExample : MonoBehaviour
     private Vector3 result;
     private string text = "";
     public bool isMarkerPlaced = false;
-    public float markerTimer = 5.00f;
+    public float markerTimer = 2000.00f;
     public float dataChannelTimer = 5.00f;
     // Update is called once per frame
     void Update()
@@ -169,9 +169,12 @@ public class raycaseExample : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 Vector3 hitPosition = hit.point;
-                Debug.Log("HIT");
-                Debug.Log(hit.point);
-                Instantiate(prefab, hit.point, Quaternion.identity);
+                Debug.Log("HIT: " + hit.point);
+                Debug.Log("HIT: " + hitPosition[0]);
+                Debug.Log("HIT: " + hitPosition[1]);
+                hitPosition[1] = hitPosition[1] + .10f;
+                Instantiate(prefab, hitPosition, Quaternion.Euler(0f, 0f, 180f));
+                //Debug.DrawLine(ray.origin, hit.point, Color.green, 0.0f, false);
             }
         }
 
