@@ -34,6 +34,7 @@ public class BottomPanelUI : MonoBehaviour
             pcInit = MousePosition2D.pcInit;
             StartCoroutine( LoadingConnection() );
         }
+
     }
 
     
@@ -55,6 +56,7 @@ public class BottomPanelUI : MonoBehaviour
                         // stop attempting connection
                         Debug.Log("Connection Success");
                         connectSuccess = true;
+                        connectionStatus.text = "Connection Successful";
                      }
                      else {
                         // retry connection
