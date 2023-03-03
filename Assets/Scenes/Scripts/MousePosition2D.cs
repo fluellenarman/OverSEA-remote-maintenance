@@ -11,9 +11,10 @@ public class MousePosition2D : MonoBehaviour
     [SerializeField] private Microsoft.MixedReality.WebRTC.Unity.PeerConnection _peerConnection;
     //public event PeerConnection.DataChannelAddedDelegate DataChannelAdded;
 
-    private DataChannel data1;
+    public DataChannel data1;
     private DataChannel data2;
-    private bool IsData1Created = false;
+    public bool IsData1Created = false;
+    public bool pcInit = false;
 
     public void CreateChannels()
     {
@@ -50,6 +51,8 @@ public class MousePosition2D : MonoBehaviour
     }
 
     private void OnInitialized1() {
+        pcInit = true; 
+
         // check if peerconnection is init, if so, init the data channels
         if( IsData1Created == false) {
             CreateChannels();
