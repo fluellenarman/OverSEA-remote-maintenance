@@ -44,6 +44,8 @@ public class MousePosition2D : MonoBehaviour
     }
 
     private void Start() {
+        // adds a listener that listens for when _peerConnection initializes
+        // when it does hear it, then it calls function OnInitialized1
         _peerConnection.OnInitialized.AddListener(OnInitialized1);
     }
 

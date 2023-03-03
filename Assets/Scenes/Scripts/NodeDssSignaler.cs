@@ -40,7 +40,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// </summary>
         [Header("Server")]
         [Tooltip("The node-dss server to connect to")]
-        public string HttpServerAddress = "http://169.231.184.132:3000/";
+        public string HttpServerAddress;
         public bool doesServerExist = true;
 
         /// <summary>
@@ -216,7 +216,8 @@ namespace Microsoft.MixedReality.WebRTC.Unity
 
             // set the httpserveraddress
             string f = new WebClient().DownloadString("https://www.icanhazip.com/");
-           //HttpServerAddress = "http://" + f.Remove(f.Length - 1, 1) + ":3000/";
+            HttpServerAddress = "http://" + f.Remove(f.Length - 1, 1) + ":3000/";
+            Debug.Log("The HttpServerAddress is: " + HttpServerAddress);
 
             if (string.IsNullOrEmpty(HttpServerAddress))
             {
