@@ -9,6 +9,7 @@ public class MousePosition2D : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Microsoft.MixedReality.WebRTC.Unity.PeerConnection _peerConnection;
+    [SerializeField] private MarkerToggle markerToggle;
     //public event PeerConnection.DataChannelAddedDelegate DataChannelAdded;
 
     public DataChannel data1;
@@ -24,7 +25,7 @@ public class MousePosition2D : MonoBehaviour
 
     private void OnDataChannelAdded(DataChannel channel)
     {
-        Debug.Log("Hello " + channel.Label);
+        //Debug.Log("Hello " + channel.Label);
         switch (channel.Label)
         {
             case "dummy":
@@ -33,6 +34,7 @@ public class MousePosition2D : MonoBehaviour
                 break;
         }
     }
+
     private void OnStateChangedDummy()
     {
         Debug.Log("data1: " + data1.State);
@@ -87,11 +89,6 @@ public class MousePosition2D : MonoBehaviour
 
         // when mouse click
         if(Input.GetMouseButtonDown(0)){
-            // converts the screen position (input.mousePosition) into World position (-10,10)
-            // if( IsData1Created == false) {
-            //     CreateChannels();
-            //     IsData1Created = true;
-            // }
 
             // on mouse click and in video, send coordinate to hololens
             // FORMAT -> x,y,z | typeMarker
@@ -102,7 +99,7 @@ public class MousePosition2D : MonoBehaviour
             // set the z-coord to 0
             mouseWorldPosition.z = 0f;
 
-            Debug.Log(mouseWorldPosition);
+            //Debug.Log(mouseWorldPosition);
 
             // how to get an object to follow the mouse
             // transform.position = mouseWorldPosition;
@@ -111,24 +108,30 @@ public class MousePosition2D : MonoBehaviour
             if (mouseWorldPosition.x >= -7.5 && mouseWorldPosition.x <= 4.5 &&
                     mouseWorldPosition.y >= -4.09 && mouseWorldPosition.y <= 4.9){
                 //then reconvert to vector3 to a coord where the center of the screen is the remote video
-                Debug.Log("Inside remote video screen");
+                //Debug.Log("Inside remote video screen");
 
                 //conversion equation (+1.5,-0.405)
                 mouseRemVidPos.x = mouseWorldPosition.x + 1.5f;
                 mouseRemVidPos.y = mouseWorldPosition.y - 0.405f;
 
-                Debug.Log("Remote Video Coords: " + mouseRemVidPos);
+                //Debug.Log("Remote Video Coords: " + mouseRemVidPos);
 
                 // if data channel is open and can send information to the hololens
                 if ( data1.State == DataChannel.ChannelState.Open){
+                    // adds coords to text
                     string text = string.Format("{0:N3}", mouseRemVidPos.x) + "," + string.Format("{0:N3}", mouseRemVidPos.y) + "," + string.Format("{0:N3}", mouseRemVidPos.z); 
+                    
+                    // add what type of marker to text
+                    string typeMarker = " | " + markerToggle.getCurrentToggle.name[markerToggle.getCurrentToggle.name.Length - 1];
+                    text += typeMarker;
+
                     data1.SendMessage(Encoding.ASCII.GetBytes(text));
                     Debug.Log("Message sent: " + text );
                 }
                 
             }
             else{
-                Debug.Log("Outside remote video screen");
+                //Debug.Log("Outside remote video screen");
             }
 
         }
