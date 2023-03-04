@@ -28,6 +28,7 @@ public class NodeDssSignalerUI : MonoBehaviour
 
     private void Start()
     {
+        //test
         string localPeerId = NodeDssSignaler.LocalPeerId;
         DeviceNameLabel.text = localPeerId;
         Debug.Log($"NodeDSS local peer ID : {localPeerId}");
