@@ -43,8 +43,11 @@ public class BottomPanelUI : MonoBehaviour
         loadingConnect = true;
         for (int i = 0; i < 4; i++){
             // process pre-yield
-            yield return new WaitForSeconds( .4f );
-            connectionStatus.text += ".";
+            if (!connectSuccess)
+            {
+                yield return new WaitForSeconds( .4f );
+                connectionStatus.text += ".";
+            }
             // process post-yield
 
             if (i == 0) {
