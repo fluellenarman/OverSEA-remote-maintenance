@@ -1085,6 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionStatus: {fileID: 1129734090}
+  connectSuccess: 0
   MousePosition2D: {fileID: 1669053017}
   NodeDssSignalerUI: {fileID: 224978097090532664}
 --- !u!114 &444856202
@@ -1943,6 +1944,8 @@ MonoBehaviour:
   HttpServerAddress: http://169.231.51.16:3000/
   doesServerExist: 1
   PollTimeMs: 500
+  MousePosition2D: {fileID: 1669053017}
+  BottomPanelUI: {fileID: 444856201}
 --- !u!1 &666380895
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,13 +27,13 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// Unique identifier of the local peer.
         /// </summary>
         [Tooltip("Unique identifier of the local peer")]
-        public string LocalPeerId;
+        public string LocalPeerId = "UNITY";
 
         /// <summary>
         /// Unique identifier of the remote peer.
         /// </summary>
         [Tooltip("Unique identifier of the remote peer")]
-        public string RemotePeerId;
+        public string RemotePeerId = "HOLOLENS";
 
         /// <summary>
         /// The https://github.com/bengreenier/node-dss HTTP service address to connect to
@@ -211,8 +211,11 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
         /// </remarks>
         
+        private bool receivedIce = false;
         private void Start()
         {
+            pcInit = MousePosition2D.pcInit;
+            connectionSuccess = BottomPanelUI.connectSuccess;
 
             // set the httpserveraddress
             string f = new WebClient().DownloadString("https://www.icanhazip.com/");
@@ -233,6 +236,8 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             {
                 LocalPeerId = SystemInfo.deviceName;
             }
+
+            pcInit = MousePosition2D.pcInit;
         }
 
         /// <summary>
@@ -277,6 +282,12 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// and processing it as needed
         /// </summary>
         /// <returns>the message</returns>
+        public MousePosition2D MousePosition2D;
+        private bool pcInit = false;
+
+        public BottomPanelUI BottomPanelUI;
+        private bool connectionSuccess = false;
+
         private IEnumerator CO_GetAndProcessFromServer()
         {
             if (HttpServerAddress.Length == 0)
@@ -291,7 +302,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             var www = UnityWebRequest.Get($"{HttpServerAddress}data/{LocalPeerId}");
             yield return www.SendWebRequest();
 
-            if (!www.isNetworkError && !www.isHttpError)
+            if (!www.isNetworkError && !www.isHttpError && pcInit)
             {
                 doesServerExist = true;
                 var json = www.downloadHandler.text;
@@ -308,6 +319,8 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                     {
                     case NodeDssMessage.Type.Offer:
                         // Apply the offer coming from the remote peer to the local peer
+                        receivedIce = true;
+                        Debug.Log("Received Offer Message");
                         var sdpOffer = new WebRTC.SdpMessage { Type = SdpMessageType.Offer, Content = msg.Data };
                         PeerConnection.HandleConnectionMessageAsync(sdpOffer).ContinueWith(_ =>
                         {
@@ -318,12 +331,18 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                         break;
 
                     case NodeDssMessage.Type.Answer:
-                        // No need to wait for completion; there is nothing interesting to do after it.
-                        var sdpAnswer = new WebRTC.SdpMessage { Type = SdpMessageType.Answer, Content = msg.Data };
-                        _ = PeerConnection.HandleConnectionMessageAsync(sdpAnswer);
+                        if (connectionSuccess || receivedIce)
+                        {
+                            Debug.Log("Inside Answer");
+                            // No need to wait for completion; there is nothing interesting to do after it.
+                            var sdpAnswer = new WebRTC.SdpMessage { Type = SdpMessageType.Answer, Content = msg.Data };
+                            _ = PeerConnection.HandleConnectionMessageAsync(sdpAnswer);
+                        }
                         break;
 
                     case NodeDssMessage.Type.Ice:
+                        Debug.Log("Received Ice Message");
+                        receivedIce = true;
                         // this "parts" protocol is defined above, in OnIceCandidateReadyToSend listener
                         _nativePeer.AddIceCandidate(msg.ToIceCandidate());
                         break;
@@ -345,6 +364,16 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                 doesServerExist = false;
                 Debug.Log($"Network error trying to send data to {HttpServerAddress}: {www.error}");
             }
+            else if (!pcInit)
+            {
+                // pc has not been initialized
+                Debug.Log("Peer Connection has not been initialized yet");
+            }
+            else if (!connectionSuccess)
+            {
+                // connection has not been established between both users
+                Debug.Log("No Connection has been established between devices");
+            }
             else
             {
                 // This is very spammy because the node-dss protocol uses 404 as regular "no data yet" message, which is an HTTP error
@@ -361,6 +390,9 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// <inheritdoc/>
         protected override void Update()
         {
+            pcInit = MousePosition2D.pcInit;
+            connectionSuccess = BottomPanelUI.connectSuccess;
+
             if (!doesServerExist) {
                 //StartCoroutine(CO_GetAndProcessFromServer());
 
@@ -398,6 +430,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
 
             // ...begin the poll and process.
             lastGetComplete = false;
+
             StartCoroutine(CO_GetAndProcessFromServer());
         }
 

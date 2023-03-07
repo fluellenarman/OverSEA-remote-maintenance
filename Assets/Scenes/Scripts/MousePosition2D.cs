@@ -53,6 +53,7 @@ public class MousePosition2D : MonoBehaviour
     }
 
     private void OnInitialized1() {
+        Debug.Log("Peer Connection has been initialized");
         pcInit = true; 
 
         // check if peerconnection is init, if so, init the data channels

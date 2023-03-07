@@ -8,7 +8,7 @@ public class BottomPanelUI : MonoBehaviour
 {
     public Text connectionStatus;
     private bool loadingConnect = false;
-    private bool connectSuccess = false;
+    public bool connectSuccess = false;
 
     public MousePosition2D MousePosition2D;
     private bool IsData1Created = false;
@@ -47,25 +47,26 @@ public class BottomPanelUI : MonoBehaviour
             {
                 yield return new WaitForSeconds( .4f );
                 connectionStatus.text += ".";
-            }
-            // process post-yield
+            
+                // process post-yield
 
-            if (i == 0) {
-                // after every four loops, attempt reconnection
-                connectionStatus.text = "Waiting for another user";
-                if (pcInit && IsData1Created && data1 != null) {
-                     if (data1.State == DataChannel.ChannelState.Open) {
-                        // we know that a connection has been made when a datachannel is open
-                        // stop attempting connection
-                        Debug.Log("Connection Success");
-                        connectSuccess = true;
-                        connectionStatus.text = "Connection Successful";
-                     }
-                     else {
-                        // retry connection
-                        NodeDssSignalerUI.StartConnection();
-                        Debug.Log("Reattempting Connection");
-                     }
+                if (i == 0) {
+                    // after every four loops, attempt reconnection
+                    connectionStatus.text = "Waiting for another user";
+                    if (pcInit && IsData1Created && data1 != null) {
+                            if (data1.State == DataChannel.ChannelState.Open) {
+                                // we know that a connection has been made when a datachannel is open
+                                // stop attempting connection
+                                Debug.Log("Connection Success");
+                                connectSuccess = true;
+                                connectionStatus.text = "Connection Successful";
+                            }
+                            else {
+                                // retry connection
+                                NodeDssSignalerUI.StartConnection();
+                                Debug.Log("Reattempting Connection");
+                            }
+                    }
                 }
             }
         }
