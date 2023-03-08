@@ -216,7 +216,6 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         private void Start()
         {
             pcInit = MousePosition2D.pcInit;
-            connectSuccess = BottomPanelUI.connectSuccess;
             startedConnectAttempts = BottomPanelUI.startedConnectAttempts; 
 
             // set the httpserveraddress
@@ -240,8 +239,6 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             }
 
             pcInit = MousePosition2D.pcInit;
-            IsData1Created = MousePosition2D.IsData1Created;
-            data1 = MousePosition2D.data1;
         }
 
         /// <summary>
@@ -288,11 +285,8 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// <returns>the message</returns>
         public MousePosition2D MousePosition2D;
         private bool pcInit = false;
-        private bool IsData1Created = false;
-        private DataChannel data1;
         
         public BottomPanelUI BottomPanelUI;
-        private bool connectSuccess = false;
         private bool startedConnectAttempts = false;
 
         private List<NodeDssMessage> iceCandQueue = new List<NodeDssMessage>();
@@ -345,10 +339,12 @@ namespace Microsoft.MixedReality.WebRTC.Unity
 
                         // once we receive an answer msg, empty the ice candidate queue
                         receivedAns = true;
+                        Debug.Log("receivedAns = true");
                         foreach (NodeDssMessage currIceCand in iceCandQueue) {
                             Debug.Log("Add Early ICE candidate");
                             _nativePeer.AddIceCandidate(currIceCand.ToIceCandidate());
                         }
+                        iceCandQueue.Clear();
                         break;
 
                     case NodeDssMessage.Type.Ice:
@@ -414,10 +410,6 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         protected override void Update()
         {
             pcInit = MousePosition2D.pcInit;
-            IsData1Created = MousePosition2D.IsData1Created;
-            data1 = MousePosition2D.data1;
-
-            connectSuccess = BottomPanelUI.connectSuccess;
             startedConnectAttempts = BottomPanelUI.startedConnectAttempts;
 
             if (!doesServerExist) {
@@ -434,20 +426,31 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                 }
             }
 
-            // if dataChannel is closed, then reset the receivedAns bool since that means there was
-            // a disconnection and the app will need another ans msg to reinitiate the call.
-            // if (receivedAns) {
-            //     if (IsData1Created && data1 != null) {
-            //         if (data1.State == DataChannel.ChannelState.Connecting || data1.State == DataChannel.ChannelState.Closing) {
-            //             Debug.Log("Reset receivedAns to false - dataChannel is Connecting/Closing");
-            //             receivedAns = false;
-            //         }
-            //         else{
-            //             Debug.Log("receivedAns = true; data1 state: " + data1.State);
-            //         }
-            //     }
-            // }
-            //Debug.Log("receivedAns = " + receivedAns + "; data1 state: " + data1.State);
+            // if ICEState = Disconnected, remote peer has been disconnected
+            // and the app will need another ans msg to reinitiate the call.
+            if (pcInit) {
+                _nativePeer.IceStateChanged += (IceConnectionState newICEState) => {
+                    // reset receivedAns if peer disconnected
+                    if (receivedAns && newICEState == IceConnectionState.Disconnected) {
+                        // remote peer was disconnected, reset receivedAns
+                        receivedAns = false;
+                        Debug.Log("receivedAns = false");
+                        
+                        // recall startConnection through BottomPanelUI by resetting its variables
+                        BottomPanelUI.loadingConnect = false;
+                        BottomPanelUI.startedConnectAttempts = false;
+                        Debug.Log("remotePeerConnected = false");
+                        BottomPanelUI.remotePeerConnected = false;
+                        
+                    }
+                    
+                    // if icestate is connected, then the remote peer has been connected
+                    if (newICEState == IceConnectionState.Connected) {
+                        Debug.Log("remotePeerConnected = true");
+                        BottomPanelUI.remotePeerConnected = true;
+                    }
+                };
+            }
 
             // Do not forget to call the base class Update(), which processes events from background
             // threads to fire the callbacks implemented in this class.

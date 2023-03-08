@@ -1085,8 +1085,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionStatus: {fileID: 1129734090}
-  connectSuccess: 0
-  MousePosition2D: {fileID: 1669053017}
+  loadingConnect: 0
+  startedConnectAttempts: 0
+  remotePeerConnected: 0
   NodeDssSignalerUI: {fileID: 224978097090532664}
 --- !u!114 &444856202
 MonoBehaviour:
@@ -5912,7 +5913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dff3d25ffa2ee4f907d396ed9c1ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoCreateOfferOnRenegotiationNeeded: 1
+  AutoCreateOfferOnRenegotiationNeeded: 0
   AutoLogErrorsToUnityConsole: 1
   IceServers:
   - Type: 1

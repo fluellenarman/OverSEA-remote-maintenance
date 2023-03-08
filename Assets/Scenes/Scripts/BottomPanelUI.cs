@@ -7,14 +7,9 @@ using UnityEngine.UI;
 public class BottomPanelUI : MonoBehaviour
 {
     public Text connectionStatus;
-    private bool loadingConnect = false;
-    public bool connectSuccess = false;
+    public bool loadingConnect = false;
     public bool startedConnectAttempts = false;
-
-    public MousePosition2D MousePosition2D;
-    private bool IsData1Created = false;
-    private DataChannel data1;
-    private bool pcInit = false;
+    public bool remotePeerConnected = false;
 
     public NodeDssSignalerUI NodeDssSignalerUI;
 
@@ -27,12 +22,9 @@ public class BottomPanelUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!loadingConnect && !connectSuccess) {
+        if (!loadingConnect && !remotePeerConnected) {
             // if not connected to user, change the text to load
             // and then attempt connecting
-            IsData1Created = MousePosition2D.IsData1Created;
-            data1 = MousePosition2D.data1;
-            pcInit = MousePosition2D.pcInit;
             StartCoroutine( LoadingConnection() );
         }
 
@@ -41,68 +33,30 @@ public class BottomPanelUI : MonoBehaviour
     private IEnumerator LoadingConnection()
     {
         loadingConnect = true;
-        // for (int i = 0; i < 4; i++){
-        //     // process pre-yield
-        //     if (!connectSuccess)
-        //     {
-        //         yield return new WaitForSeconds( .4f );
-        //         connectionStatus.text += ".";
-            
-        //         // process post-yield
-
-        //         if (i == 0) {
-        //             // after every four loops, attempt reconnection
-        //             connectionStatus.text = "Waiting for another user";
-        //             if (pcInit && IsData1Created && data1 != null) {
-        //                     if (data1.State == DataChannel.ChannelState.Open) {
-        //                         // we know that a connection has been made when a datachannel is open
-        //                         // stop attempting connection
-        //                         Debug.Log("Connection Success");
-        //                         connectSuccess = true;
-        //                         connectionStatus.text = "Connection Successful";
-        //                     }
-        //                     else {
-        //                         // retry connection
-        //                         startedConnectAttempts = true;
-        //                         NodeDssSignalerUI.StartConnection();
-        //                         Debug.Log("Reattempting Connection");
-        //                     }
-        //             }
-        //         }
-        //     }
-        // }
-
         for (int i = 0; i < 4; i++){
-        // process pre-yield
-        if (!connectSuccess)
-        {
-            yield return new WaitForSeconds( .4f );
-            connectionStatus.text += ".";
-        
-            // process post-yield
-
-            if (i == 0) {
-                // after every four loops, attempt reconnection
-                connectionStatus.text = "Waiting for another user";
-                if (pcInit && IsData1Created && data1 != null) {
-                        if (data1.State == DataChannel.ChannelState.Open) {
-                            // we know that a connection has been made when a datachannel is open
-                            // stop attempting connection
-                            Debug.Log("Connection Success");
-                            connectSuccess = true;
-                            connectionStatus.text = "Connection Successful";
-                        }
-                        else if(!startedConnectAttempts){
-                            // retry connection
-                            startedConnectAttempts = true;
-                            NodeDssSignalerUI.StartConnection();
-                            Debug.Log("Reattempting Connection");
-                        }
+            // process pre-yield
+            if (!remotePeerConnected){
+                yield return new WaitForSeconds( .4f );
+                connectionStatus.text += ".";
+                
+                // process post-yield
+                if (i == 0) {
+                    connectionStatus.text = "Waiting for another user";
+                    if(!startedConnectAttempts){
+                        // retry connection
+                        startedConnectAttempts = true;
+                        NodeDssSignalerUI.StartConnection();
+                        Debug.Log("Start Connection");
+                    }
                 }
             }
+            else {
+                // we know that a connection has been made when a datachannel is open
+                // stop attempting connection
+                Debug.Log("Connection Success");
+                connectionStatus.text = "Connection Successful";
+            }
         }
-    }
-        
         loadingConnect = false;
     }
 
