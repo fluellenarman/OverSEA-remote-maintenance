@@ -81,7 +81,7 @@ public class MousePosition2D : MonoBehaviour
                 };
             }
             else{
-                //Debug.Log("data1 is closed");
+                Debug.Log("data1: " + data1.State);
             }
         }
         else{

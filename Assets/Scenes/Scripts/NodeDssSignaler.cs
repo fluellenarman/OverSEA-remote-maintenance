@@ -3,6 +3,8 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -211,11 +213,11 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
         /// </remarks>
         
-        private bool receivedIce = false;
         private void Start()
         {
             pcInit = MousePosition2D.pcInit;
-            connectionSuccess = BottomPanelUI.connectSuccess;
+            connectSuccess = BottomPanelUI.connectSuccess;
+            startedConnectAttempts = BottomPanelUI.startedConnectAttempts; 
 
             // set the httpserveraddress
             string f = new WebClient().DownloadString("https://www.icanhazip.com/");
@@ -238,6 +240,8 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             }
 
             pcInit = MousePosition2D.pcInit;
+            IsData1Created = MousePosition2D.IsData1Created;
+            data1 = MousePosition2D.data1;
         }
 
         /// <summary>
@@ -284,9 +288,15 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         /// <returns>the message</returns>
         public MousePosition2D MousePosition2D;
         private bool pcInit = false;
-
+        private bool IsData1Created = false;
+        private DataChannel data1;
+        
         public BottomPanelUI BottomPanelUI;
-        private bool connectionSuccess = false;
+        private bool connectSuccess = false;
+        private bool startedConnectAttempts = false;
+
+        private List<NodeDssMessage> iceCandQueue = new List<NodeDssMessage>();
+        private bool receivedAns = false;
 
         private IEnumerator CO_GetAndProcessFromServer()
         {
@@ -310,7 +320,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                 var msg = JsonUtility.FromJson<NodeDssMessage>(json);
 
                 // if the message is good
-                if (msg != null)
+                if (msg != null && startedConnectAttempts)
                 {
                     // depending on what type of message we get, we'll handle it differently
                     // this is the "glue" that allows two peers to establish a connection.
@@ -319,8 +329,6 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                     {
                     case NodeDssMessage.Type.Offer:
                         // Apply the offer coming from the remote peer to the local peer
-                        receivedIce = true;
-                        Debug.Log("Received Offer Message");
                         var sdpOffer = new WebRTC.SdpMessage { Type = SdpMessageType.Offer, Content = msg.Data };
                         PeerConnection.HandleConnectionMessageAsync(sdpOffer).ContinueWith(_ =>
                         {
@@ -331,20 +339,33 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                         break;
 
                     case NodeDssMessage.Type.Answer:
-                        if (connectionSuccess || receivedIce)
-                        {
-                            Debug.Log("Inside Answer");
-                            // No need to wait for completion; there is nothing interesting to do after it.
-                            var sdpAnswer = new WebRTC.SdpMessage { Type = SdpMessageType.Answer, Content = msg.Data };
-                            _ = PeerConnection.HandleConnectionMessageAsync(sdpAnswer);
+                        // No need to wait for completion; there is nothing interesting to do after it.
+                        var sdpAnswer = new WebRTC.SdpMessage { Type = SdpMessageType.Answer, Content = msg.Data };
+                        _ = PeerConnection.HandleConnectionMessageAsync(sdpAnswer);
+
+                        // once we receive an answer msg, empty the ice candidate queue
+                        receivedAns = true;
+                        foreach (NodeDssMessage currIceCand in iceCandQueue) {
+                            Debug.Log("Add Early ICE candidate");
+                            _nativePeer.AddIceCandidate(currIceCand.ToIceCandidate());
                         }
                         break;
 
                     case NodeDssMessage.Type.Ice:
-                        Debug.Log("Received Ice Message");
-                        receivedIce = true;
                         // this "parts" protocol is defined above, in OnIceCandidateReadyToSend listener
-                        _nativePeer.AddIceCandidate(msg.ToIceCandidate());
+                        
+                        // hitting an issue where sometimes we receive a candidate before the answer
+                        // use boolean to check if we've received the answer msg
+                        // if not, queue up the message somewhere else
+                        // if we have, run normally
+                        // for candidates that get sent to the queue, the moment we receive an answer msg
+                        // run .addIceCandidate to every candidate in the queue.
+                        if (receivedAns) {
+                            _nativePeer.AddIceCandidate(msg.ToIceCandidate());
+                        }
+                        else {
+                            iceCandQueue.Add(msg);
+                        }
                         break;
 
                     default:
@@ -353,6 +374,13 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                     }
 
                     timeSincePollMs = PollTimeMs + 1f; //fast forward next request
+                }
+                else if ( msg != null && !startedConnectAttempts)
+                {
+                    // if the receiver has not started its attempts yet to connect,
+                    // then any nonNull messages that it receives are not valid
+                    // therefore, we ignore them
+                    Debug.Log("Received a message before starting connection attempts");
                 }
                 else if (AutoLogErrors)
                 {
@@ -368,11 +396,6 @@ namespace Microsoft.MixedReality.WebRTC.Unity
             {
                 // pc has not been initialized
                 Debug.Log("Peer Connection has not been initialized yet");
-            }
-            else if (!connectionSuccess)
-            {
-                // connection has not been established between both users
-                Debug.Log("No Connection has been established between devices");
             }
             else
             {
@@ -391,7 +414,11 @@ namespace Microsoft.MixedReality.WebRTC.Unity
         protected override void Update()
         {
             pcInit = MousePosition2D.pcInit;
-            connectionSuccess = BottomPanelUI.connectSuccess;
+            IsData1Created = MousePosition2D.IsData1Created;
+            data1 = MousePosition2D.data1;
+
+            connectSuccess = BottomPanelUI.connectSuccess;
+            startedConnectAttempts = BottomPanelUI.startedConnectAttempts;
 
             if (!doesServerExist) {
                 //StartCoroutine(CO_GetAndProcessFromServer());
@@ -406,6 +433,21 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                     return;
                 }
             }
+
+            // if dataChannel is closed, then reset the receivedAns bool since that means there was
+            // a disconnection and the app will need another ans msg to reinitiate the call.
+            // if (receivedAns) {
+            //     if (IsData1Created && data1 != null) {
+            //         if (data1.State == DataChannel.ChannelState.Connecting || data1.State == DataChannel.ChannelState.Closing) {
+            //             Debug.Log("Reset receivedAns to false - dataChannel is Connecting/Closing");
+            //             receivedAns = false;
+            //         }
+            //         else{
+            //             Debug.Log("receivedAns = true; data1 state: " + data1.State);
+            //         }
+            //     }
+            // }
+            //Debug.Log("receivedAns = " + receivedAns + "; data1 state: " + data1.State);
 
             // Do not forget to call the base class Update(), which processes events from background
             // threads to fire the callbacks implemented in this class.
