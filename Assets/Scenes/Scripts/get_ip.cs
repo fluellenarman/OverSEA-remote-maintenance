@@ -8,9 +8,9 @@ using TMPro;
 
 public class get_ip : MonoBehaviour
 {
-    //public Text ip_text;
     public Text ip_text;
     public GameObject ip_text2;
+    public TMP_Text ip_address;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +20,13 @@ public class get_ip : MonoBehaviour
         // The text displayed will be:
         // The first number is 4 and the 2nd is 6.35 and the 3rd is 4.
 
-        //ip_text2 = GetComponent<GameObject>();
+        ip_text2 = GetComponent<GameObject>();
 
         string f = new WebClient().DownloadString("https://www.icanhazip.com/");
         //text.text = f;
-        Debug.Log("user IP is: " + f);
+        string IP = "IP Address: " + f;
+        Debug.Log(IP);
+        ip_address.text = IP;
     }
 
   
