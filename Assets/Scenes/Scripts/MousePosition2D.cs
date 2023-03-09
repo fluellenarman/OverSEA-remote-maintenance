@@ -37,7 +37,7 @@ public class MousePosition2D : MonoBehaviour
 
     private void OnStateChangedDummy()
     {
-        Debug.Log("data1: " + data1.State);
+        //Debug.Log("data1: " + data1.State);
 
         if (data1.State + "" == "Open")
         {
@@ -64,6 +64,17 @@ public class MousePosition2D : MonoBehaviour
         }
     }
 
+    public void delMarkers() {
+        if ( data1 != null && data1.State == DataChannel.ChannelState.Open){
+
+            // add what type of marker to text
+            string text = "0,0,0 | 8";
+
+            data1.SendMessage(Encoding.ASCII.GetBytes(text));
+            Debug.Log("Message sent: " + text );
+        }
+    }
+
     private void Update() {
         
         if (data1 != null)
@@ -81,7 +92,7 @@ public class MousePosition2D : MonoBehaviour
                 };
             }
             else{
-                Debug.Log("data1: " + data1.State);
+               // Debug.Log("data1: " + data1.State);
             }
         }
         else{
@@ -118,7 +129,7 @@ public class MousePosition2D : MonoBehaviour
                 //Debug.Log("Remote Video Coords: " + mouseRemVidPos);
 
                 // if data channel is open and can send information to the hololens
-                if ( data1.State == DataChannel.ChannelState.Open){
+                if ( data1 != null && data1.State == DataChannel.ChannelState.Open){
                     // adds coords to text
                     string text = string.Format("{0:N3}", mouseRemVidPos.x) + "," + string.Format("{0:N3}", mouseRemVidPos.y) + "," + string.Format("{0:N3}", mouseRemVidPos.z); 
                     
