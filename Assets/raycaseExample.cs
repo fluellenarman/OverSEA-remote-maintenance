@@ -20,6 +20,7 @@ public class raycaseExample : MonoBehaviour
 
     private bool IsData2Open = false;
     private bool IsData1Created = false;
+    private List<GameObject> objList;
 
     public void CreateChannels()
     {
@@ -67,6 +68,7 @@ public class raycaseExample : MonoBehaviour
     {
         Debug.Log("Raycast Example1");
         pC.OnInitialized.AddListener(OnInitialized1);
+        objList = new List<GameObject>();
         //if (IsData1Created == false)
         //{
         //    CreateChannels();
@@ -97,7 +99,7 @@ public class raycaseExample : MonoBehaviour
     private Vector3 result;
     private string text = "";
     public bool isMarkerPlaced = false;
-    public float markerTimer = 2000.00f;
+    public float markerTimer = 20000.00f;
     public float dataChannelTimer = 5.00f;
     public int markerType = 0;
     // Update is called once per frame
@@ -141,8 +143,26 @@ public class raycaseExample : MonoBehaviour
                     text = System.Text.Encoding.UTF8.GetString(message);
                     Debug.Log("Message Received " + text);
 
+                    // FOR TESTING --- Be sure to comment/uncomment this block while testing the updated pc client
+                    //string[] sArray = text.Split(',');
+                    //float resX = (float.Parse(sArray[0]) + 6f) * (Screen.width / 12f);
+                    //float resY = (float.Parse(sArray[1]) + 4.495f) * (Screen.height / 8.99f);
+                    //result = new Vector3(
+                    // resX,
+                    // resY,
+                    // 440,
+                    // 196,
+                    // 0
+                    //);
                     // FOR TESTING
-                    string[] sArray = text.Split(',');
+
+                    // MESSAGE PARSING ------- {TO USE ON UPDATE PC CLIENT, UNCOMMENT FROM HERE}
+                    string[] textList = text.Split('|');
+                    markerType = int.Parse(textList[1]);
+                    // MESSAGE PARSING --------
+
+                    // Convert text into coordinates
+                    string[] sArray = textList[0].Split(',');
                     float resX = (float.Parse(sArray[0]) + 6f) * (Screen.width / 12f);
                     float resY = (float.Parse(sArray[1]) + 4.495f) * (Screen.height / 8.99f);
                     result = new Vector3(
@@ -151,25 +171,7 @@ public class raycaseExample : MonoBehaviour
                      //440,
                      //196,
                      0
-                    );
-                    // FOR TESTING
-
-                    //// MESSAGE PARSING -------
-                    //string[] textList = text.Split('|');
-                    //markerType = int.Parse(textList[1]);
-                    //// MESSAGE PARSING --------
-
-                    //// Convert text into coordinates
-                    //string[] sArray = textList[0].Split(',');
-                    //float resX = (float.Parse(sArray[0]) + 6f) * (Screen.width / 12f);
-                    //float resY = (float.Parse(sArray[1]) + 4.495f) * (Screen.height / 8.99f);
-                    //result = new Vector3(
-                    // resX,
-                    // resY,
-                    // //440,
-                    // //196,
-                    // 0
-                    //);
+                    ); // {TO USE ON UPDATE PC CLIENT, UNCOMMENT FROM HERE}
 
                     // Raycasts
                     Debug.Log(result);
@@ -194,50 +196,57 @@ public class raycaseExample : MonoBehaviour
                 {
                     Debug.Log("Placing Default Marker");
                     hitPosition[1] = hitPosition[1] + .10f;
-                    Instantiate(prefab, hitPosition, Quaternion.Euler(0f, 0f, 180f));
+                    objList.Add(Instantiate(prefab, hitPosition, Quaternion.Euler(0f, 0f, 180f)));
                 }
                 else if (markerType == 1)
                 {
                     Debug.Log("Placing RIGHT Marker");
                     hitPosition[1] = hitPosition[1] + .10f;
-                    Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 180f));
+                    objList.Add(Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 180f)));
                 }
                 else if (markerType == 2)
                 {
                     Debug.Log("Placing DOWN Marker");
                     hitPosition[1] = hitPosition[1] + .10f;
-                    Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 90f));
+                    objList.Add(Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 90f)));
                 }
                 else if (markerType == 3)
                 {
                     Debug.Log("Placing LEFT Marker");
                     hitPosition[1] = hitPosition[1] + .10f;
-                    Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 90f));
+                    objList.Add(Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 0f)));
                 }
                 else if (markerType == 4)
                 {
                     Debug.Log("Placing UP Marker");
                     hitPosition[1] = hitPosition[1] + .10f;
-                    Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 270f));
+                    objList.Add(Instantiate(prefab1, hitPosition, Quaternion.Euler(0f, 0f, 270f)));
                 }
                 else if (markerType == 5)
                 {
                     Debug.Log("Placing CLOCKWISE marker");
                     var rotation2 = roundArrowFace2;
                     rotation2 *= Quaternion.Euler(90, 0, 0);
-                    Instantiate(prefab2, hitPosition, rotation2);
+                    objList.Add(Instantiate(prefab2, hitPosition, rotation2));
                 }
                 else if (markerType == 6)
                 {
                     Debug.Log("Placing COUNTER CLOCKWISE marker");
                     var rotation2 = roundArrowFace2;
                     rotation2 *= Quaternion.Euler(270, 0, 0);
-                    Instantiate(prefab2, hitPosition, rotation2);
+                    objList.Add(Instantiate(prefab2, hitPosition, rotation2));
+                }
+                else if (markerType == 8)
+                {
+                    for (int i = objList.Count - 1; i >= 0; i--)
+                    {
+                        Destroy(objList[i].gameObject);
+                    }
                 }
                 else
                 {
                     Debug.Log("IN ELSE");
-                    hitPosition[1] = hitPosition[1] + .10f;
+                    //hitPosition[1] = hitPosition[1] + .10f;
                     Instantiate(prefab, hitPosition, Quaternion.Euler(0f, 0f, 180f));
                 }
                 //var rotation2 = roundArrowFace2;
@@ -267,7 +276,7 @@ public class raycaseExample : MonoBehaviour
                 //Debug.Log(roundArrowFace[0]);
 
                 //Instantiate(prefab2, testHitPosition, rotation);
-                Instantiate(prefab1, testHitPosition, Quaternion.Euler(0f, 0f, 0f));
+                objList.Add(Instantiate(prefab1, testHitPosition, Quaternion.Euler(0f, 0f, 0f)));
                 Debug.DrawLine(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition), Color.red, 10f, true);
             }
             // -------------------------------------------------------------------------------------------
@@ -296,6 +305,13 @@ public class raycaseExample : MonoBehaviour
                 Debug.Log("dataChannel1 is null - cannot send message");
             }
 
+        }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            for (int i = objList.Count - 1; i >= 0; i--)
+            {
+                Destroy(objList[i].gameObject);
+            }
         }
     }
 
