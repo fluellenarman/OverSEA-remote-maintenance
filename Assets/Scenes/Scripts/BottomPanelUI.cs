@@ -13,15 +13,20 @@ public class BottomPanelUI : MonoBehaviour
 
     public NodeDssSignalerUI NodeDssSignalerUI;
 
+    public MousePosition2D MousePosition2D;
+    public bool pcInit = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        pcInit = MousePosition2D.pcInit;
         connectionStatus.text = "Waiting for another user";
     }
 
     // Update is called once per frame
     void Update()
     {
+        pcInit = MousePosition2D.pcInit;
         if (!loadingConnect && !remotePeerConnected) {
             // if not connected to user, change the text to load
             // and then attempt connecting
@@ -42,7 +47,7 @@ public class BottomPanelUI : MonoBehaviour
                 // process post-yield
                 if (i == 0) {
                     connectionStatus.text = "Waiting for another user";
-                    if(!startedConnectAttempts){
+                    if(!startedConnectAttempts && pcInit){
                         // retry connection
                         startedConnectAttempts = true;
                         NodeDssSignalerUI.StartConnection();

@@ -111,20 +111,20 @@ public class MousePosition2D : MonoBehaviour
             // set the z-coord to 0
             mouseWorldPosition.z = 0f;
 
-            //Debug.Log(mouseWorldPosition);
+            Debug.Log(mouseWorldPosition);
 
             // how to get an object to follow the mouse
             // transform.position = mouseWorldPosition;
 
             // if within the constraints of the remote video screen
-            if (mouseWorldPosition.x >= -7.5 && mouseWorldPosition.x <= 4.5 &&
-                    mouseWorldPosition.y >= -4.09 && mouseWorldPosition.y <= 4.9){
+            if (mouseWorldPosition.x >= -8.55 && mouseWorldPosition.x <= 4.95 &&
+                    mouseWorldPosition.y >= -4.28 && mouseWorldPosition.y <= 4.72){
                 //then reconvert to vector3 to a coord where the center of the screen is the remote video
                 //Debug.Log("Inside remote video screen");
 
-                //conversion equation (+1.5,-0.405)
-                mouseRemVidPos.x = mouseWorldPosition.x + 1.5f;
-                mouseRemVidPos.y = mouseWorldPosition.y - 0.405f;
+                //conversion equation (-1.8, 0.22)
+                mouseRemVidPos.x = mouseWorldPosition.x + 1.8f;
+                mouseRemVidPos.y = mouseWorldPosition.y - 0.22f;
 
                 //Debug.Log("Remote Video Coords: " + mouseRemVidPos);
 

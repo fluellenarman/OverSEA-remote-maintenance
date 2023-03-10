@@ -339,7 +339,7 @@ namespace Microsoft.MixedReality.WebRTC.Unity
 
                         // once we receive an answer msg, empty the ice candidate queue
                         receivedAns = true;
-                        Debug.Log("receivedAns = true");
+                        //Debug.Log("receivedAns = true");
                         foreach (NodeDssMessage currIceCand in iceCandQueue) {
                             Debug.Log("Add Early ICE candidate");
                             _nativePeer.AddIceCandidate(currIceCand.ToIceCandidate());
@@ -434,19 +434,19 @@ namespace Microsoft.MixedReality.WebRTC.Unity
                     if (receivedAns && newICEState == IceConnectionState.Disconnected) {
                         // remote peer was disconnected, reset receivedAns
                         receivedAns = false;
-                        Debug.Log("receivedAns = false");
+                        //Debug.Log("receivedAns = false");
                         
                         // recall startConnection through BottomPanelUI by resetting its variables
                         BottomPanelUI.loadingConnect = false;
                         BottomPanelUI.startedConnectAttempts = false;
-                        Debug.Log("remotePeerConnected = false");
+                        //Debug.Log("remotePeerConnected = false");
                         BottomPanelUI.remotePeerConnected = false;
                         
                     }
                     
                     // if icestate is connected, then the remote peer has been connected
                     if (newICEState == IceConnectionState.Connected) {
-                        Debug.Log("remotePeerConnected = true");
+                        //Debug.Log("remotePeerConnected = true");
                         BottomPanelUI.remotePeerConnected = true;
                     }
                 };
