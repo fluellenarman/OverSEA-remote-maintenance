@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -125,6 +126,21 @@ public class MousePosition2D : MonoBehaviour
                 //conversion equation (-1.8, 0.22)
                 mouseRemVidPos.x = mouseWorldPosition.x + 1.8f;
                 mouseRemVidPos.y = mouseWorldPosition.y - 0.22f;
+
+                Debug.Log("Old x: " + mouseRemVidPos.x + " New x: " + (mouseRemVidPos.x + 1.5f));
+                // if x is off center
+                mouseRemVidPos.x = mouseRemVidPos.x + 1.5f;
+
+                // y is too high in the hololens
+                mouseRemVidPos.y = mouseRemVidPos.y - 1.25f;
+
+                // farther - of origin x is too to the right
+                // farter + of origin x is too to the left
+                mouseRemVidPos.x = mouseRemVidPos.x + ((mouseRemVidPos.x - 1.55f) * .33f);
+
+                // the more left you go, the more you have to push the marker left. marker gets sent too in the right
+                // past x = 7.128
+                mouseRemVidPos.x = mouseRemVidPos.x + ((mouseRemVidPos.x - 7.218f) * .1f);                
 
                 //Debug.Log("Remote Video Coords: " + mouseRemVidPos);
 
